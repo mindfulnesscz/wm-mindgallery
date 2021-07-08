@@ -1,0 +1,27 @@
+{
+	"name": "mindgallery.dev",
+	"version": "2.0.0",
+	"description": "Humble Guttenberg ready gallery for Wordpress",
+	"main": "src/index.js",
+	"scripts": {
+		"js": "wp-scripts start --config webpack.config.js",
+		"css": "grunt watch",
+		"build:js": "wp-scripts build --config webpack.config.js",
+		"build:css": "grunt",
+		"build": "run-s \"build:*\""
+	},
+	"keywords": [],
+	"author": "Webmajstr <info@webmajstr.cz>",
+	"license": "GPL",
+	"devDependencies": {
+		"@wordpress/components": "^14.1.6",
+		"@wordpress/scripts": "^16.1.2",
+		"classnames": "^2.3.1",
+		"grunt": "^1.4.1",
+		"grunt-contrib-clean": "~2.0.0",
+		"grunt-contrib-sass": "^2.0.0",
+		"grunt-contrib-watch": "~1.1.0",
+		"lodash": "^4.17.21",
+		"npm-run-all": "^4.1.5"
+	}
+}

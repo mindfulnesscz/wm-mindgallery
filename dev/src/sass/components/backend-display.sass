@@ -1,0 +1,26 @@
+=zero-spacing
+	margin : 0
+	padding : 0
+.orbit-wrapper
+	+zero-spacing
+	.blockgallery
+		display : flex
+		flex-wrap : wrap
+	.orbit-controls
+		+zero-spacing
+		display : none
+	.orbit-container
+		+zero-spacing
+		.orbit-slide
+			+zero-spacing
+			figure
+				position : relative
+				+zero-spacing
+				> div :first-child
+					position : absolute
+				img
+					+zero-spacing
+					max-width : 150px
+					max-height : 130px 
+				figcaption
+					display : none
