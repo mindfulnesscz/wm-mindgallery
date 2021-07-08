@@ -78,7 +78,7 @@ class Mindgallery_Admin {
 		add_settings_section (
 			'mindgallery settings',
 			__( 'Mindgallery settings', 'mindgallery' ),
-			array( 'Mindgallery_Admin', 'mindgallery_section_developers_cb' ),
+			array( $this, 'mindgallery_section_developers_cb' ),
 			'mindgallery'
 		);
 
@@ -89,7 +89,7 @@ class Mindgallery_Admin {
 				'mindgallery_field_default', // as of WP 4.6 this value is used only internally
 				// use $args' label_for to populate the id inside the callback
 				__( 'Pill', 'mindgallery' ),
-				array ( 'Mindgallery_Admin', 'mindgallery_field_default_cb' ),
+				array ( $this, 'mindgallery_field_default_cb' ),
 				'mindgallery',
 				'mindgallery settings',
 				[
@@ -104,7 +104,7 @@ class Mindgallery_Admin {
 				'mindgallery_field_type_bkg_available', // as of WP 4.6 this value is used only internally
 				// use $args' label_for to populate the id inside the callback
 				__( 'Allow gallery type Background', 'mindgallery' ),
-				array( 'Mindgallery_Admin', 'mindgallery_field_type_bkg_available_cb' ),
+				array( $this, 'mindgallery_field_type_bkg_available_cb' ),
 				'mindgallery',
 				'mindgallery settings',
 				[
@@ -126,7 +126,7 @@ class Mindgallery_Admin {
 	 	'Mindgallery Options',
 	 	'manage_options',
 	 	'mindgallery',
-	 	array('Mindgallery_Admin', 'mindgallery_options_page_html')
+	 	array($this, 'mindgallery_options_page_html')
 		 );
 	}
 
@@ -150,7 +150,7 @@ class Mindgallery_Admin {
 		settings_errors( 'mindgallery_messages' );
 		?>
 			 <div class="wrap">
-				 <h1><?php echo $this->plugin_name; ?></h1>
+				 <h1><?php echo $this->plugin_name ?></h1>
 				 <form action="options.php" method="post">
 				 <?php
 				 // output security fields for the registered setting "wporg"
@@ -229,10 +229,17 @@ class Mindgallery_Admin {
 
 
 	public function mindgallery_field_type_bkg_available_cb( $args ) {
+		
 		// get the value of the setting we've registered with register_setting()
 		$options = get_option( 'mindgallery_options' );
+
+		// If there is no value, add false to avoid php errors later
+		if(!array_key_exists($args['label_for'], $options)):
+			$options[ $args['label_for'] ] = false;
+		endif;
+
 		// output the field
-		?>
+		 ?>
 		<input type="checkbox" id="<?php echo esc_attr( $args['label_for'] ); ?>"
 			data-custom="<?php echo esc_attr( $args['mindgallery_custom_data'] ); ?>"
 			name="mindgallery_options[<?php echo esc_attr( $args['label_for'] ); ?>]"
