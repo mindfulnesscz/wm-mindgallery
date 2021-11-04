@@ -22,7 +22,7 @@ import { GlobalAttributes, GlobalTransforms, GlobalClasses, GlobalStyles } from 
  */
 const { __ } = wp.i18n;
 const { createBlock } = wp.blocks;
-const { RichText, getFontSizeClass } = wp.editor;
+const { RichText, getFontSizeClass } = wp.blockEditor;
 
 /**
  * Block constants

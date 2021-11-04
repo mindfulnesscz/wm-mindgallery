@@ -14,7 +14,7 @@ import ResponsiveTabsControl from './../responsive-tabs-control';
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const { compose } = wp.compose;
-const { withColors, ColorPalette, PanelColorSettings } = wp.editor;
+const { withColors, ColorPalette, PanelColorSettings } = wp.blockEditor;
 const { SelectControl, RangeControl, ToggleControl, PanelBody, Button } = wp.components;
 
 /**

@@ -13,7 +13,7 @@
  const { Component, Fragment } = wp.element;
  const { compose } = wp.compose;
  const { IconButton, Spinner } = wp.components;
- const { RichText } = wp.editor;
+ const { RichText } = wp.blockEditor;
  const { withSelect } = wp.data;
  const { BACKSPACE, DELETE } = wp.keycodes;
  const { isBlobURL } = wp.blob;

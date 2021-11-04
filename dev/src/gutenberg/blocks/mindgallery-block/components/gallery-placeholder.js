@@ -8,7 +8,7 @@ import * as helper from './utils/helper';
  */
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
-const { MediaPlaceholder } = wp.editor;
+const { MediaPlaceholder } = wp.blockEditor;
 
 /**
  * Gallery Image Component

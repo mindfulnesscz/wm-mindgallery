@@ -26,7 +26,7 @@ const {
 const {
 	MediaPlaceholder,
 	mediaUpload,
-} = wp.editor;
+} = wp.blockEditor;
 
 /**
  * Gallery Image Component

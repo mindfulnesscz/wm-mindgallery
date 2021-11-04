@@ -20,7 +20,7 @@ const {
 	MediaUpload,
 	MediaUploadCheck,
 	AlignmentToolbar,
-} = wp.editor;
+} = wp.blockEditor;
 
 /**
  * Global Toolbar Component

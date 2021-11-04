@@ -9,7 +9,7 @@ import * as helper from './../utils/helper';
  */
 const { __ } = wp.i18n;
 const { Component, Fragment } = wp.element;
-const { MediaUpload, MediaUploadCheck } = wp.editor;
+const { MediaUpload, MediaUploadCheck } = wp.blockEditor;
 const { Toolbar, IconButton } = wp.components;
 
 /**

@@ -7,7 +7,7 @@ import { BackgroundClasses } from './../background';
 /**
  * WordPress dependencies
  */
-const { getColorClassName } = wp.editor;
+const { getColorClassName } = wp.blockEditor;
 
 /**
  * CSS classes

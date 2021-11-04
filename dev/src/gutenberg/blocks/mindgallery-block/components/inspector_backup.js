@@ -14,7 +14,7 @@ const { __, sprintf } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const { compose } = wp.compose;
 const { withSelect } = wp.data;
-const { InspectorControls, FontSizePicker, withFontSizes } = wp.editor;
+const { InspectorControls, FontSizePicker, withFontSizes } = wp.blockEditor;
 const { PanelBody, RangeControl, ToggleControl, SelectControl } = wp.components;
 
 /**
