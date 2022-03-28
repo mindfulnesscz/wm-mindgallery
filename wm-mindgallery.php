@@ -3,7 +3,7 @@
  Plugin Name: WM Mindgallery
  Plugin URI: http://www.petrmucha.cz/blog/mindgallery
  Description:Easily display all your WordPress usersname on wordpress website.
- Version: 2.0
+ Version: 2.0.1
  Author: Webmajstr
  Author URI: http://www.webmajstr.cz/
  Text Domain: wm_mindgallery
@@ -27,41 +27,43 @@ along with this program; if not, please find it at https://www.webmajstr.cz/lice
 */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-	die;
+if (!defined('WPINC')) {
+  die;
 }
 
 /**
  * First things first.
  */
-define('WM_MINDGALLERY_VERSION', '2.0');
+define('WM_MINDGALLERY_VERSION', '2.0.1');
 define('WM_MINDGALLERY_TEXTDOMAIN', 'wm_mindgallery');
 
 /**
  * The code that runs during plugin activation.
  */
-function activate_mindgallery() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-mindgallery-activator.php';
-	Mindgallery_Activator::activate();
+function activate_mindgallery()
+{
+  require_once plugin_dir_path(__FILE__) . 'includes/class-mindgallery-activator.php';
+  Mindgallery_Activator::activate();
 }
 
 
 /**
  * The code that runs during plugin deactivation.
  */
-function deactivate_mindgallery() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-mindgallery-deactivator.php';
-	Mindgallery_Deactivator::deactivate();
+function deactivate_mindgallery()
+{
+  require_once plugin_dir_path(__FILE__) . 'includes/class-mindgallery-deactivator.php';
+  Mindgallery_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_mindgallery' );
-register_deactivation_hook( __FILE__, 'deactivate_mindgallery' );
+register_activation_hook(__FILE__, 'activate_mindgallery');
+register_deactivation_hook(__FILE__, 'deactivate_mindgallery');
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-mindgallery.php';
+require plugin_dir_path(__FILE__) . 'includes/class-mindgallery.php';
 
 /**
  * Begins execution of the plugin.
@@ -73,14 +75,11 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-mindgallery.php';
  * @since    1.0.0
  */
 
-function run_mindgallery() {
+function run_mindgallery()
+{
 
-	$plugin = new Mindgallery('wm-mindgallery', WM_MINDGALLERY_VERSION, WM_MINDGALLERY_TEXTDOMAIN );
-	$plugin->run();
-
+  $plugin = new Mindgallery('wm-mindgallery', WM_MINDGALLERY_VERSION, WM_MINDGALLERY_TEXTDOMAIN);
+  $plugin->run();
 }
 
 run_mindgallery();
-
-
-?>

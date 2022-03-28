@@ -1,3 +1,8387 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=144)}([function(e,t){e.exports=window.wp.element},function(e,t,n){var r;!function(){"use strict";var n={}.hasOwnProperty;function o(){for(var e=[],t=0;t<arguments.length;t++){var r=arguments[t];if(r){var a=typeof r;if("string"===a||"number"===a)e.push(r);else if(Array.isArray(r)){if(r.length){var i=o.apply(null,r);i&&e.push(i)}}else if("object"===a)if(r.toString===Object.prototype.toString)for(var c in r)n.call(r,c)&&r[c]&&e.push(c);else e.push(r.toString())}}return e.join(" ")}e.exports?(o.default=o,e.exports=o):void 0===(r=function(){return o}.apply(t,[]))||(e.exports=r)}()},function(e,t){var n=Array.isArray;e.exports=n},function(e,t,n){var r=n(33),o="object"==typeof self&&self&&self.Object===Object&&self,a=r||o||Function("return this")();e.exports=a},function(e,t,n){var r=n(81),o=n(84);e.exports=function(e,t){var n=o(e,t);return r(n)?n:void 0}},function(e,t){function n(){return e.exports=n=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},e.exports.default=e.exports,e.exports.__esModule=!0,n.apply(this,arguments)}e.exports=n,e.exports.default=e.exports,e.exports.__esModule=!0},function(e,t,n){var r=n(7),o=n(59),a=n(60),i=r?r.toStringTag:void 0;e.exports=function(e){return null==e?void 0===e?"[object Undefined]":"[object Null]":i&&i in Object(e)?o(e):a(e)}},function(e,t,n){var r=n(3).Symbol;e.exports=r},function(e,t){e.exports=function(e){return null!=e&&"object"==typeof e}},function(e,t,n){var r=n(31);e.exports=function(e){if("string"==typeof e||r(e))return e;var t=e+"";return"0"==t&&1/e==-1/0?"-0":t}},function(e,t,n){var r=n(35),o=n(43),a=n(11),i=n(2),c=n(25),l=n(21),s=n(36),u=n(23),p=Object.prototype.hasOwnProperty;e.exports=function(e){if(null==e)return!0;if(c(e)&&(i(e)||"string"==typeof e||"function"==typeof e.splice||l(e)||u(e)||a(e)))return!e.length;var t=o(e);if("[object Map]"==t||"[object Set]"==t)return!e.size;if(s(e))return!r(e).length;for(var n in e)if(p.call(e,n))return!1;return!0}},function(e,t,n){var r=n(57),o=n(8),a=Object.prototype,i=a.hasOwnProperty,c=a.propertyIsEnumerable,l=r(function(){return arguments}())?r:function(e){return o(e)&&i.call(e,"callee")&&!c.call(e,"callee")};e.exports=l},function(e,t){e.exports=function(e){var t=typeof e;return null!=e&&("object"==t||"function"==t)}},function(e,t,n){var r=n(71),o=n(72),a=n(73),i=n(74),c=n(75);function l(e){var t=-1,n=null==e?0:e.length;for(this.clear();++t<n;){var r=e[t];this.set(r[0],r[1])}}l.prototype.clear=r,l.prototype.delete=o,l.prototype.get=a,l.prototype.has=i,l.prototype.set=c,e.exports=l},function(e,t,n){var r=n(26);e.exports=function(e,t){for(var n=e.length;n--;)if(r(e[n][0],t))return n;return-1}},function(e,t,n){var r=n(4)(Object,"create");e.exports=r},function(e,t,n){var r=n(93);e.exports=function(e,t){var n=e.__data__;return r(t)?n["string"==typeof t?"string":"hash"]:n.map}},function(e,t,n){var r=n(2),o=n(30),a=n(118),i=n(121);e.exports=function(e,t){return r(e)?e:o(e,t)?[e]:a(i(e))}},function(e,t,n){var r=n(32),o=n(50),a=n(68),i=n(2);e.exports=function(e,t){return(i(e)?r:o)(e,a(t,3))}},function(e,t,n){var r=n(29);e.exports=function(e,t,n){var o=null==e?void 0:r(e,t);return void 0===o?n:o}},function(e,t,n){var r=n(55),o=n(35),a=n(25);e.exports=function(e){return a(e)?r(e):o(e)}},function(e,t,n){(function(e){var r=n(3),o=n(61),a=t&&!t.nodeType&&t,i=a&&"object"==typeof e&&e&&!e.nodeType&&e,c=i&&i.exports===a?r.Buffer:void 0,l=(c?c.isBuffer:void 0)||o;e.exports=l}).call(this,n(34)(e))},function(e,t){var n=/^(?:0|[1-9]\d*)$/;e.exports=function(e,t){var r=typeof e;return!!(t=null==t?9007199254740991:t)&&("number"==r||"symbol"!=r&&n.test(e))&&e>-1&&e%1==0&&e<t}},function(e,t,n){var r=n(62),o=n(63),a=n(64),i=a&&a.isTypedArray,c=i?o(i):r;e.exports=c},function(e,t){e.exports=function(e){return"number"==typeof e&&e>-1&&e%1==0&&e<=9007199254740991}},function(e,t,n){var r=n(37),o=n(24);e.exports=function(e){return null!=e&&o(e.length)&&!r(e)}},function(e,t){e.exports=function(e,t){return e===t||e!=e&&t!=t}},function(e,t,n){var r=n(4)(n(3),"Map");e.exports=r},function(e,t,n){var r=n(85),o=n(92),a=n(94),i=n(95),c=n(96);function l(e){var t=-1,n=null==e?0:e.length;for(this.clear();++t<n;){var r=e[t];this.set(r[0],r[1])}}l.prototype.clear=r,l.prototype.delete=o,l.prototype.get=a,l.prototype.has=i,l.prototype.set=c,e.exports=l},function(e,t,n){var r=n(17),o=n(9);e.exports=function(e,t){for(var n=0,a=(t=r(t,e)).length;null!=e&&n<a;)e=e[o(t[n++])];return n&&n==a?e:void 0}},function(e,t,n){var r=n(2),o=n(31),a=/\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,i=/^\w*$/;e.exports=function(e,t){if(r(e))return!1;var n=typeof e;return!("number"!=n&&"symbol"!=n&&"boolean"!=n&&null!=e&&!o(e))||i.test(e)||!a.test(e)||null!=t&&e in Object(t)}},function(e,t,n){var r=n(6),o=n(8);e.exports=function(e){return"symbol"==typeof e||o(e)&&"[object Symbol]"==r(e)}},function(e,t){e.exports=function(e,t){for(var n=-1,r=null==e?0:e.length,o=0,a=[];++n<r;){var i=e[n];t(i,n,e)&&(a[o++]=i)}return a}},function(e,t,n){(function(t){var n="object"==typeof t&&t&&t.Object===Object&&t;e.exports=n}).call(this,n(58))},function(e,t){e.exports=function(e){return e.webpackPolyfill||(e.deprecate=function(){},e.paths=[],e.children||(e.children=[]),Object.defineProperty(e,"loaded",{enumerable:!0,get:function(){return e.l}}),Object.defineProperty(e,"id",{enumerable:!0,get:function(){return e.i}}),e.webpackPolyfill=1),e}},function(e,t,n){var r=n(36),o=n(65),a=Object.prototype.hasOwnProperty;e.exports=function(e){if(!r(e))return o(e);var t=[];for(var n in Object(e))a.call(e,n)&&"constructor"!=n&&t.push(n);return t}},function(e,t){var n=Object.prototype;e.exports=function(e){var t=e&&e.constructor;return e===("function"==typeof t&&t.prototype||n)}},function(e,t,n){var r=n(6),o=n(12);e.exports=function(e){if(!o(e))return!1;var t=r(e);return"[object Function]"==t||"[object GeneratorFunction]"==t||"[object AsyncFunction]"==t||"[object Proxy]"==t}},function(e,t,n){var r=n(13),o=n(76),a=n(77),i=n(78),c=n(79),l=n(80);function s(e){var t=this.__data__=new r(e);this.size=t.size}s.prototype.clear=o,s.prototype.delete=a,s.prototype.get=i,s.prototype.has=c,s.prototype.set=l,e.exports=s},function(e,t){var n=Function.prototype.toString;e.exports=function(e){if(null!=e){try{return n.call(e)}catch(e){}try{return e+""}catch(e){}}return""}},function(e,t,n){var r=n(97),o=n(8);e.exports=function e(t,n,a,i,c){return t===n||(null==t||null==n||!o(t)&&!o(n)?t!=t&&n!=n:r(t,n,a,i,e,c))}},function(e,t,n){var r=n(98),o=n(101),a=n(102);e.exports=function(e,t,n,i,c,l){var s=1&n,u=e.length,p=t.length;if(u!=p&&!(s&&p>u))return!1;var d=l.get(e),b=l.get(t);if(d&&b)return d==t&&b==e;var g=-1,m=!0,h=2&n?new r:void 0;for(l.set(e,t),l.set(t,e);++g<u;){var f=e[g],v=t[g];if(i)var y=s?i(v,f,g,t,e,l):i(f,v,g,e,t,l);if(void 0!==y){if(y)continue;m=!1;break}if(h){if(!o(t,(function(e,t){if(!a(h,t)&&(f===e||c(f,e,n,i,l)))return h.push(t)}))){m=!1;break}}else if(f!==v&&!c(f,v,n,i,l)){m=!1;break}}return l.delete(e),l.delete(t),m}},function(e,t){e.exports=function(e,t){for(var n=-1,r=t.length,o=e.length;++n<r;)e[o+n]=t[n];return e}},function(e,t,n){var r=n(112),o=n(27),a=n(113),i=n(114),c=n(115),l=n(6),s=n(39),u=s(r),p=s(o),d=s(a),b=s(i),g=s(c),m=l;(r&&"[object DataView]"!=m(new r(new ArrayBuffer(1)))||o&&"[object Map]"!=m(new o)||a&&"[object Promise]"!=m(a.resolve())||i&&"[object Set]"!=m(new i)||c&&"[object WeakMap]"!=m(new c))&&(m=function(e){var t=l(e),n="[object Object]"==t?e.constructor:void 0,r=n?s(n):"";if(r)switch(r){case u:return"[object DataView]";case p:return"[object Map]";case d:return"[object Promise]";case b:return"[object Set]";case g:return"[object WeakMap]"}return t}),e.exports=m},function(e,t,n){var r=n(12);e.exports=function(e){return e==e&&!r(e)}},function(e,t){e.exports=function(e,t){return function(n){return null!=n&&n[e]===t&&(void 0!==t||e in Object(n))}}},function(e,t,n){var r=n(124),o=n(125);e.exports=function(e,t){return null!=e&&o(e,t,r)}},function(e,t){e.exports=function(e){return e}},function(e,t,n){var r=n(4),o=function(){try{var e=r(Object,"defineProperty");return e({},"",{}),e}catch(e){}}();e.exports=o},function(e,t,n){var r=n(129),o=n(134)((function(e,t){return null==e?{}:r(e,t)}));e.exports=o},function(e,t,n){var r=n(51);e.exports=function(e,t){var n=[];return r(e,(function(e,r,o){t(e,r,o)&&n.push(e)})),n}},function(e,t,n){var r=n(52),o=n(67)(r);e.exports=o},function(e,t,n){var r=n(53),o=n(20);e.exports=function(e,t){return e&&r(e,t,o)}},function(e,t,n){var r=n(54)();e.exports=r},function(e,t){e.exports=function(e){return function(t,n,r){for(var o=-1,a=Object(t),i=r(t),c=i.length;c--;){var l=i[e?c:++o];if(!1===n(a[l],l,a))break}return t}}},function(e,t,n){var r=n(56),o=n(11),a=n(2),i=n(21),c=n(22),l=n(23),s=Object.prototype.hasOwnProperty;e.exports=function(e,t){var n=a(e),u=!n&&o(e),p=!n&&!u&&i(e),d=!n&&!u&&!p&&l(e),b=n||u||p||d,g=b?r(e.length,String):[],m=g.length;for(var h in e)!t&&!s.call(e,h)||b&&("length"==h||p&&("offset"==h||"parent"==h)||d&&("buffer"==h||"byteLength"==h||"byteOffset"==h)||c(h,m))||g.push(h);return g}},function(e,t){e.exports=function(e,t){for(var n=-1,r=Array(e);++n<e;)r[n]=t(n);return r}},function(e,t,n){var r=n(6),o=n(8);e.exports=function(e){return o(e)&&"[object Arguments]"==r(e)}},function(e,t){var n;n=function(){return this}();try{n=n||new Function("return this")()}catch(e){"object"==typeof window&&(n=window)}e.exports=n},function(e,t,n){var r=n(7),o=Object.prototype,a=o.hasOwnProperty,i=o.toString,c=r?r.toStringTag:void 0;e.exports=function(e){var t=a.call(e,c),n=e[c];try{e[c]=void 0;var r=!0}catch(e){}var o=i.call(e);return r&&(t?e[c]=n:delete e[c]),o}},function(e,t){var n=Object.prototype.toString;e.exports=function(e){return n.call(e)}},function(e,t){e.exports=function(){return!1}},function(e,t,n){var r=n(6),o=n(24),a=n(8),i={};i["[object Float32Array]"]=i["[object Float64Array]"]=i["[object Int8Array]"]=i["[object Int16Array]"]=i["[object Int32Array]"]=i["[object Uint8Array]"]=i["[object Uint8ClampedArray]"]=i["[object Uint16Array]"]=i["[object Uint32Array]"]=!0,i["[object Arguments]"]=i["[object Array]"]=i["[object ArrayBuffer]"]=i["[object Boolean]"]=i["[object DataView]"]=i["[object Date]"]=i["[object Error]"]=i["[object Function]"]=i["[object Map]"]=i["[object Number]"]=i["[object Object]"]=i["[object RegExp]"]=i["[object Set]"]=i["[object String]"]=i["[object WeakMap]"]=!1,e.exports=function(e){return a(e)&&o(e.length)&&!!i[r(e)]}},function(e,t){e.exports=function(e){return function(t){return e(t)}}},function(e,t,n){(function(e){var r=n(33),o=t&&!t.nodeType&&t,a=o&&"object"==typeof e&&e&&!e.nodeType&&e,i=a&&a.exports===o&&r.process,c=function(){try{return a&&a.require&&a.require("util").types||i&&i.binding&&i.binding("util")}catch(e){}}();e.exports=c}).call(this,n(34)(e))},function(e,t,n){var r=n(66)(Object.keys,Object);e.exports=r},function(e,t){e.exports=function(e,t){return function(n){return e(t(n))}}},function(e,t,n){var r=n(25);e.exports=function(e,t){return function(n,o){if(null==n)return n;if(!r(n))return e(n,o);for(var a=n.length,i=t?a:-1,c=Object(n);(t?i--:++i<a)&&!1!==o(c[i],i,c););return n}}},function(e,t,n){var r=n(69),o=n(117),a=n(47),i=n(2),c=n(126);e.exports=function(e){return"function"==typeof e?e:null==e?a:"object"==typeof e?i(e)?o(e[0],e[1]):r(e):c(e)}},function(e,t,n){var r=n(70),o=n(116),a=n(45);e.exports=function(e){var t=o(e);return 1==t.length&&t[0][2]?a(t[0][0],t[0][1]):function(n){return n===e||r(n,e,t)}}},function(e,t,n){var r=n(38),o=n(40);e.exports=function(e,t,n,a){var i=n.length,c=i,l=!a;if(null==e)return!c;for(e=Object(e);i--;){var s=n[i];if(l&&s[2]?s[1]!==e[s[0]]:!(s[0]in e))return!1}for(;++i<c;){var u=(s=n[i])[0],p=e[u],d=s[1];if(l&&s[2]){if(void 0===p&&!(u in e))return!1}else{var b=new r;if(a)var g=a(p,d,u,e,t,b);if(!(void 0===g?o(d,p,3,a,b):g))return!1}}return!0}},function(e,t){e.exports=function(){this.__data__=[],this.size=0}},function(e,t,n){var r=n(14),o=Array.prototype.splice;e.exports=function(e){var t=this.__data__,n=r(t,e);return!(n<0||(n==t.length-1?t.pop():o.call(t,n,1),--this.size,0))}},function(e,t,n){var r=n(14);e.exports=function(e){var t=this.__data__,n=r(t,e);return n<0?void 0:t[n][1]}},function(e,t,n){var r=n(14);e.exports=function(e){return r(this.__data__,e)>-1}},function(e,t,n){var r=n(14);e.exports=function(e,t){var n=this.__data__,o=r(n,e);return o<0?(++this.size,n.push([e,t])):n[o][1]=t,this}},function(e,t,n){var r=n(13);e.exports=function(){this.__data__=new r,this.size=0}},function(e,t){e.exports=function(e){var t=this.__data__,n=t.delete(e);return this.size=t.size,n}},function(e,t){e.exports=function(e){return this.__data__.get(e)}},function(e,t){e.exports=function(e){return this.__data__.has(e)}},function(e,t,n){var r=n(13),o=n(27),a=n(28);e.exports=function(e,t){var n=this.__data__;if(n instanceof r){var i=n.__data__;if(!o||i.length<199)return i.push([e,t]),this.size=++n.size,this;n=this.__data__=new a(i)}return n.set(e,t),this.size=n.size,this}},function(e,t,n){var r=n(37),o=n(82),a=n(12),i=n(39),c=/^\[object .+?Constructor\]$/,l=Function.prototype,s=Object.prototype,u=l.toString,p=s.hasOwnProperty,d=RegExp("^"+u.call(p).replace(/[\\^$.*+?()[\]{}|]/g,"\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,"$1.*?")+"$");e.exports=function(e){return!(!a(e)||o(e))&&(r(e)?d:c).test(i(e))}},function(e,t,n){var r,o=n(83),a=(r=/[^.]+$/.exec(o&&o.keys&&o.keys.IE_PROTO||""))?"Symbol(src)_1."+r:"";e.exports=function(e){return!!a&&a in e}},function(e,t,n){var r=n(3)["__core-js_shared__"];e.exports=r},function(e,t){e.exports=function(e,t){return null==e?void 0:e[t]}},function(e,t,n){var r=n(86),o=n(13),a=n(27);e.exports=function(){this.size=0,this.__data__={hash:new r,map:new(a||o),string:new r}}},function(e,t,n){var r=n(87),o=n(88),a=n(89),i=n(90),c=n(91);function l(e){var t=-1,n=null==e?0:e.length;for(this.clear();++t<n;){var r=e[t];this.set(r[0],r[1])}}l.prototype.clear=r,l.prototype.delete=o,l.prototype.get=a,l.prototype.has=i,l.prototype.set=c,e.exports=l},function(e,t,n){var r=n(15);e.exports=function(){this.__data__=r?r(null):{},this.size=0}},function(e,t){e.exports=function(e){var t=this.has(e)&&delete this.__data__[e];return this.size-=t?1:0,t}},function(e,t,n){var r=n(15),o=Object.prototype.hasOwnProperty;e.exports=function(e){var t=this.__data__;if(r){var n=t[e];return"__lodash_hash_undefined__"===n?void 0:n}return o.call(t,e)?t[e]:void 0}},function(e,t,n){var r=n(15),o=Object.prototype.hasOwnProperty;e.exports=function(e){var t=this.__data__;return r?void 0!==t[e]:o.call(t,e)}},function(e,t,n){var r=n(15);e.exports=function(e,t){var n=this.__data__;return this.size+=this.has(e)?0:1,n[e]=r&&void 0===t?"__lodash_hash_undefined__":t,this}},function(e,t,n){var r=n(16);e.exports=function(e){var t=r(this,e).delete(e);return this.size-=t?1:0,t}},function(e,t){e.exports=function(e){var t=typeof e;return"string"==t||"number"==t||"symbol"==t||"boolean"==t?"__proto__"!==e:null===e}},function(e,t,n){var r=n(16);e.exports=function(e){return r(this,e).get(e)}},function(e,t,n){var r=n(16);e.exports=function(e){return r(this,e).has(e)}},function(e,t,n){var r=n(16);e.exports=function(e,t){var n=r(this,e),o=n.size;return n.set(e,t),this.size+=n.size==o?0:1,this}},function(e,t,n){var r=n(38),o=n(41),a=n(103),i=n(107),c=n(43),l=n(2),s=n(21),u=n(23),p="[object Object]",d=Object.prototype.hasOwnProperty;e.exports=function(e,t,n,b,g,m){var h=l(e),f=l(t),v=h?"[object Array]":c(e),y=f?"[object Array]":c(t),k=(v="[object Arguments]"==v?p:v)==p,w=(y="[object Arguments]"==y?p:y)==p,j=v==y;if(j&&s(e)){if(!s(t))return!1;h=!0,k=!1}if(j&&!k)return m||(m=new r),h||u(e)?o(e,t,n,b,g,m):a(e,t,v,n,b,g,m);if(!(1&n)){var O=k&&d.call(e,"__wrapped__"),x=w&&d.call(t,"__wrapped__");if(O||x){var _=O?e.value():e,E=x?t.value():t;return m||(m=new r),g(_,E,n,b,m)}}return!!j&&(m||(m=new r),i(e,t,n,b,g,m))}},function(e,t,n){var r=n(28),o=n(99),a=n(100);function i(e){var t=-1,n=null==e?0:e.length;for(this.__data__=new r;++t<n;)this.add(e[t])}i.prototype.add=i.prototype.push=o,i.prototype.has=a,e.exports=i},function(e,t){e.exports=function(e){return this.__data__.set(e,"__lodash_hash_undefined__"),this}},function(e,t){e.exports=function(e){return this.__data__.has(e)}},function(e,t){e.exports=function(e,t){for(var n=-1,r=null==e?0:e.length;++n<r;)if(t(e[n],n,e))return!0;return!1}},function(e,t){e.exports=function(e,t){return e.has(t)}},function(e,t,n){var r=n(7),o=n(104),a=n(26),i=n(41),c=n(105),l=n(106),s=r?r.prototype:void 0,u=s?s.valueOf:void 0;e.exports=function(e,t,n,r,s,p,d){switch(n){case"[object DataView]":if(e.byteLength!=t.byteLength||e.byteOffset!=t.byteOffset)return!1;e=e.buffer,t=t.buffer;case"[object ArrayBuffer]":return!(e.byteLength!=t.byteLength||!p(new o(e),new o(t)));case"[object Boolean]":case"[object Date]":case"[object Number]":return a(+e,+t);case"[object Error]":return e.name==t.name&&e.message==t.message;case"[object RegExp]":case"[object String]":return e==t+"";case"[object Map]":var b=c;case"[object Set]":var g=1&r;if(b||(b=l),e.size!=t.size&&!g)return!1;var m=d.get(e);if(m)return m==t;r|=2,d.set(e,t);var h=i(b(e),b(t),r,s,p,d);return d.delete(e),h;case"[object Symbol]":if(u)return u.call(e)==u.call(t)}return!1}},function(e,t,n){var r=n(3).Uint8Array;e.exports=r},function(e,t){e.exports=function(e){var t=-1,n=Array(e.size);return e.forEach((function(e,r){n[++t]=[r,e]})),n}},function(e,t){e.exports=function(e){var t=-1,n=Array(e.size);return e.forEach((function(e){n[++t]=e})),n}},function(e,t,n){var r=n(108),o=Object.prototype.hasOwnProperty;e.exports=function(e,t,n,a,i,c){var l=1&n,s=r(e),u=s.length;if(u!=r(t).length&&!l)return!1;for(var p=u;p--;){var d=s[p];if(!(l?d in t:o.call(t,d)))return!1}var b=c.get(e),g=c.get(t);if(b&&g)return b==t&&g==e;var m=!0;c.set(e,t),c.set(t,e);for(var h=l;++p<u;){var f=e[d=s[p]],v=t[d];if(a)var y=l?a(v,f,d,t,e,c):a(f,v,d,e,t,c);if(!(void 0===y?f===v||i(f,v,n,a,c):y)){m=!1;break}h||(h="constructor"==d)}if(m&&!h){var k=e.constructor,w=t.constructor;k==w||!("constructor"in e)||!("constructor"in t)||"function"==typeof k&&k instanceof k&&"function"==typeof w&&w instanceof w||(m=!1)}return c.delete(e),c.delete(t),m}},function(e,t,n){var r=n(109),o=n(110),a=n(20);e.exports=function(e){return r(e,a,o)}},function(e,t,n){var r=n(42),o=n(2);e.exports=function(e,t,n){var a=t(e);return o(e)?a:r(a,n(e))}},function(e,t,n){var r=n(32),o=n(111),a=Object.prototype.propertyIsEnumerable,i=Object.getOwnPropertySymbols,c=i?function(e){return null==e?[]:(e=Object(e),r(i(e),(function(t){return a.call(e,t)})))}:o;e.exports=c},function(e,t){e.exports=function(){return[]}},function(e,t,n){var r=n(4)(n(3),"DataView");e.exports=r},function(e,t,n){var r=n(4)(n(3),"Promise");e.exports=r},function(e,t,n){var r=n(4)(n(3),"Set");e.exports=r},function(e,t,n){var r=n(4)(n(3),"WeakMap");e.exports=r},function(e,t,n){var r=n(44),o=n(20);e.exports=function(e){for(var t=o(e),n=t.length;n--;){var a=t[n],i=e[a];t[n]=[a,i,r(i)]}return t}},function(e,t,n){var r=n(40),o=n(19),a=n(46),i=n(30),c=n(44),l=n(45),s=n(9);e.exports=function(e,t){return i(e)&&c(t)?l(s(e),t):function(n){var i=o(n,e);return void 0===i&&i===t?a(n,e):r(t,i,3)}}},function(e,t,n){var r=n(119),o=/[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g,a=/\\(\\)?/g,i=r((function(e){var t=[];return 46===e.charCodeAt(0)&&t.push(""),e.replace(o,(function(e,n,r,o){t.push(r?o.replace(a,"$1"):n||e)})),t}));e.exports=i},function(e,t,n){var r=n(120);e.exports=function(e){var t=r(e,(function(e){return 500===n.size&&n.clear(),e})),n=t.cache;return t}},function(e,t,n){var r=n(28);function o(e,t){if("function"!=typeof e||null!=t&&"function"!=typeof t)throw new TypeError("Expected a function");var n=function(){var r=arguments,o=t?t.apply(this,r):r[0],a=n.cache;if(a.has(o))return a.get(o);var i=e.apply(this,r);return n.cache=a.set(o,i)||a,i};return n.cache=new(o.Cache||r),n}o.Cache=r,e.exports=o},function(e,t,n){var r=n(122);e.exports=function(e){return null==e?"":r(e)}},function(e,t,n){var r=n(7),o=n(123),a=n(2),i=n(31),c=r?r.prototype:void 0,l=c?c.toString:void 0;e.exports=function e(t){if("string"==typeof t)return t;if(a(t))return o(t,e)+"";if(i(t))return l?l.call(t):"";var n=t+"";return"0"==n&&1/t==-1/0?"-0":n}},function(e,t){e.exports=function(e,t){for(var n=-1,r=null==e?0:e.length,o=Array(r);++n<r;)o[n]=t(e[n],n,e);return o}},function(e,t){e.exports=function(e,t){return null!=e&&t in Object(e)}},function(e,t,n){var r=n(17),o=n(11),a=n(2),i=n(22),c=n(24),l=n(9);e.exports=function(e,t,n){for(var s=-1,u=(t=r(t,e)).length,p=!1;++s<u;){var d=l(t[s]);if(!(p=null!=e&&n(e,d)))break;e=e[d]}return p||++s!=u?p:!!(u=null==e?0:e.length)&&c(u)&&i(d,u)&&(a(e)||o(e))}},function(e,t,n){var r=n(127),o=n(128),a=n(30),i=n(9);e.exports=function(e){return a(e)?r(i(e)):o(e)}},function(e,t){e.exports=function(e){return function(t){return null==t?void 0:t[e]}}},function(e,t,n){var r=n(29);e.exports=function(e){return function(t){return r(t,e)}}},function(e,t,n){var r=n(130),o=n(46);e.exports=function(e,t){return r(e,t,(function(t,n){return o(e,n)}))}},function(e,t,n){var r=n(29),o=n(131),a=n(17);e.exports=function(e,t,n){for(var i=-1,c=t.length,l={};++i<c;){var s=t[i],u=r(e,s);n(u,s)&&o(l,a(s,e),u)}return l}},function(e,t,n){var r=n(132),o=n(17),a=n(22),i=n(12),c=n(9);e.exports=function(e,t,n,l){if(!i(e))return e;for(var s=-1,u=(t=o(t,e)).length,p=u-1,d=e;null!=d&&++s<u;){var b=c(t[s]),g=n;if("__proto__"===b||"constructor"===b||"prototype"===b)return e;if(s!=p){var m=d[b];void 0===(g=l?l(m,b,d):void 0)&&(g=i(m)?m:a(t[s+1])?[]:{})}r(d,b,g),d=d[b]}return e}},function(e,t,n){var r=n(133),o=n(26),a=Object.prototype.hasOwnProperty;e.exports=function(e,t,n){var i=e[t];a.call(e,t)&&o(i,n)&&(void 0!==n||t in e)||r(e,t,n)}},function(e,t,n){var r=n(48);e.exports=function(e,t,n){"__proto__"==t&&r?r(e,t,{configurable:!0,enumerable:!0,value:n,writable:!0}):e[t]=n}},function(e,t,n){var r=n(135),o=n(138),a=n(140);e.exports=function(e){return a(o(e,void 0,r),e+"")}},function(e,t,n){var r=n(136);e.exports=function(e){return null!=e&&e.length?r(e,1):[]}},function(e,t,n){var r=n(42),o=n(137);e.exports=function e(t,n,a,i,c){var l=-1,s=t.length;for(a||(a=o),c||(c=[]);++l<s;){var u=t[l];n>0&&a(u)?n>1?e(u,n-1,a,i,c):r(c,u):i||(c[c.length]=u)}return c}},function(e,t,n){var r=n(7),o=n(11),a=n(2),i=r?r.isConcatSpreadable:void 0;e.exports=function(e){return a(e)||o(e)||!!(i&&e&&e[i])}},function(e,t,n){var r=n(139),o=Math.max;e.exports=function(e,t,n){return t=o(void 0===t?e.length-1:t,0),function(){for(var a=arguments,i=-1,c=o(a.length-t,0),l=Array(c);++i<c;)l[i]=a[t+i];i=-1;for(var s=Array(t+1);++i<t;)s[i]=a[i];return s[t]=n(l),r(e,this,s)}}},function(e,t){e.exports=function(e,t,n){switch(n.length){case 0:return e.call(t);case 1:return e.call(t,n[0]);case 2:return e.call(t,n[0],n[1]);case 3:return e.call(t,n[0],n[1],n[2])}return e.apply(t,n)}},function(e,t,n){var r=n(141),o=n(143)(r);e.exports=o},function(e,t,n){var r=n(142),o=n(48),a=n(47),i=o?function(e,t){return o(e,"toString",{configurable:!0,enumerable:!1,value:r(t),writable:!0})}:a;e.exports=i},function(e,t){e.exports=function(e){return function(){return e}}},function(e,t){var n=Date.now;e.exports=function(e){var t=0,r=0;return function(){var o=n(),a=16-(o-r);if(r=o,a>0){if(++t>=800)return arguments[0]}else t=0;return e.apply(void 0,arguments)}}},function(e,t,n){"use strict";n.r(t);var r=n(0),o=n(1),a=n.n(o),i=n(18),c=n.n(i),l=n(5),s=n.n(l),u=n(49),p=n.n(u),d=n(19),b=n.n(d);const g=e=>{const t=p()(e,["alt","id","link","caption"]);return t.url=b()(e,["sizes","large","url"])||b()(e,["media_details","sizes","large","source_url"])||e.url,t},m=["image"],{__:__}=wp.i18n,{Component:h,Fragment:f}=wp.element,{compose:v}=wp.compose,{IconButton:y,Spinner:k}=wp.components,{RichText:w}=wp.blockEditor,{withSelect:j}=wp.data,{BACKSPACE:O,DELETE:x}=wp.keycodes,{isBlobURL:_}=wp.blob;var E=v([j((e,t)=>{const{getMedia:n}=e("core"),{id:r}=t;return{image:r?n(r):null}})])(class extends h{constructor(){super(...arguments),this.onImageClick=this.onImageClick.bind(this),this.onSelectCaption=this.onSelectCaption.bind(this),this.onKeyDown=this.onKeyDown.bind(this),this.bindContainer=this.bindContainer.bind(this),this.state={captionSelected:!1,captionFocused:!1}}bindContainer(e){this.container=e}onSelectCaption(){this.state.captionSelected||this.setState({captionSelected:!0}),this.props.isSelected||this.props.onSelect()}onImageClick(){this.props.isSelected||this.props.onSelect(),this.state.captionSelected&&this.setState({captionSelected:!1,captionFocused:!1})}onKeyDown(e){this.container===document.activeElement&&this.props.isSelected&&-1!==[O,x].indexOf(e.keyCode)&&(e.stopPropagation(),e.preventDefault(),this.props.onRemove())}componentDidUpdate(e){const{isSelected:t,image:n,url:r,i_w:o,edited:a}=this.props;if(n&&!a){const e=(e=>{let t="";console.log("helper.js - image raw all data"),console.log(e);for(const[n,r]of Object.entries(e.media_details.sizes))console.log(`${n}: ${r}`),t+=r.source_url+" "+r.width+"w, ";return{sizes:"100vw",srcset:t}})(n);this.props.setAttributes({i_w:n.media_details.width,i_h:n.media_details.height,description:n.description.raw,title:n.title.raw,edited:"touched",sizes:e.sizes,srcset:e.srcset})}this.state.captionSelected&&!t&&e.isSelected&&this.setState({captionSelected:!1,captionFocused:!1})}render(){const{alt:e,caption:t,fontSize:n,gutter:o,gutterMobile:i,id:c,isSelected:l,link:s,linkTo:u,marginBottom:p,marginLeft:d,marginRight:b,marginTop:g,onRemove:m,setAttributes:h,shadow:v,supportsCaption:j,url:O,srcset:x,captions:E,"aria-label":C}=this.props;let z;switch(u){case"media":z=O;break;case"attachment":z=s}const S=a()("orbit-image",{"mindgallery-image":!0}),P=Object(r.createElement)(f,null,Object(r.createElement)("img",{src:O,className:S,alt:e,"data-id":c,onClick:this.onImageClick,tabIndex:"0",onKeyDown:this.onImageClick,"aria-label":C}),_(O)&&Object(r.createElement)(k,null)),N=a()({"is-selected":l,"is-transient":O&&0===O.indexOf("blob:"),["has-margin-top-"+o]:g&&o>0,["has-margin-top-mobile-"+i]:g&&i>0,["has-margin-right-"+o]:b&&o>0,["has-margin-right-mobile-"+i]:b&&i>0,["has-margin-bottom-"+o]:p&&o>0,["has-margin-bottom-mobile-"+i]:p&&i>0,["has-margin-left-"+o]:d&&o>0,["has-margin-left-mobile-"+i]:d&&i>0}),T={fontSize:n?n+"px":void 0};return Object(r.createElement)("figure",{className:"blockgallery--figure orbit-figure "+N,tabIndex:"-1",onKeyDown:this.onKeyDown,ref:this.bindContainer},l&&Object(r.createElement)("div",{className:"components-blockgallery-gallery-item__remove-wrapper"},Object(r.createElement)(y,{icon:"no-alt",onClick:m,className:"components-blockgallery-gallery-item__remove-button",label:__("Remove Image")})),z?Object(r.createElement)("a",{href:z},P):P,!0!==j||w.isEmpty(t)&&!l||!E?null:Object(r.createElement)(w,{tagName:"figcaption",placeholder:__("Write caption…"),className:"blockgallery--caption orbit-caption",style:T,value:t,isSelected:this.state.captionSelected,onChange:e=>h({caption:e}),unstableOnFocus:this.onSelectCaption,inlineToolbar:!0}))}});const{__:C}=wp.i18n,{Component:z,Fragment:S}=wp.element,{MediaPlaceholder:P}=wp.blockEditor;var N=class extends z{constructor(){super(...arguments),this.onSelectImages=this.onSelectImages.bind(this)}onSelectImages(e){this.props.setAttributes({images:e.map(e=>g(e))})}render(){console.log("GALERY INSERT");const{attributes:e,className:t,noticeOperations:n,noticeUI:o}=this.props;return Object(r.createElement)(S,null,Object(r.createElement)(P,{icon:this.props.icon,className:t,labels:{title:this.props.label,instructions:C("Drag images, upload new ones or select files from your library.")},onSelect:this.onSelectImages,accept:"image/*",allowedTypes:m,multiple:!0,notices:o,onError:n.createErrorNotice}))}};const{__:T}=wp.i18n,{Component:I,Fragment:F}=wp.element,{mediaUpload:M}=wp.blockEditor,{DropZone:A}=wp.components;var B=class extends I{constructor(){super(...arguments),this.addFiles=this.addFiles.bind(this)}addFiles(e){const t=this.props.attributes.images||[],{noticeOperations:n,setAttributes:r}=this.props;console.log("PROOOPS"),console.log(this.props),M({allowedTypes:m,filesList:e,onFileChange:e=>{const n=e.map(e=>g(e));r({images:t.concat(n)})},onError:n.createErrorNotice})}render(){const{attributes:e,className:t,noticeOperations:n,noticeUI:o,label:a}=this.props;return Object(r.createElement)(F,null,Object(r.createElement)(A,{onFilesDrop:this.addFiles,label:this.props.label}))}};const{__:R}=wp.i18n,{Component:D,Fragment:L}=wp.element,{compose:U}=wp.compose,{withSelect:G}=wp.data,{IconButton:$,DropZone:V,FormFileUpload:K,PanelBody:W,Toolbar:q,withNotices:H}=wp.components,{MediaPlaceholder:Z,mediaUpload:Y}=wp.blockEditor;var J=class extends D{constructor(){super(...arguments),this.addFiles=this.addFiles.bind(this),this.uploadFromFiles=this.uploadFromFiles.bind(this)}uploadFromFiles(e){this.addFiles(e.target.files)}addFiles(e){const t=this.props.attributes.images||[],{noticeOperations:n,setAttributes:r}=this.props;Y({allowedTypes:m,filesList:e,onFileChange:e=>{r({images:t.concat(e)})},onError:n.createErrorNotice})}render(){const{gutter:e,gutterMobile:t,marginLeft:n,marginRight:o,marginTop:i,marginBottom:c}=this.props,l=a()("blockgallery--figure",{["has-margin-top-"+e]:i&&e>0,["has-margin-top-mobile-"+t]:i&&t>0,["has-margin-right-"+e]:o&&e>0,["has-margin-right-mobile-"+t]:o&&t>0,["has-margin-bottom-"+e]:c&&e>0,["has-margin-bottom-mobile-"+t]:c&&t>0,["has-margin-left-"+e]:n&&e>0,["has-margin-left-mobile-"+t]:n&&t>0});return Object(r.createElement)(L,null,Object(r.createElement)("li",{className:"blockgallery--item blockgallery--item-uploader"},Object(r.createElement)("div",{className:l},Object(r.createElement)(K,{multiple:!0,isLarge:!0,className:"components-blockgallery-gallery-item__upload",onChange:this.uploadFromFiles,accept:"image/*",icon:"insert"},Object(r.createElement)("span",null,R("Upload an image"))))))}};const{__:Q}=wp.i18n;var X=[{value:"attachment",label:Q("Attachment Page")},{value:"media",label:Q("Media File")},{value:"none",label:Q("None")}];const{__:ee}=wp.i18n;var te=[{value:"lightbox",label:ee("Light Box")},{value:"standard",label:ee("Standard")},{value:"background",label:ee("Background")}];const{__:ne,sprintf:re}=wp.i18n,{Component:oe,Fragment:ae}=wp.element,{compose:ie}=wp.compose,{withSelect:ce}=wp.data,{InspectorControls:le,FontSizePicker:se,withFontSizes:ue}=wp.blockEditor,{PanelBody:pe,RangeControl:de,ToggleControl:be,SelectControl:ge}=wp.components;var me=ie([ce(e=>({wideControlsEnabled:e("core/editor").getEditorSettings().alignWide})),ue("fontSize")])(class extends oe{constructor(e){super(...arguments),this.setLinkTo=this.setLinkTo.bind(this),this.setTypeTo=this.setTypeTo.bind(this)}setLinkTo(e){this.props.setAttributes({linkTo:e})}setTypeTo(e){this.props.setAttributes({typeTo:e})}render(){const{attributes:e,setAttributes:t,isSelected:n,setFontSize:o,fontSize:a,wideControlsEnabled:i=!1}=this.props,{align:c,images:l,linkTo:s,typeTo:u,controls:p,gutter:d,lightbox:b,fullwidth:g,radius:m,shadow:h,captions:f,backgroundPadding:v}=e;return n&&Object(r.createElement)(ae,null,Object(r.createElement)(le,null,Object(r.createElement)(pe,{title:ne("Type Settings"),initialOpen:!1},Object(r.createElement)(ge,{label:ne("Type of Gallery"),value:u,options:te,onChange:this.setTypeTo}),Object(r.createElement)(be,{label:ne("Controls"),checked:!!p,onChange:()=>t({controls:!p}),help:this.getCaptionsHelp})),Object(r.createElement)(pe,{title:ne("Link Settings"),initialOpen:!1},Object(r.createElement)(ge,{label:ne("Link To"),value:s,options:X,onChange:this.setLinkTo}))))}});const{getColorClassName:he}=wp.blockEditor;var fe=function(e){const t=he("background-color",e.backgroundColor),n="undefined"!=typeof options&&void 0!==options.backgroundSize?options.backgroundSize:"cover",r=e.backgroundSize?e.backgroundSize:n;return[{"has-background":e.backgroundColor||e.customBackgroundColor},{[t]:t},{"has-padding":e.backgroundPadding>0},{["has-background-border-radius-"+e.backgroundRadius]:e.backgroundRadius>0},{["has-padding-"+e.backgroundPadding]:e.backgroundPadding>0},{["has-padding-mobile-"+e.backgroundPaddingMobile]:e.backgroundPaddingMobile>0},{"has-parallax":e.backgroundImg&&e.hasParallax},{"has-background-image":e.backgroundImg},{"has-background-image-transient":e.backgroundImg&&0===e.backgroundImg.indexOf("blob:")},{["has-background-"+e.backgroundRepeat]:e.backgroundImg&&e.backgroundRepeat},{["has-background-"+e.backgroundPosition.split(" ").join("-")]:e.backgroundImg&&e.backgroundPosition},{["has-background-"+r]:e.backgroundImg},{"has-background-overlay":e.backgroundImg&&0!==e.backgroundOverlay},{[(o=e.backgroundOverlay,0===o||50===o?null:"has-background-overlay-"+10*Math.round(o/10))]:e.backgroundImg&&0!==e.backgroundOverlay&&50!==e.backgroundOverlay}];var o},ve=n(10),ye=n.n(ve);const ke={};ke.logo=Object(r.createElement)("svg",{"aria-hidden":!0,className:"components-panel__icon components-blockgallery-logo-icon--pink",height:"18",viewBox:"0 0 18 18",width:"18",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("path",{d:"m9 18c-7 0-9-2.005-9-9s2-9 9-9 9 2.005 9 9-2 9-9 9zm0-16c-5.889 0-7 1.112-7 7-.012.211-.019.458-.019.707 0 1.342.201 2.638.576 3.857l2.443-2.564 2 2 5-5 3.85 3.853c.097-.764.152-1.649.152-2.547 0-.108-.001-.215-.002-.323 0-5.873-1.11-6.984-7-6.984zm-3.5 5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5z"})),ke.masonry=Object(r.createElement)("svg",{"aria-hidden":!0,className:"components-blockgallery-svg dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{transform:"translate(3 3)"},Object(r.createElement)("path",{d:"m6 0h-4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm0 16h-4v-14h4z"}),Object(r.createElement)("path",{d:"m16 10h-4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-4v-4h4z"}),Object(r.createElement)("path",{d:"m16 0h-4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-4v-4h4z"}))),ke.stacked=Object(r.createElement)("svg",{"aria-hidden":!0,className:"components-blockgallery-svg dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{transform:"translate(3 3)"},Object(r.createElement)("path",{d:"m16 0h-14c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 8h-14v-6h14z"}),Object(r.createElement)("path",{d:"m16 12h-14c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2zm0 4h-14v-2h14z"}))),ke.carousel=Object(r.createElement)("svg",{"aria-hidden":!0,className:"components-blockgallery-svg dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{transform:"translate(3 3)"},Object(r.createElement)("path",{d:"m11 0h-4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm0 16h-4v-14h4z"}),Object(r.createElement)("path",{d:"m18 0h-1c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h1s0-.9 0-2v-14c0-1.1 0-2 0-2zm0 16h-1v-14h1z"}),Object(r.createElement)("path",{d:"m3 0h-1c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h1s0-.9 0-2v-14c0-1.1 0-2 0-2zm0 16h-1v-14h1z",transform:"matrix(-1 0 0 1 3 0)"}))),ke.thumbnails=Object(r.createElement)("svg",{"aria-hidden":!0,className:"components-blockgallery-svg dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{"fill-rule":"evenodd",transform:"translate(3 3)"},Object(r.createElement)("path",{d:"m16 0h-14c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10h-14v-8h14z","fill-rule":"nonzero"}),Object(r.createElement)("rect",{height:"4",rx:".5",width:"5.33",x:"12.67",y:"14"}),Object(r.createElement)("rect",{height:"4",rx:".5",width:"5.33",x:"6.335",y:"14"}),Object(r.createElement)("rect",{height:"4",rx:".5",width:"5.33",y:"14"}))),ke.offset=Object(r.createElement)("svg",{"aria-hidden":!0,className:"components-blockgallery-svg dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{transform:"translate(3 3)"},Object(r.createElement)("path",{d:"m16 10h-6c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-6v-4h6z"}),Object(r.createElement)("path",{d:"m13.6666667 0h-9.33333337c-1.28333333 0-2.33333333.9-2.33333333 2v4c0 1.1 1.05 2 2.33333333 2h9.33333337c1.2833333 0 2.3333333-.9 2.3333333-2v-4c0-1.1-1.05-2-2.3333333-2zm0 6h-9.33333337v-4h9.33333337z"}),Object(r.createElement)("path",{d:"m4 10h-2c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-2v-4h2z"}))),ke.autoHeight=Object(r.createElement)("svg",{"aria-hidden":!0,className:"components-blockgallery-svg dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{transform:"translate(3 3)"},Object(r.createElement)("path",{d:"m8.99488661 15.1058214-3.24188911-3.2418891-1.44197591 1.4419759 4.68386502 4.6940918 4.69409179-4.6940918-1.4522027-1.4419759z"}),Object(r.createElement)("path",{d:"m16 0h-14c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 8h-14v-6h14z"}))),ke.tiled=Object(r.createElement)("svg",{"aria-hidden":!0,className:"components-blockgallery-svg dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{transform:"translate(3 3)"},Object(r.createElement)("path",{d:"m16 0h-5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h5c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-5v-4h5z"}),Object(r.createElement)("path",{d:"m8 10h-6c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-6v-4h6z"}),Object(r.createElement)("path",{d:"m5 0h-3c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-3v-4h3z"}),Object(r.createElement)("path",{d:"m16 10h-2c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-2v-4h2z"}))),ke.mobile=Object(r.createElement)("svg",{"aria-hidden":!0,className:"dashicon",role:"img",focusable:"false",height:"15",viewBox:"0 0 15 15",width:"15",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("path",{d:"m8.25 0h-6c-.825 0-1.5.61363636-1.5 1.36363636v10.27272724c0 .75.675 1.3636364 1.5 1.3636364h6c.825 0 1.5-.6136364 1.5-1.3636364v-10.27272724c0-.75-.675-1.36363636-1.5-1.36363636zm-.5 11h-5v-9h5z",transform:"translate(2.25 1)"})),ke.desktopChrome=Object(r.createElement)("svg",{"aria-hidden":!0,className:"dashicon dashicon--desktop-chrome",role:"img",focusable:"false",height:"15",viewBox:"0 0 15 15",width:"15",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("path",{d:"m13.5 0h-12c-.8325 0-1.5.61363636-1.5 1.36363636v12.27272724c0 .75.6675 1.3636364 1.5 1.3636364h12l-.5-2h-11v-10h11v10l.5 2c.825 0 1.5-.6136364 1.5-1.3636364v-12.27272724c0-.75-.6675-1.36363636-1.5-1.36363636z"})),ke.backgroundImage=Object(r.createElement)("svg",{className:"dashicon","aria-hidden":!0,role:"img",focusable:"false",height:"20",viewBox:"0 0 20 20",width:"20",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{transform:"translate(1 .665604)"},Object(r.createElement)("path",{d:"m15.6111111 2.72328445v13.22222225h-13.22222221v-13.22222225zm0-1.88888889h-13.22222221c-1.03888889 0-1.88888889.85-1.88888889 1.88888889v13.22222225c0 1.0388889.85 1.8888889 1.88888889 1.8888889h13.22222221c1.0388889 0 1.8888889-.85 1.8888889-1.8888889v-13.22222225c0-1.03888889-.85-1.88888889-1.8888889-1.88888889z"}),Object(r.createElement)("path",{d:"m10.7833333 10.3343956-2.49999997 3.01-1.78333333-2.0144445-2.5 3.0022222h10z"}))),ke.editGallery=Object(r.createElement)("svg",{"aria-hidden":!0,className:"dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{fill:"none","fill-rule":"evenodd"},Object(r.createElement)("path",{d:"m0 0h24v24h-24z"}),Object(r.createElement)("path",{d:"m18 20h-14v-14h9v-2h-9c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9h-2zm-7.79-3.17-1.96-2.36-2.75 3.53h11l-3.54-4.71zm9.79-12.83v-3h-2v3h-3c.01.01 0 2 0 2h3v2.99c.01.01 2 0 2 0v-2.99h3v-2z",fill:"currentColor","fill-rule":"nonzero"}))),ke.imageFilter=Object(r.createElement)("svg",{"aria-hidden":!0,className:"dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{fill:"none","fill-rule":"evenodd"},Object(r.createElement)("path",{d:"m0 0h24v24h-24z"}),Object(r.createElement)("path",{d:"m19 10v9h-14.02v-14h9v-2h-8.98c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9zm-2.94-2.06.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-4.06.06-1.25 2.75-2.75 1.25 2.75 1.25 1.25 2.75 1.25-2.75 2.75-1.25-2.75-1.25z",fill:"currentColor","fill-rule":"nonzero"}))),ke.imageFilterVintage=Object(r.createElement)("svg",{"aria-hidden":!0,className:"dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{fill:"none","fill-rule":"evenodd",transform:"translate(1.328206 1.328206)"},Object(r.createElement)("path",{d:"m0 0h21.3435872v21.3435872h-21.3435872z"}),Object(r.createElement)("path",{d:"m16.6302117 11.0275201c-.2490085-.1422906-.5069102-.2579017-.7648119-.3557265.2579017-.0978248.5158034-.2134359.7648119-.3557264 1.707487-.98714094 2.6590553-2.77466638 2.6679484-4.61555077-.8092777-.46244439-1.7341664-.71145291-2.6768415-.71145291-.9071025 0-1.8230981.23122219-2.6590553.71145291-.2490085.14229058-.4802307.31126064-.6936666.48023071.0444658-.275688.0711453-.56026917.0711453-.84485033 0-1.97428182-1.0760725-3.69066196-2.6679484-4.61555074-1.59187586.92488878-2.66794839 2.64126892-2.66794839 4.61555074 0 .28458116.02667949.56916233.0711453.84485033-.21343588-.17786323-.44465807-.34683329-.69366659-.48912388-.83595717-.48023071-1.75195279-.7114529-2.65905524-.7114529-.93378194 0-1.86756389.24900851-2.67684157.7114529 0 1.8408844.95156826 3.62840983 2.66794841 4.61555074.24900851.1422906.50691019.2579017.76481187.3557265-.25790168.0978247-.51580336.2134358-.76481187.3557264-1.70748698.9871409-2.65905525 2.7746664-2.66794841 4.6155508.80927768.4624443 1.73416646.7114529 2.67684157.7114529.90710245 0 1.82309807-.2312222 2.65905524-.7114529.24900852-.1422906.48023071-.3112607.69366659-.4802308-.04446581.2845812-.0711453.5691624-.0711453.8537435 0 1.9742818 1.07607253 3.690662 2.66794839 4.6155508 1.5918759-.9248888 2.6679484-2.641269 2.6679484-4.6155508 0-.2845811-.0266795-.5691623-.0711453-.8448503.2134359.1778632.4446581.3379401.6936666.4802307.8359572.4802307 1.7519528.7114529 2.6590553.7114529.9337819 0 1.8675638-.2490085 2.6768415-.7114529-.0088931-1.8408844-.9604614-3.6284098-2.6679484-4.6155507zm-2.258863-3.45054663c.1867564-.15118374.3379402-.25790168.4802308-.32904697.5424828-.31126065 1.1561109-.48023071 1.7786322-.48023071.2401154 0 .4713376.02667948.7025598.07114529-.275688.80927768-.8359572 1.50294427-1.5829827 1.93870917-.1511838.08893162-.3201539.16007691-.5158034.24011536l-1.2272563.46244439c-.1511837-.40908542-.3646196-.77370504-.6403076-1.10275201zm-3.6995551-4.5799781c.5602692.64030762.8893162 1.47626479.8893162 2.33890144 0 .16897007-.0177864.36461962-.0444659.56026916l-.2045427 1.28061524c-.2134358-.03557265-.4268717-.06225213-.6403076-.06225213s-.4268717.02667948-.6314144.06225213l-.20454275-1.28061524c-.03557264-.19564954-.05335897-.39129909-.05335897-.56026916 0-.87152981.32904702-1.69859382.88931612-2.33890144zm-6.66097783 3.83295255c.23122219-.05335897.47133755-.07114529.71145291-.07114529.61362813 0 1.22725626.1600769 1.76973911.48023071.13339742.08003845.28458116.17786323.4357649.31126065l1.02271356.85374349c-.26679484.3201538-.47133755.67588026-.6225213 1.06717936l-1.22725626-.46244439c-.18675639-.08003845-.35572646-.16007691-.49801704-.24011536-.77370504-.44465807-1.32508104-1.12943149-1.59187588-1.93870917zm2.96142273 6.92777268c-.18675639.1511838-.33794013.2579017-.48023071.329047-.54248285.3112606-1.15611098.4802307-1.77863227.4802307-.24011536 0-.47133756-.0266795-.70255975-.0711453.275688-.8092777.83595717-1.5029443 1.58298272-1.9387092.15118374-.0889316.32015381-.1600769.51580336-.2401153l1.22725626-.4624444c.14229059.4090854.36461962.7825982.64030762 1.102752zm3.6995551 4.5888713c-.5602691-.6403077-.88931612-1.4762648-.88931612-2.3389015 0-.1778632.01778633-.3646196.05335897-.5780555l.19564955-1.2628289c.2045427.0355727.4179786.0622522.6403076.0622522.2134359 0 .4268718-.0266795.6314145-.0622522l.2045427 1.2806153c.0355726.1956495.053359.3912991.053359.5602691 0 .8715298-.329047 1.6985938-.8893162 2.3389015zm5.949525-3.7707004c-.6136282 0-1.2272563-.160077-1.7697391-.4802308-.160077-.0889316-.3023675-.1956495-.435765-.3023674l-1.0227135-.8537435c.2667948-.3201538.4802307-.6758803.6225213-1.0760726l1.2272563.4624444c.1956495.0711453.3646196.1511838.5069102.2312222.7559187.4357649 1.3072947 1.1294315 1.5829827 1.9387092-.2401154.0622521-.4802307.0800385-.7114529.0800385z",fill:"currentColor","fill-rule":"nonzero"}))),ke.imageFilterGrayscale=Object(r.createElement)("svg",{"aria-hidden":!0,className:"dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{fill:"none","fill-rule":"evenodd"},Object(r.createElement)("path",{d:"m0 0h24v24h-24z"}),Object(r.createElement)("path",{d:"m19 3h-14c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm0 16-7-8v8h-7l7-8v-6h7z",fill:"currentColor","fill-rule":"nonzero"}))),ke.imageFilterSaturation=Object(r.createElement)("svg",{"aria-hidden":!0,className:"dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{fill:"none","fill-rule":"evenodd",transform:"translate(1.328206 1.328206)"},Object(r.createElement)("path",{d:"m0 0h21.3435872v21.3435872h-21.3435872z"}),Object(r.createElement)("g",{fill:"currentColor"},Object(r.createElement)("path",{d:"m17.7863227 7.72815721v-4.17089267h-4.1708927l-2.9436364-2.94363641-2.94363639 2.94363641h-4.17089267v4.17089267l-2.94363641 2.94363639 2.94363641 2.9436364v4.1708927h4.17089267l2.94363639 2.9436364 2.9436364-2.9436364h4.1708927v-4.1708927l2.9436364-2.9436364zm-1.7786323 5.14914039v3.1303928h-3.1303928l-2.205504 2.205504-2.20550399-2.205504h-3.1303928v-3.1303928l-2.20550401-2.205504 2.20550401-2.20550399v-3.1303928h3.1303928l2.20550399-2.20550401 2.205504 2.20550401h3.1303928v3.1303928l2.205504 2.20550399zm-5.3358968-7.09674272c-2.69462787 0-4.89123872 2.19661085-4.89123872 4.89123872 0 2.6946279 2.19661085 4.8912388 4.89123872 4.8912388 2.6946279 0 4.8912388-2.1966109 4.8912388-4.8912388 0-2.69462787-2.1966109-4.89123872-4.8912388-4.89123872zm0 8.00384522c-1.71638012 0-3.11260645-1.3962263-3.11260645-3.1126065 0-1.71638012 1.39622633-3.11260645 3.11260645-3.11260645 1.7163802 0 3.1126065 1.39622633 3.1126065 3.11260645 0 1.7163802-1.3962263 3.1126065-3.1126065 3.1126065z","fill-rule":"nonzero"}),Object(r.createElement)("circle",{cx:"10.671794",cy:"10.671794",r:"1.778632"})))),ke.imageFilterDark=Object(r.createElement)("svg",{"aria-hidden":!0,className:"dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{fill:"none","fill-rule":"evenodd",transform:"translate(1.170085 1.170085)"},Object(r.createElement)("path",{d:"m0 0h21.6598307v21.6598307h-21.6598307z"}),Object(r.createElement)("path",{d:"m9.02492947 3.60997179c3.97999393 0 7.21994353 3.23994968 7.21994353 7.21994361 0 3.9799939-3.2399496 7.2199435-7.21994353 7.2199435-.3068476 0-.6136952-.0180498-.91151788-.0631745 1.72376153-1.9493847 2.71650381-4.4944148 2.71650381-7.156769 0-2.66235423-.99274228-5.20738434-2.71650381-7.15676911.29782268-.04512464.60467028-.0631745.91151788-.0631745zm0-1.8049859c-1.64253716 0-3.1858001.45124648-4.51246473 1.21836548 2.69845391 1.5613128 4.51246473 4.46734009 4.51246473 7.80656403 0 3.3392239-1.81401082 6.2452512-4.51246473 7.806564 1.32666463.767119 2.86992757 1.2183654 4.51246473 1.2183654 4.98176103 0 9.02492943-4.0431684 9.02492943-9.0249294 0-4.9817611-4.0431684-9.02492951-9.02492943-9.02492951z",fill:"currentColor","fill-rule":"nonzero"}))),ke.imageFilterSepia=Object(r.createElement)("svg",{"aria-hidden":!0,className:"dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{fill:"none","fill-rule":"evenodd",transform:"translate(1.8 1.8)"},Object(r.createElement)("path",{d:"m0 0h20.4v20.4h-20.4z"}),Object(r.createElement)("path",{d:"m5.95 9.35h-5.1v1.7h5.1zm1.8445-2.754-1.802-1.802-1.1985 1.1985 1.802 1.802zm3.2555-5.746h-1.7v5.1h1.7zm4.556 5.1425-1.1985-1.1985-1.802 1.802 1.1985 1.1985zm-1.156 3.3575v1.7h5.1v-1.7zm-4.25-1.7c-1.411 0-2.55 1.139-2.55 2.55s1.139 2.55 2.55 2.55 2.55-1.139 2.55-2.55-1.139-2.55-2.55-2.55zm2.4055 6.154 1.802 1.802 1.1985-1.1985-1.802-1.802zm-7.8115.6035 1.1985 1.1985 1.802-1.802-1.1985-1.1985zm4.556 5.1425h1.7v-5.1h-1.7z",fill:"currentColor","fill-rule":"nonzero"}))),ke.image=Object(r.createElement)("svg",{"aria-hidden":!0,className:"dashicon",role:"img",focusable:"false",height:"24",viewBox:"0 0 24 24",width:"24",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("g",{fill:"none","fill-rule":"evenodd"},Object(r.createElement)("path",{d:"m0 0h24v24h-24z"}),Object(r.createElement)("path",{d:"m19 3h-14c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm0 16h-14v-14h14zm-5.04-6.71-2.75 3.54-1.96-2.36-2.75 3.53h11z",fill:"currentColor","fill-rule":"nonzero"}))),ke.trash=Object(r.createElement)("svg",{className:"dashicon","aria-hidden":!0,role:"img",focusable:"false",height:"20",viewBox:"0 0 20 20",width:"20",xmlns:"http://www.w3.org/2000/svg"},Object(r.createElement)("path",{d:"m9 6.00065104v7.99934896h-6v-7.99934896zm-.85714286-6.00065104.85714286 1.00907841h3v2.01815683h-12v-2.01815683h3l.85714286-1.00907841zm-7.12701513 4.01388889h9.99696179v10.27380951c0 .9417659-.6413752 1.7123016-1.58423237 1.7123016h-6.85714286c-.94285714 0-1.55558656-.7705357-1.55558656-1.7123016z",transform:"translate(4 2)"}));var we=ke;const{__:je,sprintf:Oe}=wp.i18n,{Component:xe,Fragment:_e}=wp.element,{RangeControl:Ee,TabPanel:Ce}=wp.components;var ze=class extends xe{constructor(){super(...arguments),this.setGutterTo=this.setGutterTo.bind(this),this.setGutterMobileTo=this.setGutterMobileTo.bind(this)}setGutterTo(e){this.props.setAttributes({gutter:e})}setGutterMobileTo(e){this.props.setAttributes({gutterMobile:e})}render(){const{attributes:e,label:t=je("Gutter"),max:n=50,min:o=0,onChange:a=this.setGutterTo,onChangeMobile:i=this.setGutterMobileTo,setAttributes:c,step:l=5,value:s=this.props.attributes.gutter,valueMobile:u=this.props.attributes.gutterMobile}=this.props;return Object(r.createElement)(_e,null,Object(r.createElement)(Ce,{className:"components-base-control components-blockgallery-inspector__tabs",activeClass:"is-active",initialTabName:"desk",tabs:[{name:"desk",title:we.desktopChrome,className:"components-blockgallery-inspector__tabs-item components-blockgallery-inspector__tabs-item--desktop"},{name:"mobile",title:we.mobile,className:"components-blockgallery-inspector__tabs-item components-blockgallery-inspector__tabs-item--mobile"}]},e=>"mobile"===e.name?Object(r.createElement)(Ee,{label:Oe(je("Mobile %s"),t),value:u,onChange:e=>i(e),min:o,max:n,step:l}):Object(r.createElement)(Ee,{label:t,value:s,onChange:e=>a(e),min:o,max:n,step:l})))}};const{__:Se}=wp.i18n,{Component:Pe,Fragment:Ne}=wp.element,{compose:Te}=wp.compose,{withColors:Ie,ColorPalette:Fe,PanelColorSettings:Me}=wp.blockEditor,{SelectControl:Ae,RangeControl:Be,ToggleControl:Re,PanelBody:De,Button:Le}=wp.components;Te([Ie({backgroundColor:"background-color",captionColor:"color"})])(class extends Pe{constructor(){super(...arguments),this.setBackgroundPaddingTo=this.setBackgroundPaddingTo.bind(this),this.setBackgroundPaddingMobileTo=this.setBackgroundPaddingMobileTo.bind(this),this.getColors=this.getColors.bind(this)}setBackgroundPaddingTo(e){this.props.setAttributes({backgroundPadding:e}),this.props.attributes.backgroundPadding<=0&&this.props.setAttributes({backgroundRadius:0})}setBackgroundPaddingMobileTo(e){this.props.setAttributes({backgroundPaddingMobile:e})}getColors(){const{backgroundColor:e,setBackgroundColor:t,captionColor:n,setCaptionColor:r,hasCaption:o,attributes:a}=this.props,{backgroundImg:i,backgroundPadding:c,backgroundPaddingMobile:l}=a,s=[{value:e.color,onChange:e=>{t(e),c||l||this.props.setAttributes({backgroundPadding:30,backgroundPaddingMobile:30}),e||i||this.props.setAttributes({backgroundPadding:0,backgroundPaddingMobile:0})},label:Se("Background Color")}],u=[{value:n.color,onChange:r,label:Se("Caption Text Color")}];return o?s.concat(u):s}render(){const{attributes:e,setAttributes:t,backgroundColor:n,setBackgroundColor:o,captionColor:a,setCaptionColor:i}=this.props,{align:c,backgroundPosition:l,backgroundRepeat:u,backgroundSize:p,backgroundOverlay:d,backgroundPadding:b,backgroundPaddingMobile:g,hasParallax:m,backgroundImg:h,backgroundRadius:f}=e,v=[{value:"top left",label:Se("Top Left")},{value:"top center",label:Se("Top Center")},{value:"top right",label:Se("Top Right")},{value:"center left",label:Se("Center Left")},{value:"center center",label:Se("Center Center")},{value:"center right",label:Se("Center Right")},{value:"bottom left",label:Se("Bottom Left")},{value:"bottom center",label:Se("Bottom Center")},{value:"bottom right",label:Se("Bottom Right")}],y=[{value:"no-repeat",label:Se("No Repeat")},{value:"repeat",label:Se("Repeat")},{value:"repeat-x",label:Se("Repeat Horizontally")},{value:"repeat-y",label:Se("Repeat Vertically")}],k=[{value:"auto",label:Se("Auto")},{value:"cover",label:Se("Cover")},{value:"contain",label:Se("Contain")}],w="undefined"!=typeof options&&void 0!==options.backgroundSize?options.backgroundSize:"cover";return Object(r.createElement)(Ne,null,(!ye()(h)||!ye()(n.color))&&Object(r.createElement)(De,{title:Se("Background Settings"),initialOpen:!1},Object(r.createElement)(ze,s()({},this.props,{label:Se("Padding"),value:b,valueMobile:g,onChange:this.setBackgroundPaddingTo,onChangeMobile:this.setBackgroundPaddingMobileTo,min:5,max:100})),(!ye()(h)||!ye()(n.color))&&b>0&&"full"!=c&&Object(r.createElement)(Be,{label:Se("Rounded Corners"),value:f,onChange:e=>t({backgroundRadius:e}),min:0,max:20,step:1}),h&&Object(r.createElement)(Ne,null,Object(r.createElement)(Be,{label:Se("Image Overlay"),className:"components-blockgallery-inspector__background-image-overlay",value:d,onChange:e=>t({backgroundOverlay:e}),min:0,max:90,step:10}),Object(r.createElement)(Ae,{label:Se("Position"),className:"components-blockgallery-inspector__background-position",value:l||"center center",options:v,onChange:e=>t({backgroundPosition:e})}),Object(r.createElement)(Ae,{label:Se("Repeat"),className:"components-blockgallery-inspector__background-repeat",value:u||"no-repeat",options:y,onChange:e=>t({backgroundRepeat:e})}),Object(r.createElement)(Ae,{label:Se("Display"),className:"components-blockgallery-inspector__background-size",value:p||w,options:k,onChange:e=>t({backgroundSize:e})}),Object(r.createElement)(Re,{label:Se("Fixed Background"),className:"components-blockgallery-inspector__background-parallax",checked:!!m,onChange:()=>t({hasParallax:!m})}),Object(r.createElement)(Le,{isLarge:!0,className:"components-blockgallery-inspector__background-remove-button",onClick:()=>t({backgroundImg:"",backgroundOverlay:0})},Se("Remove Background Image")))),Object(r.createElement)(Me,{title:Se("Color Settings"),initialOpen:!1,colorSettings:this.getColors()}))}});const{getColorClassName:Ue}=wp.blockEditor;var Ge=function(e){const t=Ue("background-color",e.backgroundColor);return{backgroundImage:e.backgroundImg?`url(${e.backgroundImg})`:void 0,backgroundColor:t?void 0:e.customBackgroundColor}};const{__:$e}=wp.i18n,{Component:Ve,Fragment:Ke}=wp.element,{MediaUpload:We,MediaUploadCheck:qe}=wp.blockEditor,{Toolbar:He,IconButton:Ze}=wp.components;var Ye=class extends Ve{constructor(e){super(...arguments)}render(){const{attributes:e,setAttributes:t}=this.props,{backgroundColor:n,backgroundImg:o,backgroundPadding:a,backgroundPaddingMobile:i}=e;return Object(r.createElement)(Ke,null,Object(r.createElement)(qe,null,Object(r.createElement)(He,null,o?Object(r.createElement)(Ze,{className:"components-toolbar__control",label:$e("Remove background image"),icon:we.trash,onClick:()=>{t({backgroundImg:"",backgroundOverlay:0,backgroundRepeat:"no-repeat",backgroundPosition:"",backgroundSize:"cover",hasParallax:!1}),n||t({backgroundPadding:0,backgroundPaddingMobile:0})}}):Object(r.createElement)(We,{onSelect:e=>{t({backgroundImg:e.url}),a||i||t({backgroundPadding:30,backgroundPaddingMobile:30})},allowedTypes:m,value:o,render:({open:e})=>Object(r.createElement)(Ze,{className:"components-toolbar__control",label:$e("Add Background Image"),icon:we.backgroundImage,onClick:e})}))))}},Je=function(e){return{backgroundColor:e.backgroundColor,customBackgroundColor:e.customBackgroundColor,backgroundImg:e.backgroundImg,backgroundOverlay:e.backgroundOverlay,backgroundPosition:e.backgroundPosition,backgroundRepeat:e.backgroundRepeat,backgroundSize:e.backgroundSize,backgroundPadding:e.backgroundPadding,backgroundPaddingMobile:e.backgroundPaddingMobile,backgroundRadius:e.backgroundRadius,hasParallax:e.hasParallax,captionStyle:e.captionStyle}},Qe={images:{type:"array",default:[],source:"query",selector:".blockgallery--item",query:{url:{source:"attribute",selector:"img",attribute:"src"},link:{source:"attribute",selector:"img",attribute:"data-link"},alt:{source:"attribute",selector:"img",attribute:"alt",default:""},id:{source:"attribute",selector:"img",attribute:"data-id"},caption:{type:"array",source:"children",selector:"figcaption"},i_w:{type:"string",source:"attribute",selector:"img",attribute:"i_w"},i_h:{type:"string",source:"attribute",selector:"img",attribute:"i_h"},srcset:{type:"string",default:"",source:"attribute",selector:"img",attribute:"srcset"},description:{type:"string",default:"",source:"attribute",selector:"img",attribute:"description"},title:{type:"string",default:"",source:"attribute",selector:"img",attribute:"title"},sizes:{type:"string",default:"",source:"attribute",selector:"img",attribute:"sizes"}}},linkTo:{type:"string",default:"none"},typeTo:{type:"string",default:"background"},align:{type:"string"},gutter:{type:"number",default:15},gutterMobile:{type:"number",default:15},radius:{type:"number",default:0},shadow:{type:"string",default:"none"},filter:{type:"string",default:"none"},captions:{type:"boolean",default:!0},controls:{type:"boolean",default:!0},captionStyle:{type:"string",default:"dark"},captionColor:{type:"string"},customCaptionColor:{type:"string"},fontSize:{type:"string"},customFontSize:{type:"number"},primaryCaption:{type:"array",source:"children",selector:".blockgallery--primary-caption"},backgroundImg:{type:"string"},backgroundPosition:{type:"string",default:"center center"},backgroundRepeat:{type:"string",default:"no-repeat"},backgroundSize:{type:"string"},backgroundRadius:{type:"number",default:0},backgroundPadding:{type:"number",default:0},backgroundPaddingMobile:{type:"number",default:0},hasParallax:{type:"boolean",default:!1},backgroundOverlay:{type:"number",default:0},backgroundColor:{type:"string"},customBackgroundColor:{type:"string"}};const{getColorClassName:Xe}=wp.blockEditor;var et=function(e){e.backgroundPosition="top";const t=Xe("color",e.captionColor),{align:n,images:r,radius:o,filter:a,captionStyle:i,customCaptionColor:c}=e;return["blockgallery",{"has-no-alignment":!n},{["has-border-radius-"+o]:o>0},{["has-filter-"+a]:"none"!=a},{["has-caption-style-"+i]:null!=i},{"has-caption-color":t},...fe(e),t]};const{__:tt}=wp.i18n,{Component:nt,Fragment:rt}=wp.element,{IconButton:ot,Toolbar:at,DropdownMenu:it}=wp.components,{BlockControls:ct,MediaUpload:lt,MediaUploadCheck:st,AlignmentToolbar:ut}=wp.blockEditor;var pt=class extends nt{constructor(e){super(...arguments),this.onSelectImages=this.onSelectImages.bind(this)}onSelectImages(e){console.log("ADDING STUFF"),console.log(e),this.props.setAttributes({images:e.map(e=>g(e))})}render(){const{attributes:e,isSelected:t,setAttributes:n,hasAlignmentToolbar:o}=this.props,{images:a,contentAlign:i}=e;return t&&Object(r.createElement)(rt,null,Object(r.createElement)(ct,null,o&&Object(r.createElement)(ut,{value:i,onChange:e=>{n({contentAlign:e})}}),Object(r.createElement)(Ye,this.props),!!a.length&&Object(r.createElement)(at,null,Object(r.createElement)(st,null,Object(r.createElement)(lt,{onSelect:this.onSelectImages,allowedTypes:m,multiple:!0,gallery:!0,value:a.map(e=>e.id),render:({open:e})=>Object(r.createElement)(ot,{className:"components-toolbar__control",label:tt("Edit Gallery"),icon:"edit",onClick:e})})),Object(r.createElement)(it,{icon:we.imageFilter,label:tt("Apply Filter"),_:!0,controls:[{icon:we.imageFilterGrayscale,title:tt("Grayscale"),onClick:()=>{n({filter:"grayscale"})}},{icon:we.imageFilterSepia,title:tt("Sepia"),onClick:()=>{n({filter:"sepia"})}},{icon:we.imageFilterSaturation,title:tt("Saturation"),onClick:()=>{n({filter:"saturation"})}},{icon:we.imageFilterDark,title:tt("Dark"),onClick:()=>{n({filter:"dim"})}},{icon:we.imageFilterVintage,title:tt("Vintage"),onClick:()=>{n({filter:"vintage"})}},{icon:we.image,title:tt("Original"),onClick:()=>{n({filter:"none"})}}]}))))}},dt=function(e){return{align:e.align,gutter:e.gutter,gutterMobile:e.gutterMobile,gridSize:e.gridSize,images:e.images.map(e=>g(e)),linkTo:e.linkTo,radius:e.radius,shadow:e.shadow,filter:e.filter,height:e.height,primaryCaption:e.primaryCaption,captions:e.captions,captionColor:e.captionColor,customCaptionColor:e.customCaptionColor,pageDots:e.pageDots,prevNextButtons:e.prevNextButtons,autoPlay:e.autoPlay,autoPlaySpeed:e.autoPlaySpeed,draggable:e.draggable,fontSize:e.fontSize,customFontSize:e.customFontSize,...Je(e)}};const{getColorClassName:bt}=wp.blockEditor;var gt=function(e){return{color:bt("color",e.captionColor)?void 0:e.customCaptionColor}};const{__:mt,sprintf:ht}=wp.i18n,{Component:ft,Fragment:vt}=wp.element,{compose:yt}=wp.compose,{withSelect:kt}=wp.data,{withNotices:wt}=wp.components,{withColors:jt,withFontSizes:Ot}=wp.blockEditor;var xt=yt([kt((e,t)=>({editorSidebarOpened:e("core/edit-post").isEditorSidebarOpened(),pluginSidebarOpened:e("core/edit-post").isPluginSidebarOpened(),publishSidebarOpened:e("core/edit-post").isPublishSidebarOpened(),wideControlsEnabled:e("core/editor").getEditorSettings().alignWide})),jt({backgroundColor:"background-color",captionColor:"color"}),Ot("fontSize"),wt])(class extends ft{constructor(){super(...arguments),this.onSelectImage=this.onSelectImage.bind(this),this.onRemoveImage=this.onRemoveImage.bind(this),this.setImageAttributes=this.setImageAttributes.bind(this),this.state={selectedImage:null}}componentDidMount(){this.props.setAttributes({captionStyle:void 0})}componentDidUpdate(e){console.log("Edit Class Updated"),!this.props.isSelected&&e.isSelected&&this.setState({selectedImage:null,captionSelected:!1})}onSelectImage(e){return()=>{this.state.selectedImage!==e&&this.setState({selectedImage:e})}}onRemoveImage(e){return()=>{const t=c()(this.props.attributes.images,(t,n)=>e!==n);this.setState({selectedImage:null}),this.props.setAttributes({images:t})}}setImageAttributes(e,t){const{attributes:{images:n},setAttributes:r}=this.props;n[e]&&r({images:[...n.slice(0,e),{...n[e],...t},...n.slice(e+1)]})}render(){console.log("STUFFED PROPS"),console.log(this.props);const{attributes:e,backgroundColor:t,captionColor:n,className:o,isSelected:i,noticeOperations:c,noticeUI:l,setAttributes:u,fontSize:p}=this.props,{align:d,fullwidth:b,gutter:g,gutterMobile:m,linkTo:h,images:f,controls:v,typeTo:y,shadow:k,captions:w}=e,j=Object(r.createElement)(B,s()({},this.props,{label:ht(mt("Drop to add to the %s gallery"),It.toLowerCase())})),O=a()(...et(e),"orbit-container",{"has-fullwidth-images":b,["align"+d]:d,"has-margin":g>0,["has-margin-bottom-"+g]:g>0,["has-margin-bottom-mobile-"+m]:m>0}),x={...Ge(e),backgroundColor:t.color,color:n.color};return 0===f.length?Object(r.createElement)(N,s()({},this.props,{label:ht(mt("%s Gallery"),It),icon:Ft})):Object(r.createElement)(vt,null,Object(r.createElement)(pt,this.props),Object(r.createElement)(me,this.props),l,Object(r.createElement)("div",{className:o},Object(r.createElement)("div",{className:"orbit",role:"region","aria-label":"Favorite Space Pictures","data-orbit":!0,"data-options":"animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;"},Object(r.createElement)("div",{className:"orbit-wrapper"},Object(r.createElement)("div",{className:"orbit-controls"},Object(r.createElement)("button",{className:"orbit-previous"},Object(r.createElement)("span",{className:"show-for-sr"},"Previous Slide"),"◀︎"),Object(r.createElement)("button",{className:"orbit-next"},Object(r.createElement)("span",{className:"show-for-sr"},"Next Slide"),"▶︎")),Object(r.createElement)("ul",{className:O,style:x},j,f.map((e,t)=>{
-// translators: %1$d is the order number of the image, %2$d is the total number of images.
-const n=mt(ht("image %1$d of %2$d in gallery",t+1,f.length));return Object(r.createElement)("li",{className:"blockgallery--item orbit-slide",key:e.id||e.url},Object(r.createElement)(E,{edited:e.edited,url:e.url,i_w:e.i_w,i_h:e.i_h,srcset:e.srcset,sizes:e.sizes,description:e.description,title:e.title,alt:e.alt,id:e.id,gutter:g,gutterMobile:m,marginBottom:!0,shadow:k,isSelected:i&&this.state.selectedImage===t,onRemove:this.onRemoveImage(t),onSelect:this.onSelectImage(t),setAttributes:e=>this.setImageAttributes(t,e),caption:e.caption,"aria-label":n,captions:w,supportsCaption:!0,fontSize:p.size}))}),i&&Object(r.createElement)(J,s()({},this.props,{gutter:g,gutterMobile:m,marginBottom:!0})))))))}});const{withSelect:_t}=wp.data,{compose:Et}=wp.compose,{Component:Ct}=wp.element;class zt extends Ct{constructor(){super(...arguments)}render(){console.log("MindImage - save image data");const{image:e}=this.props;return console.log(e),Object(r.createElement)("image",{className:"orbit-image",src:e.url,alt:e.alt,"data-id":e.id,i_w:e.i_w,i_h:e.i_h,description:e.description,title:e.title,srcset:e.srcset,sizes:e.sizes})}}const{__:St}=wp.i18n,{createBlock:Pt}=wp.blocks,{RichText:Nt,getFontSizeClass:Tt}=wp.blockEditor,It=St("Mindgallery"),Ft="format-image",Mt=[St("gallery"),St("images"),St("photos")],At={...Qe,align:{type:"string",default:"full"},captionStyle:{type:"string"},fullwidth:{type:"boolean",default:!0},gutter:{type:"number",default:0},gutterMobile:{type:"number",default:0}},Bt={title:It,icon:Ft,category:"layout",description:St("Mindgallery settings for the default gallery."),keywords:Mt,attributes:At,supports:{align:["wide","full"]},transforms:{from:[{type:"block",blocks:["blockgallery/masonry"],transform:e=>Pt("blockgallery/Mindgallery",{...dt(e)})},{type:"block",blocks:["blockgallery/carousel"],transform:e=>Pt("blockgallery/Mindgallery",{...dt(e)})},{type:"block",blocks:["blockgallery/thumbnails"],transform:e=>Pt("blockgallery/Mindgallery",{...dt(e)})},{type:"block",blocks:["blockgallery/offset"],transform:e=>Pt("blockgallery/Mindgallery",{...dt(e)})},{type:"block",blocks:["blockgallery/auto-height"],transform:e=>Pt("blockgallery/Mindgallery",{...dt(e)})},{type:"block",blocks:["core/gallery"],transform:e=>Pt("blockgallery/Mindgallery",{...dt(e)})},{type:"block",isMultiBlock:!0,blocks:["core/image"],transform:e=>{const t=c()(e,({id:e,url:t})=>e&&t);return t.length>0?Pt("blockgallery/Mindgallery",{images:t.map(({id:e,url:t,alt:n,caption:r})=>({id:e,url:t,alt:n,caption:r})),ids:t.map(({id:e})=>e)}):Pt("blockgallery/Mindgallery")}},{type:"prefix",prefix:":stacked",transform:function(e){return Pt("blockgallery/Mindgallery",{content:e})}}],to:[{type:"block",blocks:["core/gallery"],transform:e=>Pt("core/gallery",{...dt(e)})}]},edit:xt,save({attributes:e,className:t}){console.log("SAVING IN THE INIT"),console.log(e);const{captionColor:n,captions:o,customCaptionColor:i,customFontSize:c,fontSize:l,fullwidth:s,gutter:u,gutterMobile:p,images:d,linkTo:b,shadow:g,i_w:m,i_h:h}=e,f=a()(...et(e),"orbit-container",{"has-fullwidth-images":s,"has-margin":u>0}),v={...gt(e),...Ge(e)},y=Tt(l),k=a()("blockgallery--figure","orbit-figure",{["has-margin-bottom-"+u]:u>0,["has-margin-bottom-mobile-"+p]:p>0,[y]:y}),w=a()("orbit-caption","blockgallery--caption",{[y]:y}),j={fontSize:y?void 0:c};return Object(r.createElement)("div",{className:t},Object(r.createElement)("div",{className:"orbit",role:"region","aria-label":"Favorite Space Pictures","data-orbit":!0,"data-options":"animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;"},Object(r.createElement)("div",{className:"orbit-wrapper"},Object(r.createElement)("div",{className:"orbit-controls"},Object(r.createElement)("button",{className:"orbit-previous"},Object(r.createElement)("span",{className:"show-for-sr"},St("Previous Slide","mindgallery")),"◀︎"),Object(r.createElement)("button",{className:"orbit-next"},Object(r.createElement)("span",{className:"show-for-sr"},St("Next Slide","mindgallery")),"▶︎")),Object(r.createElement)("ul",{className:f,style:v},d.map(e=>{let t;switch(b){case"media":t=e.url;break;case"attachment":t=e.link}a()(e.id?["wp-image-"+e.id]:null);const n=Object(r.createElement)(zt,{image:e});return Object(r.createElement)("li",{key:e.id||e.url,className:"blockgallery--item orbit-slide"},Object(r.createElement)("figure",{className:k},t?Object(r.createElement)("a",{href:t},n):n,o&&e.caption&&e.caption.length>0&&Object(r.createElement)(Nt.Content,{tagName:"figcaption",className:w,value:e.caption,styles:j})))})))))}},{registerBlockType:Rt}=wp.blocks;Rt("mindfulness-blocks/mindgallery-block",{...Bt})}]);
+/******/ (function() { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/background/attributes.js":
+/*!************************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/background/attributes.js ***!
+  \************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/**
+ * Set the attributes for the Background Panel
+ * @type {Object}
+ */
+const BackgroundAttributes = {
+  backgroundImg: {
+    type: 'string'
+  },
+  backgroundPosition: {
+    type: 'string',
+    default: 'center center'
+  },
+  backgroundRepeat: {
+    type: 'string',
+    default: 'no-repeat'
+  },
+  backgroundSize: {
+    type: 'string'
+  },
+  backgroundRadius: {
+    type: 'number',
+    default: 0
+  },
+  backgroundPadding: {
+    type: 'number',
+    default: 0
+  },
+  backgroundPaddingMobile: {
+    type: 'number',
+    default: 0
+  },
+  hasParallax: {
+    type: 'boolean',
+    default: false
+  },
+  backgroundOverlay: {
+    type: 'number',
+    default: 0
+  },
+  backgroundColor: {
+    type: 'string'
+  },
+  customBackgroundColor: {
+    type: 'string'
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (BackgroundAttributes);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/background/classes.js":
+/*!*********************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/background/classes.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _utils_helper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../utils/helper */ "./src/gutenberg/blocks/mindgallery-block/components/utils/helper.js");
+/**
+ * Internal dependencies
+ */
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  getColorClassName
+} = wp.blockEditor;
+/**
+ * Background Classes
+ */
+
+function BackgroundClasses(attributes) {
+  const backgroundClass = getColorClassName('background-color', attributes.backgroundColor);
+  const backgroundSizeDefault = typeof options !== 'undefined' && typeof options.backgroundSize !== 'undefined' ? options.backgroundSize : 'cover';
+  const backgroundSize = attributes.backgroundSize ? attributes.backgroundSize : backgroundSizeDefault;
+  return [{
+    'has-background': attributes.backgroundColor || attributes.customBackgroundColor
+  }, {
+    [backgroundClass]: backgroundClass
+  }, {
+    'has-padding': attributes.backgroundPadding > 0
+  }, {
+    [`has-background-border-radius-${attributes.backgroundRadius}`]: attributes.backgroundRadius > 0
+  }, {
+    [`has-padding-${attributes.backgroundPadding}`]: attributes.backgroundPadding > 0
+  }, {
+    [`has-padding-mobile-${attributes.backgroundPaddingMobile}`]: attributes.backgroundPaddingMobile > 0
+  }, {
+    'has-parallax': attributes.backgroundImg && attributes.hasParallax
+  }, {
+    'has-background-image': attributes.backgroundImg
+  }, {
+    'has-background-image-transient': attributes.backgroundImg && 0 === attributes.backgroundImg.indexOf('blob:')
+  }, {
+    [`has-background-${attributes.backgroundRepeat}`]: attributes.backgroundImg && attributes.backgroundRepeat
+  }, {
+    [`has-background-${attributes.backgroundPosition.split(' ').join('-')}`]: attributes.backgroundImg && attributes.backgroundPosition
+  }, {
+    [`has-background-${backgroundSize}`]: attributes.backgroundImg
+  }, {
+    [`has-background-overlay`]: attributes.backgroundImg && attributes.backgroundOverlay !== 0
+  }, {
+    [_utils_helper__WEBPACK_IMPORTED_MODULE_0__.overlayToClass(attributes.backgroundOverlay)]: attributes.backgroundImg && attributes.backgroundOverlay !== 0 && attributes.backgroundOverlay !== 50
+  }];
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (BackgroundClasses);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/background/index.js":
+/*!*******************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/background/index.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BackgroundAttributes": function() { return /* reexport safe */ _attributes__WEBPACK_IMPORTED_MODULE_0__["default"]; },
+/* harmony export */   "BackgroundClasses": function() { return /* reexport safe */ _classes__WEBPACK_IMPORTED_MODULE_1__["default"]; },
+/* harmony export */   "BackgroundPanel": function() { return /* reexport safe */ _panel__WEBPACK_IMPORTED_MODULE_2__["default"]; },
+/* harmony export */   "BackgroundStyles": function() { return /* reexport safe */ _styles__WEBPACK_IMPORTED_MODULE_3__["default"]; },
+/* harmony export */   "BackgroundToolbar": function() { return /* reexport safe */ _toolbar__WEBPACK_IMPORTED_MODULE_4__["default"]; },
+/* harmony export */   "BackgroundTransforms": function() { return /* reexport safe */ _transforms__WEBPACK_IMPORTED_MODULE_5__["default"]; }
+/* harmony export */ });
+/* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./attributes */ "./src/gutenberg/blocks/mindgallery-block/components/background/attributes.js");
+/* harmony import */ var _classes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./classes */ "./src/gutenberg/blocks/mindgallery-block/components/background/classes.js");
+/* harmony import */ var _panel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./panel */ "./src/gutenberg/blocks/mindgallery-block/components/background/panel.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles */ "./src/gutenberg/blocks/mindgallery-block/components/background/styles.js");
+/* harmony import */ var _toolbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./toolbar */ "./src/gutenberg/blocks/mindgallery-block/components/background/toolbar.js");
+/* harmony import */ var _transforms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./transforms */ "./src/gutenberg/blocks/mindgallery-block/components/background/transforms.js");
+/**
+ * Internal dependencies
+ */
+
+
+
+
+
+
+/**
+ * Export
+ */
+
+
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/background/panel.js":
+/*!*******************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/background/panel.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lodash_isEmpty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash/isEmpty */ "./node_modules/lodash/isEmpty.js");
+/* harmony import */ var lodash_isEmpty__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_isEmpty__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _responsive_tabs_control__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../responsive-tabs-control */ "./src/gutenberg/blocks/mindgallery-block/components/responsive-tabs-control.js");
+
+
+
+/**
+ * External dependencies
+ */
+
+/**
+ * Internal dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  __
+} = wp.i18n;
+const {
+  Component,
+  Fragment
+} = wp.element;
+const {
+  compose
+} = wp.compose;
+const {
+  withColors,
+  ColorPalette,
+  PanelColorSettings
+} = wp.blockEditor;
+const {
+  SelectControl,
+  RangeControl,
+  ToggleControl,
+  PanelBody,
+  Button
+} = wp.components;
+/**
+ * Gutter Controls Component
+ */
+
+class BackgroundPanel extends Component {
+  constructor() {
+    super(...arguments);
+    this.setBackgroundPaddingTo = this.setBackgroundPaddingTo.bind(this);
+    this.setBackgroundPaddingMobileTo = this.setBackgroundPaddingMobileTo.bind(this);
+    this.getColors = this.getColors.bind(this);
+  }
+
+  setBackgroundPaddingTo(value) {
+    this.props.setAttributes({
+      backgroundPadding: value
+    });
+
+    if (this.props.attributes.backgroundPadding <= 0) {
+      this.props.setAttributes({
+        backgroundRadius: 0
+      });
+    }
+  }
+
+  setBackgroundPaddingMobileTo(value) {
+    this.props.setAttributes({
+      backgroundPaddingMobile: value
+    });
+  }
+
+  getColors() {
+    const {
+      backgroundColor,
+      setBackgroundColor,
+      captionColor,
+      setCaptionColor,
+      hasCaption,
+      attributes
+    } = this.props;
+    const {
+      backgroundImg,
+      backgroundPadding,
+      backgroundPaddingMobile
+    } = attributes;
+    const background = [{
+      value: backgroundColor.color,
+      onChange: nextBackgroundColor => {
+        setBackgroundColor(nextBackgroundColor); // Add default padding, if they are not yet present.
+
+        if (!backgroundPadding && !backgroundPaddingMobile) {
+          this.props.setAttributes({
+            backgroundPadding: 30,
+            backgroundPaddingMobile: 30
+          });
+        } // Reset when cleared.
+
+
+        if (!nextBackgroundColor && !backgroundImg) {
+          this.props.setAttributes({
+            backgroundPadding: 0,
+            backgroundPaddingMobile: 0
+          });
+        }
+      },
+      label: __('Background Color')
+    }];
+    const caption = [{
+      value: captionColor.color,
+      onChange: setCaptionColor,
+      label: __('Caption Text Color')
+    }];
+
+    if (hasCaption) {
+      return background.concat(caption);
+    } else {
+      return background;
+    }
+  }
+
+  render() {
+    const {
+      attributes,
+      setAttributes,
+      backgroundColor,
+      setBackgroundColor,
+      captionColor,
+      setCaptionColor
+    } = this.props;
+    const {
+      align,
+      backgroundPosition,
+      backgroundRepeat,
+      backgroundSize,
+      backgroundOverlay,
+      backgroundPadding,
+      backgroundPaddingMobile,
+      hasParallax,
+      backgroundImg,
+      backgroundRadius
+    } = attributes;
+    const backgroundPositionOptions = [{
+      value: 'top left',
+      label: __('Top Left')
+    }, {
+      value: 'top center',
+      label: __('Top Center')
+    }, {
+      value: 'top right',
+      label: __('Top Right')
+    }, {
+      value: 'center left',
+      label: __('Center Left')
+    }, {
+      value: 'center center',
+      label: __('Center Center')
+    }, {
+      value: 'center right',
+      label: __('Center Right')
+    }, {
+      value: 'bottom left',
+      label: __('Bottom Left')
+    }, {
+      value: 'bottom center',
+      label: __('Bottom Center')
+    }, {
+      value: 'bottom right',
+      label: __('Bottom Right')
+    }];
+    const backgroundRepeatOptions = [{
+      value: 'no-repeat',
+      label: __('No Repeat')
+    }, {
+      value: 'repeat',
+      label: __('Repeat')
+    }, {
+      value: 'repeat-x',
+      label: __('Repeat Horizontally')
+    }, {
+      value: 'repeat-y',
+      label: __('Repeat Vertically')
+    }];
+    const backgroundSizeOptions = [{
+      value: 'auto',
+      label: __('Auto')
+    }, {
+      value: 'cover',
+      label: __('Cover')
+    }, {
+      value: 'contain',
+      label: __('Contain')
+    }];
+    const backgroundSizeDefault = typeof options !== 'undefined' && typeof options.backgroundSize !== 'undefined' ? options.backgroundSize : 'cover';
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(Fragment, null, (!lodash_isEmpty__WEBPACK_IMPORTED_MODULE_2___default()(backgroundImg) || !lodash_isEmpty__WEBPACK_IMPORTED_MODULE_2___default()(backgroundColor.color)) && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(PanelBody, {
+      title: __('Background Settings'),
+      initialOpen: false
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_responsive_tabs_control__WEBPACK_IMPORTED_MODULE_3__["default"], (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.props, {
+      label: __('Padding'),
+      value: backgroundPadding,
+      valueMobile: backgroundPaddingMobile,
+      onChange: this.setBackgroundPaddingTo,
+      onChangeMobile: this.setBackgroundPaddingMobileTo,
+      min: 5,
+      max: 100
+    })), (!lodash_isEmpty__WEBPACK_IMPORTED_MODULE_2___default()(backgroundImg) || !lodash_isEmpty__WEBPACK_IMPORTED_MODULE_2___default()(backgroundColor.color)) && backgroundPadding > 0 && align != 'full' && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(RangeControl, {
+      label: __('Rounded Corners'),
+      value: backgroundRadius,
+      onChange: nextBackgroundRadius => setAttributes({
+        backgroundRadius: nextBackgroundRadius
+      }),
+      min: 0,
+      max: 20,
+      step: 1
+    }), backgroundImg && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(RangeControl, {
+      label: __('Image Overlay'),
+      className: "components-blockgallery-inspector__background-image-overlay",
+      value: backgroundOverlay,
+      onChange: nextBackgroundOverlay => setAttributes({
+        backgroundOverlay: nextBackgroundOverlay
+      }),
+      min: 0,
+      max: 90,
+      step: 10
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(SelectControl, {
+      label: __('Position'),
+      className: "components-blockgallery-inspector__background-position",
+      value: backgroundPosition ? backgroundPosition : 'center center',
+      options: backgroundPositionOptions,
+      onChange: nextbackgroundPosition => setAttributes({
+        backgroundPosition: nextbackgroundPosition
+      })
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(SelectControl, {
+      label: __('Repeat'),
+      className: "components-blockgallery-inspector__background-repeat",
+      value: backgroundRepeat ? backgroundRepeat : 'no-repeat',
+      options: backgroundRepeatOptions,
+      onChange: nextbackgroundRepeat => setAttributes({
+        backgroundRepeat: nextbackgroundRepeat
+      })
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(SelectControl, {
+      label: __('Display'),
+      className: "components-blockgallery-inspector__background-size",
+      value: backgroundSize ? backgroundSize : backgroundSizeDefault,
+      options: backgroundSizeOptions,
+      onChange: nextbackgroundSize => setAttributes({
+        backgroundSize: nextbackgroundSize
+      })
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(ToggleControl, {
+      label: __('Fixed Background'),
+      className: "components-blockgallery-inspector__background-parallax",
+      checked: !!hasParallax,
+      onChange: () => setAttributes({
+        hasParallax: !hasParallax
+      })
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(Button, {
+      islarge: "true",
+      className: "components-blockgallery-inspector__background-remove-button",
+      onClick: () => setAttributes({
+        backgroundImg: '',
+        backgroundOverlay: 0
+      })
+    }, __('Remove Background Image')))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(PanelColorSettings, {
+      title: __('Color Settings'),
+      initialOpen: false,
+      colorSettings: this.getColors()
+    }));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (compose([withColors({
+  backgroundColor: 'background-color',
+  captionColor: 'color'
+})])(BackgroundPanel));
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/background/styles.js":
+/*!********************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/background/styles.js ***!
+  \********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/**
+ * WordPress dependencies
+ */
+const {
+  getColorClassName
+} = wp.blockEditor;
+/**
+ * Background Classes
+ */
+
+function BackgroundStyles(attributes) {
+  const backgroundClass = getColorClassName('background-color', attributes.backgroundColor);
+  const styles = {
+    backgroundImage: attributes.backgroundImg ? `url(${attributes.backgroundImg})` : undefined,
+    backgroundColor: backgroundClass ? undefined : attributes.customBackgroundColor
+  };
+  return styles;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (BackgroundStyles);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/background/toolbar.js":
+/*!*********************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/background/toolbar.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../utils/icons */ "./src/gutenberg/blocks/mindgallery-block/components/utils/icons.js");
+/* harmony import */ var _utils_helper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../utils/helper */ "./src/gutenberg/blocks/mindgallery-block/components/utils/helper.js");
+
+
+/**
+ * Internal dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  __
+} = wp.i18n;
+const {
+  Component,
+  Fragment
+} = wp.element;
+const {
+  MediaUpload,
+  MediaUploadCheck
+} = wp.blockEditor;
+const {
+  Toolbar,
+  IconButton
+} = wp.components;
+/**
+ * Background Image Toolbar
+ */
+
+class BackgroundToolbar extends Component {
+  constructor(props) {
+    super(...arguments);
+  }
+
+  render() {
+    const {
+      attributes,
+      setAttributes
+    } = this.props;
+    const {
+      backgroundColor,
+      backgroundImg,
+      backgroundPadding,
+      backgroundPaddingMobile
+    } = attributes;
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Toolbar, null, !backgroundImg ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUpload, {
+      onSelect: media => {
+        setAttributes({
+          backgroundImg: media.url
+        });
+
+        if (!backgroundPadding && !backgroundPaddingMobile) {
+          setAttributes({
+            backgroundPadding: 30,
+            backgroundPaddingMobile: 30
+          });
+        }
+      },
+      allowedTypes: _utils_helper__WEBPACK_IMPORTED_MODULE_2__.ALLOWED_MEDIA_TYPES,
+      value: backgroundImg,
+      render: _ref => {
+        let {
+          open
+        } = _ref;
+        return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(IconButton, {
+          className: "components-toolbar__control",
+          label: __('Add Background Image'),
+          icon: _utils_icons__WEBPACK_IMPORTED_MODULE_1__["default"].backgroundImage,
+          onClick: open
+        });
+      }
+    }) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(IconButton, {
+      className: "components-toolbar__control",
+      label: __('Remove background image'),
+      icon: _utils_icons__WEBPACK_IMPORTED_MODULE_1__["default"].trash,
+      onClick: () => {
+        setAttributes({
+          backgroundImg: '',
+          backgroundOverlay: 0,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: '',
+          backgroundSize: 'cover',
+          hasParallax: false
+        });
+
+        if (!backgroundColor) {
+          setAttributes({
+            backgroundPadding: 0,
+            backgroundPaddingMobile: 0
+          });
+        }
+      }
+    }))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (BackgroundToolbar);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/background/transforms.js":
+/*!************************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/background/transforms.js ***!
+  \************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/**
+ * Set the attributes for the Background transformations
+ * @type {Object}
+ */
+function BackgroundTransforms(props) {
+  const transforms = {
+    backgroundColor: props.backgroundColor,
+    customBackgroundColor: props.customBackgroundColor,
+    backgroundImg: props.backgroundImg,
+    backgroundOverlay: props.backgroundOverlay,
+    backgroundPosition: props.backgroundPosition,
+    backgroundRepeat: props.backgroundRepeat,
+    backgroundSize: props.backgroundSize,
+    backgroundPadding: props.backgroundPadding,
+    backgroundPaddingMobile: props.backgroundPaddingMobile,
+    backgroundRadius: props.backgroundRadius,
+    hasParallax: props.hasParallax,
+    captionStyle: props.captionStyle
+  };
+  return transforms;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (BackgroundTransforms);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/edit.js":
+/*!*******************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/edit.js ***!
+  \*******************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var lodash_filter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash/filter */ "./node_modules/lodash/filter.js");
+/* harmony import */ var lodash_filter__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_filter__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _gallery_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./gallery-image */ "./src/gutenberg/blocks/mindgallery-block/components/gallery-image.js");
+/* harmony import */ var _gallery_placeholder__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./gallery-placeholder */ "./src/gutenberg/blocks/mindgallery-block/components/gallery-placeholder.js");
+/* harmony import */ var _gallery_dropzone__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./gallery-dropzone */ "./src/gutenberg/blocks/mindgallery-block/components/gallery-dropzone.js");
+/* harmony import */ var _gallery_upload__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./gallery-upload */ "./src/gutenberg/blocks/mindgallery-block/components/gallery-upload.js");
+/* harmony import */ var _inspector__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./inspector */ "./src/gutenberg/blocks/mindgallery-block/components/inspector.js");
+/* harmony import */ var _background___WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./background/ */ "./src/gutenberg/blocks/mindgallery-block/components/background/index.js");
+/* harmony import */ var _global___WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./global/ */ "./src/gutenberg/blocks/mindgallery-block/components/global/index.js");
+/* harmony import */ var _mind_gallery__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../mind-gallery */ "./src/gutenberg/blocks/mindgallery-block/mind-gallery.js");
+
+
+
+/*jshint esversion: 9 */
+
+/**
+ * External dependencies
+ */
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+
+
+
+
+
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  __,
+  sprintf
+} = wp.i18n;
+const {
+  Component,
+  Fragment
+} = wp.element;
+const {
+  compose
+} = wp.compose;
+const {
+  withSelect
+} = wp.data;
+const {
+  withNotices
+} = wp.components;
+const {
+  withColors,
+  withFontSizes
+} = wp.blockEditor;
+/**
+ * Block edit function
+ */
+
+class Edit extends Component {
+  constructor() {
+    super(...arguments);
+    this.onSelectImage = this.onSelectImage.bind(this);
+    this.onRemoveImage = this.onRemoveImage.bind(this);
+    this.setImageAttributes = this.setImageAttributes.bind(this);
+    this.state = {
+      selectedImage: null
+    };
+  }
+
+  componentDidMount() {
+    // This block does not support caption style.
+    this.props.setAttributes({
+      captionStyle: undefined
+    });
+  }
+
+  componentDidUpdate(prevProps) {
+    console.log('Edit Class Updated'); // Deselect images when deselecting the block
+
+    if (!this.props.isSelected && prevProps.isSelected) {
+      this.setState({
+        selectedImage: null,
+        captionSelected: false
+      });
+    }
+  }
+
+  onSelectImage(index) {
+    return () => {
+      if (this.state.selectedImage !== index) {
+        this.setState({
+          selectedImage: index
+        });
+      }
+    };
+  }
+
+  onRemoveImage(index) {
+    return () => {
+      const images = lodash_filter__WEBPACK_IMPORTED_MODULE_3___default()(this.props.attributes.images, (img, i) => index !== i);
+      this.setState({
+        selectedImage: null
+      });
+      this.props.setAttributes({
+        images
+      });
+    };
+  }
+
+  setImageAttributes(index, attributes) {
+    const {
+      attributes: {
+        images
+      },
+      setAttributes
+    } = this.props;
+
+    if (!images[index]) {
+      return;
+    }
+
+    setAttributes({
+      images: [...images.slice(0, index), { ...images[index],
+        ...attributes
+      }, ...images.slice(index + 1)]
+    });
+  }
+
+  render() {
+    console.log('STUFFED PROPS');
+    console.log(this.props);
+    const {
+      attributes,
+      backgroundColor,
+      captionColor,
+      className,
+      isSelected,
+      noticeOperations,
+      noticeUI,
+      setAttributes,
+      fontSize
+    } = this.props;
+    const {
+      align,
+      fullwidth,
+      gutter,
+      gutterMobile,
+      linkTo,
+      images,
+      controls,
+      typeTo,
+      shadow,
+      captions
+    } = attributes;
+    const dropZone = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_gallery_dropzone__WEBPACK_IMPORTED_MODULE_6__["default"], (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.props, {
+      label: sprintf(__('Drop to add to the %s gallery'), _mind_gallery__WEBPACK_IMPORTED_MODULE_11__.title.toLowerCase())
+    }));
+    const wrapperClasses = classnames__WEBPACK_IMPORTED_MODULE_2___default()(...(0,_global___WEBPACK_IMPORTED_MODULE_10__.GlobalClasses)(attributes), 'orbit-container', {
+      'has-fullwidth-images': fullwidth,
+      [`align${align}`]: align,
+      [`has-margin`]: gutter > 0,
+      [`has-margin-bottom-${gutter}`]: gutter > 0,
+      [`has-margin-bottom-mobile-${gutterMobile}`]: gutterMobile > 0
+    });
+    const wrapperStyles = { ...(0,_background___WEBPACK_IMPORTED_MODULE_9__.BackgroundStyles)(attributes),
+      backgroundColor: backgroundColor.color,
+      color: captionColor.color
+    };
+
+    if (images.length === 0) {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_gallery_placeholder__WEBPACK_IMPORTED_MODULE_5__["default"], (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.props, {
+        label: sprintf(__('%s Gallery'), _mind_gallery__WEBPACK_IMPORTED_MODULE_11__.title),
+        icon: _mind_gallery__WEBPACK_IMPORTED_MODULE_11__.icon
+      }));
+    }
+
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_global___WEBPACK_IMPORTED_MODULE_10__.GlobalToolbar, this.props), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_inspector__WEBPACK_IMPORTED_MODULE_8__["default"], this.props), noticeUI, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+      className: className
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+      className: "orbit",
+      role: "region",
+      "aria-label": "Favorite Space Pictures",
+      "data-orbit": true,
+      "data-options": "animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+      className: "orbit-wrapper"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+      className: "orbit-controls"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("button", {
+      className: "orbit-previous"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
+      className: "show-for-sr"
+    }, "Previous Slide"), "\u25C0\uFE0E"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("button", {
+      className: "orbit-next"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
+      className: "show-for-sr"
+    }, "Next Slide"), "\u25B6\uFE0E")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("ul", {
+      className: wrapperClasses,
+      style: wrapperStyles
+    }, dropZone, images.map((img, index) => {
+      // translators: %1$d is the order number of the image, %2$d is the total number of images.
+      const ariaLabel = __(sprintf('image %1$d of %2$d in gallery', index + 1, images.length));
+
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("li", {
+        className: "blockgallery--item orbit-slide",
+        key: img.id || img.url
+      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_gallery_image__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        edited: img.edited,
+        url: img.url,
+        i_w: img.i_w,
+        i_h: img.i_h,
+        srcset: img.srcset,
+        sizes: img.sizes,
+        description: img.description,
+        title: img.title,
+        alt: img.alt,
+        id: img.id,
+        gutter: gutter,
+        gutterMobile: gutterMobile,
+        marginBottom: true,
+        shadow: shadow,
+        isSelected: isSelected && this.state.selectedImage === index,
+        onRemove: this.onRemoveImage(index),
+        onSelect: this.onSelectImage(index),
+        setAttributes: attrs => this.setImageAttributes(index, attrs),
+        caption: img.caption,
+        "aria-label": ariaLabel,
+        captions: captions,
+        supportsCaption: true,
+        fontSize: fontSize.size
+      }));
+    }), isSelected && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_gallery_upload__WEBPACK_IMPORTED_MODULE_7__["default"], (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.props, {
+      gutter: gutter,
+      gutterMobile: gutterMobile,
+      marginBottom: true
+    })))))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (compose([withSelect((select, ownProps) => {
+  return {
+    //new_images: new_images,
+    editorSidebarOpened: select('core/edit-post').isEditorSidebarOpened(),
+    pluginSidebarOpened: select('core/edit-post').isPluginSidebarOpened(),
+    publishSidebarOpened: select('core/edit-post').isPublishSidebarOpened(),
+    wideControlsEnabled: select('core/editor').getEditorSettings().alignWide
+  };
+}), withColors({
+  backgroundColor: 'background-color',
+  captionColor: 'color'
+}), withFontSizes('fontSize'), withNotices])(Edit));
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/gallery-dropzone.js":
+/*!*******************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/gallery-dropzone.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_helper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/helper */ "./src/gutenberg/blocks/mindgallery-block/components/utils/helper.js");
+
+
+/**
+ * WordPress dependencies
+ */
+const {
+  __
+} = wp.i18n;
+const {
+  Component,
+  Fragment
+} = wp.element;
+const {
+  mediaUpload
+} = wp.blockEditor;
+const {
+  DropZone
+} = wp.components;
+/**
+ * Internal dependencies
+ */
+
+
+/**
+ * Gallery Drop Zone Component
+ */
+
+class GalleryDropZone extends Component {
+  constructor() {
+    super(...arguments);
+    this.addFiles = this.addFiles.bind(this);
+  }
+
+  addFiles(files) {
+    const currentImages = this.props.attributes.images || [];
+    const {
+      noticeOperations,
+      setAttributes
+    } = this.props;
+    mediaUpload({
+      allowedTypes: _utils_helper__WEBPACK_IMPORTED_MODULE_1__.ALLOWED_MEDIA_TYPES,
+      filesList: files,
+      onFileChange: images => {
+        const imagesNormalized = images.map(image => _utils_helper__WEBPACK_IMPORTED_MODULE_1__.pickRelevantMediaFiles(image));
+        setAttributes({
+          images: currentImages.concat(imagesNormalized)
+        });
+      },
+      onError: noticeOperations.createErrorNotice
+    });
+  }
+
+  render() {
+    const {
+      attributes,
+      className,
+      noticeOperations,
+      noticeUI,
+      label
+    } = this.props;
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(DropZone, {
+      onFilesDrop: this.addFiles,
+      label: this.props.label
+    }));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (GalleryDropZone);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/gallery-image.js":
+/*!****************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/gallery-image.js ***!
+  \****************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _utils_helper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/helper */ "./src/gutenberg/blocks/mindgallery-block/components/utils/helper.js");
+
+
+/*jshint esversion: 9 */
+
+/**
+ * External Dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  __
+} = wp.i18n;
+const {
+  Component,
+  Fragment
+} = wp.element;
+const {
+  compose
+} = wp.compose;
+const {
+  IconButton,
+  Spinner
+} = wp.components;
+const {
+  RichText
+} = wp.blockEditor;
+const {
+  withSelect
+} = wp.data;
+const {
+  BACKSPACE,
+  DELETE
+} = wp.keycodes;
+const {
+  isBlobURL
+} = wp.blob;
+/**
+ * Gallery Image Component
+ */
+
+class GalleryImage extends Component {
+  constructor() {
+    super(...arguments);
+    this.onImageClick = this.onImageClick.bind(this);
+    this.onSelectCaption = this.onSelectCaption.bind(this);
+    this.onKeyDown = this.onKeyDown.bind(this);
+    this.bindContainer = this.bindContainer.bind(this);
+    this.state = {
+      captionSelected: false,
+      captionFocused: false
+    };
+  }
+
+  bindContainer(ref) {
+    this.container = ref;
+  }
+
+  onSelectCaption() {
+    if (!this.state.captionSelected) {
+      this.setState({
+        captionSelected: true
+      });
+    }
+
+    if (!this.props.isSelected) {
+      this.props.onSelect();
+    }
+  }
+
+  onImageClick() {
+    if (!this.props.isSelected) {
+      this.props.onSelect();
+    }
+
+    if (this.state.captionSelected) {
+      this.setState({
+        captionSelected: false,
+        captionFocused: false
+      });
+    }
+  }
+
+  onKeyDown(event) {
+    if (this.container === document.activeElement && this.props.isSelected && [BACKSPACE, DELETE].indexOf(event.keyCode) !== -1) {
+      event.stopPropagation();
+      event.preventDefault();
+      this.props.onRemove();
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    const {
+      isSelected,
+      image,
+      url,
+      i_w,
+      edited
+    } = this.props;
+
+    if (image && !edited) {
+      const mind_image_data = _utils_helper__WEBPACK_IMPORTED_MODULE_2__.prepareSrceSetAndSizes(image);
+      this.props.setAttributes({
+        i_w: image.media_details.width,
+        i_h: image.media_details.height,
+        description: image.description.raw,
+        title: image.title.raw,
+        edited: 'touched',
+        sizes: mind_image_data.sizes,
+        srcset: mind_image_data.srcset
+      });
+    } // unselect the caption so when the user selects other image and comeback
+    // the caption is not immediately selected
+
+
+    if (this.state.captionSelected && !isSelected && prevProps.isSelected) {
+      this.setState({
+        captionSelected: false,
+        captionFocused: false
+      });
+    }
+  }
+
+  render() {
+    const {
+      alt,
+      caption,
+      fontSize,
+      gutter,
+      gutterMobile,
+      id,
+      isSelected,
+      link,
+      linkTo,
+      marginBottom,
+      marginLeft,
+      marginRight,
+      marginTop,
+      onRemove,
+      setAttributes,
+      shadow,
+      supportsCaption,
+      url,
+      srcset,
+      captions,
+      'aria-label': ariaLabel
+    } = this.props;
+    let href;
+
+    switch (linkTo) {
+      case 'media':
+        href = url;
+        break;
+
+      case 'attachment':
+        href = link;
+        break;
+    }
+
+    const imgClasses = classnames__WEBPACK_IMPORTED_MODULE_1___default()('orbit-image', {
+      'mindgallery-image': true
+    }); // Disable reason: Image itself is not meant to be
+    // interactive, but should direct image selection and unfocus caption fields
+    // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/click-events-have-key-events
+
+    const img = // Disable reason: Image itself is not meant to be interactive, but should
+    // direct image selection and unfocus caption fields.
+
+    /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+    (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      src: url,
+      className: imgClasses,
+      alt: alt,
+      "data-id": id,
+      onClick: this.onImageClick,
+      tabIndex: "0",
+      onKeyDown: this.onImageClick,
+      "aria-label": ariaLabel
+    }), isBlobURL(url) && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Spinner, null))
+    /* eslint-enable jsx-a11y/no-noninteractive-element-interactions */
+    ;
+    const className = classnames__WEBPACK_IMPORTED_MODULE_1___default()({
+      'is-selected': isSelected,
+      'is-transient': url && 0 === url.indexOf('blob:'),
+      [`has-margin-top-${gutter}`]: marginTop && gutter > 0,
+      [`has-margin-top-mobile-${gutterMobile}`]: marginTop && gutterMobile > 0,
+      [`has-margin-right-${gutter}`]: marginRight && gutter > 0,
+      [`has-margin-right-mobile-${gutterMobile}`]: marginRight && gutterMobile > 0,
+      [`has-margin-bottom-${gutter}`]: marginBottom && gutter > 0,
+      [`has-margin-bottom-mobile-${gutterMobile}`]: marginBottom && gutterMobile > 0,
+      [`has-margin-left-${gutter}`]: marginLeft && gutter > 0,
+      [`has-margin-left-mobile-${gutterMobile}`]: marginLeft && gutterMobile > 0
+    });
+    const captionStyles = {
+      fontSize: fontSize ? fontSize + 'px' : undefined
+    }; // Disable reason: Each block can be selected by clicking on it and we should keep the same saved markup
+
+    /* eslint-disable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/onclick-has-role, jsx-a11y/click-events-have-key-events */
+
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("figure", {
+      className: 'blockgallery--figure orbit-figure ' + className,
+      tabIndex: "-1",
+      onKeyDown: this.onKeyDown,
+      ref: this.bindContainer
+    }, isSelected && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "components-blockgallery-gallery-item__remove-wrapper"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(IconButton, {
+      icon: "no-alt",
+      onClick: onRemove,
+      className: "components-blockgallery-gallery-item__remove-button",
+      label: __('Remove Image')
+    })), href ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+      href: href
+    }, img) : img, supportsCaption === true && (!RichText.isEmpty(caption) || isSelected) && captions ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RichText, {
+      tagName: "figcaption",
+      placeholder: __('Write caption…'),
+      className: "blockgallery--caption orbit-caption",
+      style: captionStyles,
+      value: caption,
+      isSelected: this.state.captionSelected,
+      onChange: newCaption => setAttributes({
+        caption: newCaption
+      }),
+      unstableOnFocus: this.onSelectCaption,
+      inlineToolbar: true
+    }) : null);
+    /* eslint-enable jsx-a11y/no-noninteractive-element-interactions, jsx-a11y/onclick-has-role, jsx-a11y/click-events-have-key-events */
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (compose([withSelect((select, ownProps) => {
+  const {
+    getMedia
+  } = select('core');
+  const {
+    id
+  } = ownProps;
+  return {
+    image: id ? getMedia(id) : null
+  };
+})])(GalleryImage));
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/gallery-placeholder.js":
+/*!**********************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/gallery-placeholder.js ***!
+  \**********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_helper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/helper */ "./src/gutenberg/blocks/mindgallery-block/components/utils/helper.js");
+
+
+/**
+ * Internal dependencies
+ */
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  __
+} = wp.i18n;
+const {
+  Component,
+  Fragment
+} = wp.element;
+const {
+  MediaPlaceholder
+} = wp.blockEditor;
+/**
+ * Gallery Image Component
+ */
+
+class GalleryPlaceholder extends Component {
+  constructor() {
+    super(...arguments);
+    this.onSelectImages = this.onSelectImages.bind(this);
+  }
+
+  onSelectImages(images) {
+    this.props.setAttributes({
+      images: images.map(image => _utils_helper__WEBPACK_IMPORTED_MODULE_1__.pickRelevantMediaFiles(image))
+    });
+  }
+
+  render() {
+    console.log('GALERY INSERT');
+    const {
+      attributes,
+      className,
+      noticeOperations,
+      noticeUI
+    } = this.props;
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaPlaceholder, {
+      icon: this.props.icon,
+      className: className,
+      labels: {
+        title: this.props.label,
+        instructions: __('Drag images, upload new ones or select files from your library.')
+      },
+      onSelect: this.onSelectImages,
+      accept: "image/*",
+      allowedTypes: _utils_helper__WEBPACK_IMPORTED_MODULE_1__.ALLOWED_MEDIA_TYPES,
+      multiple: true,
+      notices: noticeUI,
+      onError: noticeOperations.createErrorNotice
+    }));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (GalleryPlaceholder);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/gallery-upload.js":
+/*!*****************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/gallery-upload.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _utils_helper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/helper */ "./src/gutenberg/blocks/mindgallery-block/components/utils/helper.js");
+
+
+/**
+ * External Dependencies
+ */
+
+/**
+ * Internal dependencies
+ */
+
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  __
+} = wp.i18n;
+const {
+  Component,
+  Fragment
+} = wp.element;
+const {
+  compose
+} = wp.compose;
+const {
+  withSelect
+} = wp.data;
+const {
+  IconButton,
+  DropZone,
+  FormFileUpload,
+  PanelBody,
+  Toolbar,
+  withNotices
+} = wp.components;
+const {
+  MediaPlaceholder,
+  mediaUpload
+} = wp.blockEditor;
+/**
+ * Gallery Image Component
+ */
+
+class GalleryUpload extends Component {
+  constructor() {
+    super(...arguments);
+    this.addFiles = this.addFiles.bind(this);
+    this.uploadFromFiles = this.uploadFromFiles.bind(this);
+  }
+
+  uploadFromFiles(event) {
+    this.addFiles(event.target.files);
+  }
+
+  addFiles(files) {
+    const currentImages = this.props.attributes.images || [];
+    const {
+      noticeOperations,
+      setAttributes
+    } = this.props;
+    mediaUpload({
+      allowedTypes: _utils_helper__WEBPACK_IMPORTED_MODULE_2__.ALLOWED_MEDIA_TYPES,
+      filesList: files,
+      onFileChange: images => {
+        setAttributes({
+          images: currentImages.concat(images)
+        });
+      },
+      onError: noticeOperations.createErrorNotice
+    });
+  }
+
+  render() {
+    const {
+      gutter,
+      gutterMobile,
+      marginLeft,
+      marginRight,
+      marginTop,
+      marginBottom
+    } = this.props;
+    const className = classnames__WEBPACK_IMPORTED_MODULE_1___default()('blockgallery--figure', {
+      [`has-margin-top-${gutter}`]: marginTop && gutter > 0,
+      [`has-margin-top-mobile-${gutterMobile}`]: marginTop && gutterMobile > 0,
+      [`has-margin-right-${gutter}`]: marginRight && gutter > 0,
+      [`has-margin-right-mobile-${gutterMobile}`]: marginRight && gutterMobile > 0,
+      [`has-margin-bottom-${gutter}`]: marginBottom && gutter > 0,
+      [`has-margin-bottom-mobile-${gutterMobile}`]: marginBottom && gutterMobile > 0,
+      [`has-margin-left-${gutter}`]: marginLeft && gutter > 0,
+      [`has-margin-left-mobile-${gutterMobile}`]: marginLeft && gutterMobile > 0
+    });
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
+      className: "blockgallery--item blockgallery--item-uploader"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: className
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(FormFileUpload, {
+      multiple: true,
+      islarge: "true",
+      className: "components-blockgallery-gallery-item__upload",
+      onChange: this.uploadFromFiles,
+      accept: "image/*",
+      icon: "insert"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, __('Upload an image'))))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (GalleryUpload);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/global/attributes.js":
+/*!********************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/global/attributes.js ***!
+  \********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _background__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../background */ "./src/gutenberg/blocks/mindgallery-block/components/background/index.js");
+/*
+*
+* Main attributes file for both Gallery and individual 
+* Images that are read and passed during edit and save
+*
+*/
+
+/**
+ * Internal dependencies
+ */
+
+/**
+ * Set global attributes that every block uses.
+ * @type {Object}
+ */
+
+const GlobalAttributes = {
+  images: {
+    type: 'array',
+    default: [],
+    source: 'query',
+    selector: '.blockgallery--item',
+    query: {
+      url: {
+        source: 'attribute',
+        selector: 'img',
+        attribute: 'src'
+      },
+      link: {
+        source: 'attribute',
+        selector: 'img',
+        attribute: 'data-link'
+      },
+      alt: {
+        source: 'attribute',
+        selector: 'img',
+        attribute: 'alt',
+        default: ''
+      },
+      id: {
+        source: 'attribute',
+        selector: 'img',
+        attribute: 'data-id'
+      },
+      caption: {
+        type: 'array',
+        source: 'children',
+        selector: 'figcaption'
+      },
+      i_w: {
+        type: 'string',
+        source: 'attribute',
+        selector: 'img',
+        attribute: 'i_w'
+      },
+      i_h: {
+        type: 'string',
+        source: 'attribute',
+        selector: 'img',
+        attribute: 'i_h'
+      },
+      srcset: {
+        type: 'string',
+        default: '',
+        source: 'attribute',
+        selector: 'img',
+        attribute: 'srcset'
+      },
+      description: {
+        type: 'string',
+        default: '',
+        source: 'attribute',
+        selector: 'img',
+        attribute: 'description'
+      },
+      title: {
+        type: 'string',
+        default: '',
+        source: 'attribute',
+        selector: 'img',
+        attribute: 'title'
+      },
+      sizes: {
+        type: 'string',
+        default: '',
+        source: 'attribute',
+        selector: 'img',
+        attribute: 'sizes'
+      }
+    }
+  },
+  linkTo: {
+    type: 'string',
+    default: 'none'
+  },
+  typeTo: {
+    type: 'string',
+    default: 'background'
+  },
+  align: {
+    type: 'string'
+  },
+  gutter: {
+    type: 'number',
+    default: 15
+  },
+  gutterMobile: {
+    type: 'number',
+    default: 15
+  },
+  radius: {
+    type: 'number',
+    default: 0
+  },
+  shadow: {
+    type: 'string',
+    default: 'none'
+  },
+  filter: {
+    type: 'string',
+    default: 'none'
+  },
+  captions: {
+    type: 'boolean',
+    default: true
+  },
+  controls: {
+    type: 'boolean',
+    default: true
+  },
+  captionStyle: {
+    type: 'string',
+    default: 'dark'
+  },
+  captionColor: {
+    type: 'string'
+  },
+  customCaptionColor: {
+    type: 'string'
+  },
+  fontSize: {
+    type: 'string'
+  },
+  customFontSize: {
+    type: 'number'
+  },
+  primaryCaption: {
+    type: 'array',
+    source: 'children',
+    selector: '.blockgallery--primary-caption'
+  },
+  ..._background__WEBPACK_IMPORTED_MODULE_0__.BackgroundAttributes
+};
+/* harmony default export */ __webpack_exports__["default"] = (GlobalAttributes);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/global/classes.js":
+/*!*****************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/global/classes.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _background__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../background */ "./src/gutenberg/blocks/mindgallery-block/components/background/index.js");
+/**
+ * Internal dependencies
+ */
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  getColorClassName
+} = wp.blockEditor;
+/**
+ * CSS classes
+ */
+
+function GlobalClasses(attributes) {
+  attributes.backgroundPosition = 'top';
+  const captionColorClass = getColorClassName('color', attributes.captionColor);
+  const {
+    align,
+    images,
+    radius,
+    filter,
+    captionStyle,
+    customCaptionColor
+  } = attributes;
+  return ['blockgallery', {
+    'has-no-alignment': !align
+  }, {
+    [`has-border-radius-${radius}`]: radius > 0
+  }, {
+    [`has-filter-${filter}`]: filter != 'none'
+  }, {
+    [`has-caption-style-${captionStyle}`]: captionStyle != undefined
+  }, {
+    'has-caption-color': captionColorClass
+  }, ...(0,_background__WEBPACK_IMPORTED_MODULE_0__.BackgroundClasses)(attributes), captionColorClass];
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (GlobalClasses);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/global/index.js":
+/*!***************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/global/index.js ***!
+  \***************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GlobalAttributes": function() { return /* reexport safe */ _attributes__WEBPACK_IMPORTED_MODULE_0__["default"]; },
+/* harmony export */   "GlobalClasses": function() { return /* reexport safe */ _classes__WEBPACK_IMPORTED_MODULE_1__["default"]; },
+/* harmony export */   "GlobalStyles": function() { return /* reexport safe */ _styles__WEBPACK_IMPORTED_MODULE_4__["default"]; },
+/* harmony export */   "GlobalToolbar": function() { return /* reexport safe */ _toolbar__WEBPACK_IMPORTED_MODULE_2__["default"]; },
+/* harmony export */   "GlobalTransforms": function() { return /* reexport safe */ _transforms__WEBPACK_IMPORTED_MODULE_3__["default"]; }
+/* harmony export */ });
+/* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./attributes */ "./src/gutenberg/blocks/mindgallery-block/components/global/attributes.js");
+/* harmony import */ var _classes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./classes */ "./src/gutenberg/blocks/mindgallery-block/components/global/classes.js");
+/* harmony import */ var _toolbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./toolbar */ "./src/gutenberg/blocks/mindgallery-block/components/global/toolbar.js");
+/* harmony import */ var _transforms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./transforms */ "./src/gutenberg/blocks/mindgallery-block/components/global/transforms.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles */ "./src/gutenberg/blocks/mindgallery-block/components/global/styles.js");
+/**
+ * Internal dependencies
+ */
+
+
+
+
+
+/**
+ * Export
+ */
+
+
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/global/styles.js":
+/*!****************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/global/styles.js ***!
+  \****************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/**
+ * WordPress dependencies
+ */
+const {
+  getColorClassName
+} = wp.blockEditor;
+/**
+ * Background Classes
+ */
+
+function GlobalStyles(attributes) {
+  const captionColorClass = getColorClassName('color', attributes.captionColor);
+  const styles = {
+    color: captionColorClass ? undefined : attributes.customCaptionColor
+  };
+  return styles;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (GlobalStyles);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/global/toolbar.js":
+/*!*****************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/global/toolbar.js ***!
+  \*****************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_helper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../utils/helper */ "./src/gutenberg/blocks/mindgallery-block/components/utils/helper.js");
+/* harmony import */ var _utils_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../utils/icons */ "./src/gutenberg/blocks/mindgallery-block/components/utils/icons.js");
+/* harmony import */ var _background__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../background */ "./src/gutenberg/blocks/mindgallery-block/components/background/index.js");
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  __
+} = wp.i18n;
+const {
+  Component,
+  Fragment
+} = wp.element;
+const {
+  IconButton,
+  Toolbar,
+  DropdownMenu
+} = wp.components;
+const {
+  BlockControls,
+  MediaUpload,
+  MediaUploadCheck,
+  AlignmentToolbar
+} = wp.blockEditor;
+/**
+ * Global Toolbar Component
+ */
+
+class GlobalToolbar extends Component {
+  constructor(props) {
+    super(...arguments);
+    this.onSelectImages = this.onSelectImages.bind(this);
+  }
+
+  onSelectImages(images) {
+    console.log('ADDING STUFF');
+    console.log(images);
+    this.props.setAttributes({
+      images: images.map(image => _utils_helper__WEBPACK_IMPORTED_MODULE_1__.pickRelevantMediaFiles(image))
+    });
+  }
+
+  render() {
+    const {
+      attributes,
+      isSelected,
+      setAttributes,
+      hasAlignmentToolbar
+    } = this.props;
+    const {
+      images,
+      contentAlign
+    } = attributes;
+    return isSelected && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(BlockControls, null, hasAlignmentToolbar && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(AlignmentToolbar, {
+      value: contentAlign,
+      onChange: nextAlign => {
+        setAttributes({
+          contentAlign: nextAlign
+        });
+      }
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_background__WEBPACK_IMPORTED_MODULE_3__.BackgroundToolbar, this.props), !!images.length && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Toolbar, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUploadCheck, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(MediaUpload, {
+      onSelect: this.onSelectImages,
+      allowedTypes: _utils_helper__WEBPACK_IMPORTED_MODULE_1__.ALLOWED_MEDIA_TYPES,
+      multiple: true,
+      gallery: true,
+      value: images.map(img => img.id),
+      render: _ref => {
+        let {
+          open
+        } = _ref;
+        return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(IconButton, {
+          className: "components-toolbar__control",
+          label: __('Edit Gallery'),
+          icon: "edit",
+          onClick: open
+        });
+      }
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(DropdownMenu, {
+      icon: _utils_icons__WEBPACK_IMPORTED_MODULE_2__["default"].imageFilter,
+      label: __('Apply Filter'),
+      _: true,
+      controls: [{
+        icon: _utils_icons__WEBPACK_IMPORTED_MODULE_2__["default"].imageFilterGrayscale,
+        title: __('Grayscale'),
+        onClick: () => {
+          setAttributes({
+            filter: 'grayscale'
+          });
+        }
+      }, {
+        icon: _utils_icons__WEBPACK_IMPORTED_MODULE_2__["default"].imageFilterSepia,
+        title: __('Sepia'),
+        onClick: () => {
+          setAttributes({
+            filter: 'sepia'
+          });
+        }
+      }, {
+        icon: _utils_icons__WEBPACK_IMPORTED_MODULE_2__["default"].imageFilterSaturation,
+        title: __('Saturation'),
+        onClick: () => {
+          setAttributes({
+            filter: 'saturation'
+          });
+        }
+      }, {
+        icon: _utils_icons__WEBPACK_IMPORTED_MODULE_2__["default"].imageFilterDark,
+        title: __('Dark'),
+        onClick: () => {
+          setAttributes({
+            filter: 'dim'
+          });
+        }
+      }, {
+        icon: _utils_icons__WEBPACK_IMPORTED_MODULE_2__["default"].imageFilterVintage,
+        title: __('Vintage'),
+        onClick: () => {
+          setAttributes({
+            filter: 'vintage'
+          });
+        }
+      }, {
+        icon: _utils_icons__WEBPACK_IMPORTED_MODULE_2__["default"].image,
+        title: __('Original'),
+        onClick: () => {
+          setAttributes({
+            filter: 'none'
+          });
+        }
+      }]
+    }))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (GlobalToolbar);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/global/transforms.js":
+/*!********************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/global/transforms.js ***!
+  \********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _utils_helper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../utils/helper */ "./src/gutenberg/blocks/mindgallery-block/components/utils/helper.js");
+/* harmony import */ var _background__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../background */ "./src/gutenberg/blocks/mindgallery-block/components/background/index.js");
+/**
+ * Internal dependencies
+ */
+
+
+/**
+ * Set global transforms that every block uses.
+ * @type {Object}
+ */
+
+function GlobalTransforms(props) {
+  const transforms = {
+    align: props.align,
+    gutter: props.gutter,
+    gutterMobile: props.gutterMobile,
+    gridSize: props.gridSize,
+    images: props.images.map(image => _utils_helper__WEBPACK_IMPORTED_MODULE_0__.pickRelevantMediaFiles(image)),
+    linkTo: props.linkTo,
+    radius: props.radius,
+    shadow: props.shadow,
+    filter: props.filter,
+    height: props.height,
+    primaryCaption: props.primaryCaption,
+    captions: props.captions,
+    captionColor: props.captionColor,
+    customCaptionColor: props.customCaptionColor,
+    pageDots: props.pageDots,
+    prevNextButtons: props.prevNextButtons,
+    autoPlay: props.autoPlay,
+    autoPlaySpeed: props.autoPlaySpeed,
+    draggable: props.draggable,
+    fontSize: props.fontSize,
+    customFontSize: props.customFontSize,
+    ...(0,_background__WEBPACK_IMPORTED_MODULE_1__.BackgroundTransforms)(props)
+  };
+  return transforms;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (GlobalTransforms);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/inspector.js":
+/*!************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/inspector.js ***!
+  \************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mind_gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../mind-gallery */ "./src/gutenberg/blocks/mindgallery-block/mind-gallery.js");
+/* harmony import */ var _utils_link_options__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/link-options */ "./src/gutenberg/blocks/mindgallery-block/components/utils/link-options.js");
+/* harmony import */ var _utils_type_options__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/type-options */ "./src/gutenberg/blocks/mindgallery-block/components/utils/type-options.js");
+
+
+/**
+ * Internal dependencies
+ */
+
+
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  __,
+  sprintf
+} = wp.i18n;
+const {
+  Component,
+  Fragment
+} = wp.element;
+const {
+  compose
+} = wp.compose;
+const {
+  withSelect
+} = wp.data;
+const {
+  InspectorControls,
+  FontSizePicker,
+  withFontSizes
+} = wp.blockEditor;
+const {
+  PanelBody,
+  RangeControl,
+  ToggleControl,
+  SelectControl
+} = wp.components;
+/**
+ * Inspector controls
+ */
+
+class Inspector extends Component {
+  constructor(props) {
+    super(...arguments);
+    this.setLinkTo = this.setLinkTo.bind(this);
+    this.setTypeTo = this.setTypeTo.bind(this);
+  }
+
+  setLinkTo(value) {
+    this.props.setAttributes({
+      linkTo: value
+    });
+  }
+
+  setTypeTo(value) {
+    this.props.setAttributes({
+      typeTo: value
+    });
+  }
+
+  render() {
+    const {
+      attributes,
+      setAttributes,
+      isSelected,
+      setFontSize,
+      fontSize,
+      wideControlsEnabled = false
+    } = this.props;
+    const {
+      align,
+      images,
+      linkTo,
+      typeTo,
+      controls,
+      gutter,
+      lightbox,
+      fullwidth,
+      radius,
+      shadow,
+      captions,
+      backgroundPadding
+    } = attributes;
+    return isSelected && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelBody, {
+      title: __('Type Settings'),
+      initialOpen: false
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(SelectControl, {
+      label: __('Type of Gallery'),
+      value: typeTo,
+      options: _utils_type_options__WEBPACK_IMPORTED_MODULE_3__["default"],
+      onChange: this.setTypeTo
+    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(ToggleControl, {
+      label: __('Controls'),
+      checked: !!controls,
+      onChange: () => setAttributes({
+        controls: !controls
+      }),
+      help: this.getCaptionsHelp
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(PanelBody, {
+      title: __('Link Settings'),
+      initialOpen: false
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(SelectControl, {
+      label: __('Link To'),
+      value: linkTo,
+      options: _utils_link_options__WEBPACK_IMPORTED_MODULE_2__["default"],
+      onChange: this.setLinkTo
+    }))));
+  }
+
+}
+
+;
+/* harmony default export */ __webpack_exports__["default"] = (compose([withSelect(select => ({
+  wideControlsEnabled: select('core/editor').getEditorSettings().alignWide
+})), withFontSizes('fontSize')])(Inspector));
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/responsive-tabs-control.js":
+/*!**************************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/responsive-tabs-control.js ***!
+  \**************************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/icons */ "./src/gutenberg/blocks/mindgallery-block/components/utils/icons.js");
+
+
+/**
+ * Internal dependencies
+ */
+
+/**
+ * WordPress dependencies
+ */
+
+const {
+  __,
+  sprintf
+} = wp.i18n;
+const {
+  Component,
+  Fragment
+} = wp.element;
+const {
+  RangeControl,
+  TabPanel
+} = wp.components;
+/**
+ * Gutter Controls Component
+ */
+
+class ResponsiveTabsControl extends Component {
+  constructor() {
+    super(...arguments);
+    this.setGutterTo = this.setGutterTo.bind(this);
+    this.setGutterMobileTo = this.setGutterMobileTo.bind(this);
+  }
+
+  setGutterTo(value) {
+    this.props.setAttributes({
+      gutter: value
+    });
+  }
+
+  setGutterMobileTo(value) {
+    this.props.setAttributes({
+      gutterMobile: value
+    });
+  }
+
+  render() {
+    const {
+      attributes,
+      label = __('Gutter'),
+      max = 50,
+      min = 0,
+      onChange = this.setGutterTo,
+      onChangeMobile = this.setGutterMobileTo,
+      setAttributes,
+      step = 5,
+      value = this.props.attributes.gutter,
+      valueMobile = this.props.attributes.gutterMobile
+    } = this.props;
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(TabPanel, {
+      className: "components-base-control components-blockgallery-inspector__tabs",
+      activeClass: "is-active",
+      initialTabName: "desk",
+      tabs: [{
+        name: 'desk',
+        title: _utils_icons__WEBPACK_IMPORTED_MODULE_1__["default"].desktopChrome,
+        className: 'components-blockgallery-inspector__tabs-item components-blockgallery-inspector__tabs-item--desktop'
+      }, {
+        name: 'mobile',
+        title: _utils_icons__WEBPACK_IMPORTED_MODULE_1__["default"].mobile,
+        className: 'components-blockgallery-inspector__tabs-item components-blockgallery-inspector__tabs-item--mobile'
+      }]
+    }, tab => {
+      if ('mobile' === tab.name) {
+        return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RangeControl // translators: Control name
+        , {
+          label: sprintf(__('Mobile %s'), label),
+          value: valueMobile,
+          onChange: valueMobile => onChangeMobile(valueMobile),
+          min: min,
+          max: max,
+          step: step
+        });
+      } else {
+        return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RangeControl, {
+          label: label,
+          value: value,
+          onChange: value => onChange(value),
+          min: min,
+          max: max,
+          step: step
+        });
+      }
+    }));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ResponsiveTabsControl);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/utils/helper.js":
+/*!***************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/utils/helper.js ***!
+  \***************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ALLOWED_MEDIA_TYPES": function() { return /* binding */ ALLOWED_MEDIA_TYPES; },
+/* harmony export */   "overlayToClass": function() { return /* binding */ overlayToClass; },
+/* harmony export */   "pickRelevantMediaFiles": function() { return /* binding */ pickRelevantMediaFiles; },
+/* harmony export */   "prepareSrceSetAndSizes": function() { return /* binding */ prepareSrceSetAndSizes; }
+/* harmony export */ });
+/* harmony import */ var lodash_pick__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash/pick */ "./node_modules/lodash/pick.js");
+/* harmony import */ var lodash_pick__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_pick__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash/get */ "./node_modules/lodash/get.js");
+/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash_get__WEBPACK_IMPORTED_MODULE_1__);
+/*jshint esversion: 9 */
+
+/**
+ * External dependencies
+ */
+
+
+function overlayToClass(ratio) {
+  return ratio === 0 || ratio === 50 ? null : 'has-background-overlay-' + 10 * Math.round(ratio / 10);
+}
+const pickRelevantMediaFiles = image => {
+  /*let srcset = '';
+  const sizes = Object.values(image.sizes);
+  sizes.map((size)=>{
+  	srcset += size.url + ' '+size.width+'w,'
+  });*/
+  //console.log(getMedia(image.id));
+  const imageProps = lodash_pick__WEBPACK_IMPORTED_MODULE_0___default()(image, ['alt', 'id', 'link', 'caption']);
+  imageProps.url = lodash_get__WEBPACK_IMPORTED_MODULE_1___default()(image, ['sizes', 'large', 'url']) || lodash_get__WEBPACK_IMPORTED_MODULE_1___default()(image, ['media_details', 'sizes', 'large', 'source_url']) || image.url; //imageProps.srcset = srcset;*/
+
+  return imageProps;
+};
+const prepareSrceSetAndSizes = image => {
+  let srcset = '';
+  console.log('helper.js - image raw all data');
+  console.log(image);
+
+  for (const [size, size_object] of Object.entries(image.media_details.sizes)) {
+    console.log(`${size}: ${size_object}`);
+    srcset += size_object.source_url + ' ' + size_object.width + 'w, ';
+  }
+  /*for (let size in image.media_details.sizes ) {
+  	if (Object.prototype.hasOwnProperty.call(obj, size)) {
+  		srcset += size.source_url + ' ' + size.width +'w, ';
+  	}
+  }*/
+
+
+  return {
+    sizes: '100vw',
+    srcset: srcset
+  };
+};
+const ALLOWED_MEDIA_TYPES = ['image'];
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/utils/icons.js":
+/*!**************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/utils/icons.js ***!
+  \**************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/**
+ * Custom icons
+ */
+const icons = {};
+icons.logo = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "components-panel__icon components-blockgallery-logo-icon--pink",
+  height: "18",
+  viewBox: "0 0 18 18",
+  width: "18",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m9 18c-7 0-9-2.005-9-9s2-9 9-9 9 2.005 9 9-2 9-9 9zm0-16c-5.889 0-7 1.112-7 7-.012.211-.019.458-.019.707 0 1.342.201 2.638.576 3.857l2.443-2.564 2 2 5-5 3.85 3.853c.097-.764.152-1.649.152-2.547 0-.108-.001-.215-.002-.323 0-5.873-1.11-6.984-7-6.984zm-3.5 5c-.828 0-1.5-.672-1.5-1.5s.672-1.5 1.5-1.5 1.5.672 1.5 1.5-.672 1.5-1.5 1.5z"
+}));
+icons.masonry = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "components-blockgallery-svg dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  transform: "translate(3 3)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m6 0h-4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm0 16h-4v-14h4z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m16 10h-4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-4v-4h4z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m16 0h-4c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-4v-4h4z"
+})));
+icons.stacked = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "components-blockgallery-svg dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  transform: "translate(3 3)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m16 0h-14c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 8h-14v-6h14z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m16 12h-14c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2zm0 4h-14v-2h14z"
+})));
+icons.carousel = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "components-blockgallery-svg dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  transform: "translate(3 3)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m11 0h-4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm0 16h-4v-14h4z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m18 0h-1c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h1s0-.9 0-2v-14c0-1.1 0-2 0-2zm0 16h-1v-14h1z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m3 0h-1c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h1s0-.9 0-2v-14c0-1.1 0-2 0-2zm0 16h-1v-14h1z",
+  transform: "matrix(-1 0 0 1 3 0)"
+})));
+icons.thumbnails = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "components-blockgallery-svg dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  fillRule: "evenodd",
+  transform: "translate(3 3)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m16 0h-14c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2zm0 10h-14v-8h14z",
+  fillRule: "nonzero"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  height: "4",
+  rx: ".5",
+  width: "5.33",
+  x: "12.67",
+  y: "14"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  height: "4",
+  rx: ".5",
+  width: "5.33",
+  x: "6.335",
+  y: "14"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("rect", {
+  height: "4",
+  rx: ".5",
+  width: "5.33",
+  y: "14"
+})));
+icons.offset = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "components-blockgallery-svg dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  transform: "translate(3 3)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m16 10h-6c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-6v-4h6z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m13.6666667 0h-9.33333337c-1.28333333 0-2.33333333.9-2.33333333 2v4c0 1.1 1.05 2 2.33333333 2h9.33333337c1.2833333 0 2.3333333-.9 2.3333333-2v-4c0-1.1-1.05-2-2.3333333-2zm0 6h-9.33333337v-4h9.33333337z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m4 10h-2c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-2v-4h2z"
+})));
+icons.autoHeight = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "components-blockgallery-svg dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  transform: "translate(3 3)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m8.99488661 15.1058214-3.24188911-3.2418891-1.44197591 1.4419759 4.68386502 4.6940918 4.69409179-4.6940918-1.4522027-1.4419759z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m16 0h-14c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 8h-14v-6h14z"
+})));
+icons.tiled = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "components-blockgallery-svg dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  transform: "translate(3 3)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m16 0h-5c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h5c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-5v-4h5z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m8 10h-6c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-6v-4h6z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m5 0h-3c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h3c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-3v-4h3z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m16 10h-2c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2zm0 6h-2v-4h2z"
+})));
+icons.mobile = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "dashicon",
+  role: "img",
+  focusable: "false",
+  height: "15",
+  viewBox: "0 0 15 15",
+  width: "15",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m8.25 0h-6c-.825 0-1.5.61363636-1.5 1.36363636v10.27272724c0 .75.675 1.3636364 1.5 1.3636364h6c.825 0 1.5-.6136364 1.5-1.3636364v-10.27272724c0-.75-.675-1.36363636-1.5-1.36363636zm-.5 11h-5v-9h5z",
+  transform: "translate(2.25 1)"
+}));
+icons.desktopChrome = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "dashicon dashicon--desktop-chrome",
+  role: "img",
+  focusable: "false",
+  height: "15",
+  viewBox: "0 0 15 15",
+  width: "15",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m13.5 0h-12c-.8325 0-1.5.61363636-1.5 1.36363636v12.27272724c0 .75.6675 1.3636364 1.5 1.3636364h12l-.5-2h-11v-10h11v10l.5 2c.825 0 1.5-.6136364 1.5-1.3636364v-12.27272724c0-.75-.6675-1.36363636-1.5-1.36363636z"
+}));
+icons.backgroundImage = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  className: "dashicon",
+  "aria-hidden": true,
+  role: "img",
+  focusable: "false",
+  height: "20",
+  viewBox: "0 0 20 20",
+  width: "20",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  transform: "translate(1 .665604)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m15.6111111 2.72328445v13.22222225h-13.22222221v-13.22222225zm0-1.88888889h-13.22222221c-1.03888889 0-1.88888889.85-1.88888889 1.88888889v13.22222225c0 1.0388889.85 1.8888889 1.88888889 1.8888889h13.22222221c1.0388889 0 1.8888889-.85 1.8888889-1.8888889v-13.22222225c0-1.03888889-.85-1.88888889-1.8888889-1.88888889z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m10.7833333 10.3343956-2.49999997 3.01-1.78333333-2.0144445-2.5 3.0022222h10z"
+})));
+icons.editGallery = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  fill: "none",
+  fillRule: "evenodd"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m0 0h24v24h-24z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m18 20h-14v-14h9v-2h-9c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9h-2zm-7.79-3.17-1.96-2.36-2.75 3.53h11l-3.54-4.71zm9.79-12.83v-3h-2v3h-3c.01.01 0 2 0 2h3v2.99c.01.01 2 0 2 0v-2.99h3v-2z",
+  fill: "currentColor",
+  fillRule: "nonzero"
+})));
+icons.imageFilter = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  fill: "none",
+  fillRule: "evenodd"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m0 0h24v24h-24z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m19 10v9h-14.02v-14h9v-2h-8.98c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9zm-2.94-2.06.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-4.06.06-1.25 2.75-2.75 1.25 2.75 1.25 1.25 2.75 1.25-2.75 2.75-1.25-2.75-1.25z",
+  fill: "currentColor",
+  fillRule: "nonzero"
+})));
+icons.imageFilterVintage = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  fill: "none",
+  fillRule: "evenodd",
+  transform: "translate(1.328206 1.328206)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m0 0h21.3435872v21.3435872h-21.3435872z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m16.6302117 11.0275201c-.2490085-.1422906-.5069102-.2579017-.7648119-.3557265.2579017-.0978248.5158034-.2134359.7648119-.3557264 1.707487-.98714094 2.6590553-2.77466638 2.6679484-4.61555077-.8092777-.46244439-1.7341664-.71145291-2.6768415-.71145291-.9071025 0-1.8230981.23122219-2.6590553.71145291-.2490085.14229058-.4802307.31126064-.6936666.48023071.0444658-.275688.0711453-.56026917.0711453-.84485033 0-1.97428182-1.0760725-3.69066196-2.6679484-4.61555074-1.59187586.92488878-2.66794839 2.64126892-2.66794839 4.61555074 0 .28458116.02667949.56916233.0711453.84485033-.21343588-.17786323-.44465807-.34683329-.69366659-.48912388-.83595717-.48023071-1.75195279-.7114529-2.65905524-.7114529-.93378194 0-1.86756389.24900851-2.67684157.7114529 0 1.8408844.95156826 3.62840983 2.66794841 4.61555074.24900851.1422906.50691019.2579017.76481187.3557265-.25790168.0978247-.51580336.2134358-.76481187.3557264-1.70748698.9871409-2.65905525 2.7746664-2.66794841 4.6155508.80927768.4624443 1.73416646.7114529 2.67684157.7114529.90710245 0 1.82309807-.2312222 2.65905524-.7114529.24900852-.1422906.48023071-.3112607.69366659-.4802308-.04446581.2845812-.0711453.5691624-.0711453.8537435 0 1.9742818 1.07607253 3.690662 2.66794839 4.6155508 1.5918759-.9248888 2.6679484-2.641269 2.6679484-4.6155508 0-.2845811-.0266795-.5691623-.0711453-.8448503.2134359.1778632.4446581.3379401.6936666.4802307.8359572.4802307 1.7519528.7114529 2.6590553.7114529.9337819 0 1.8675638-.2490085 2.6768415-.7114529-.0088931-1.8408844-.9604614-3.6284098-2.6679484-4.6155507zm-2.258863-3.45054663c.1867564-.15118374.3379402-.25790168.4802308-.32904697.5424828-.31126065 1.1561109-.48023071 1.7786322-.48023071.2401154 0 .4713376.02667948.7025598.07114529-.275688.80927768-.8359572 1.50294427-1.5829827 1.93870917-.1511838.08893162-.3201539.16007691-.5158034.24011536l-1.2272563.46244439c-.1511837-.40908542-.3646196-.77370504-.6403076-1.10275201zm-3.6995551-4.5799781c.5602692.64030762.8893162 1.47626479.8893162 2.33890144 0 .16897007-.0177864.36461962-.0444659.56026916l-.2045427 1.28061524c-.2134358-.03557265-.4268717-.06225213-.6403076-.06225213s-.4268717.02667948-.6314144.06225213l-.20454275-1.28061524c-.03557264-.19564954-.05335897-.39129909-.05335897-.56026916 0-.87152981.32904702-1.69859382.88931612-2.33890144zm-6.66097783 3.83295255c.23122219-.05335897.47133755-.07114529.71145291-.07114529.61362813 0 1.22725626.1600769 1.76973911.48023071.13339742.08003845.28458116.17786323.4357649.31126065l1.02271356.85374349c-.26679484.3201538-.47133755.67588026-.6225213 1.06717936l-1.22725626-.46244439c-.18675639-.08003845-.35572646-.16007691-.49801704-.24011536-.77370504-.44465807-1.32508104-1.12943149-1.59187588-1.93870917zm2.96142273 6.92777268c-.18675639.1511838-.33794013.2579017-.48023071.329047-.54248285.3112606-1.15611098.4802307-1.77863227.4802307-.24011536 0-.47133756-.0266795-.70255975-.0711453.275688-.8092777.83595717-1.5029443 1.58298272-1.9387092.15118374-.0889316.32015381-.1600769.51580336-.2401153l1.22725626-.4624444c.14229059.4090854.36461962.7825982.64030762 1.102752zm3.6995551 4.5888713c-.5602691-.6403077-.88931612-1.4762648-.88931612-2.3389015 0-.1778632.01778633-.3646196.05335897-.5780555l.19564955-1.2628289c.2045427.0355727.4179786.0622522.6403076.0622522.2134359 0 .4268718-.0266795.6314145-.0622522l.2045427 1.2806153c.0355726.1956495.053359.3912991.053359.5602691 0 .8715298-.329047 1.6985938-.8893162 2.3389015zm5.949525-3.7707004c-.6136282 0-1.2272563-.160077-1.7697391-.4802308-.160077-.0889316-.3023675-.1956495-.435765-.3023674l-1.0227135-.8537435c.2667948-.3201538.4802307-.6758803.6225213-1.0760726l1.2272563.4624444c.1956495.0711453.3646196.1511838.5069102.2312222.7559187.4357649 1.3072947 1.1294315 1.5829827 1.9387092-.2401154.0622521-.4802307.0800385-.7114529.0800385z",
+  fill: "currentColor",
+  fillRule: "nonzero"
+})));
+icons.imageFilterGrayscale = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  fill: "none",
+  fillRule: "evenodd"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m0 0h24v24h-24z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m19 3h-14c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm0 16-7-8v8h-7l7-8v-6h7z",
+  fill: "currentColor",
+  fillRule: "nonzero"
+})));
+icons.imageFilterSaturation = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  fill: "none",
+  fillRule: "evenodd",
+  transform: "translate(1.328206 1.328206)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m0 0h21.3435872v21.3435872h-21.3435872z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  fill: "currentColor"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m17.7863227 7.72815721v-4.17089267h-4.1708927l-2.9436364-2.94363641-2.94363639 2.94363641h-4.17089267v4.17089267l-2.94363641 2.94363639 2.94363641 2.9436364v4.1708927h4.17089267l2.94363639 2.9436364 2.9436364-2.9436364h4.1708927v-4.1708927l2.9436364-2.9436364zm-1.7786323 5.14914039v3.1303928h-3.1303928l-2.205504 2.205504-2.20550399-2.205504h-3.1303928v-3.1303928l-2.20550401-2.205504 2.20550401-2.20550399v-3.1303928h3.1303928l2.20550399-2.20550401 2.205504 2.20550401h3.1303928v3.1303928l2.205504 2.20550399zm-5.3358968-7.09674272c-2.69462787 0-4.89123872 2.19661085-4.89123872 4.89123872 0 2.6946279 2.19661085 4.8912388 4.89123872 4.8912388 2.6946279 0 4.8912388-2.1966109 4.8912388-4.8912388 0-2.69462787-2.1966109-4.89123872-4.8912388-4.89123872zm0 8.00384522c-1.71638012 0-3.11260645-1.3962263-3.11260645-3.1126065 0-1.71638012 1.39622633-3.11260645 3.11260645-3.11260645 1.7163802 0 3.1126065 1.39622633 3.1126065 3.11260645 0 1.7163802-1.3962263 3.1126065-3.1126065 3.1126065z",
+  fillRule: "nonzero"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("circle", {
+  cx: "10.671794",
+  cy: "10.671794",
+  r: "1.778632"
+}))));
+icons.imageFilterDark = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  fill: "none",
+  fillRule: "evenodd",
+  transform: "translate(1.170085 1.170085)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m0 0h21.6598307v21.6598307h-21.6598307z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m9.02492947 3.60997179c3.97999393 0 7.21994353 3.23994968 7.21994353 7.21994361 0 3.9799939-3.2399496 7.2199435-7.21994353 7.2199435-.3068476 0-.6136952-.0180498-.91151788-.0631745 1.72376153-1.9493847 2.71650381-4.4944148 2.71650381-7.156769 0-2.66235423-.99274228-5.20738434-2.71650381-7.15676911.29782268-.04512464.60467028-.0631745.91151788-.0631745zm0-1.8049859c-1.64253716 0-3.1858001.45124648-4.51246473 1.21836548 2.69845391 1.5613128 4.51246473 4.46734009 4.51246473 7.80656403 0 3.3392239-1.81401082 6.2452512-4.51246473 7.806564 1.32666463.767119 2.86992757 1.2183654 4.51246473 1.2183654 4.98176103 0 9.02492943-4.0431684 9.02492943-9.0249294 0-4.9817611-4.0431684-9.02492951-9.02492943-9.02492951z",
+  fill: "currentColor",
+  fillRule: "nonzero"
+})));
+icons.imageFilterSepia = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  fill: "none",
+  fillRule: "evenodd",
+  transform: "translate(1.8 1.8)"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m0 0h20.4v20.4h-20.4z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m5.95 9.35h-5.1v1.7h5.1zm1.8445-2.754-1.802-1.802-1.1985 1.1985 1.802 1.802zm3.2555-5.746h-1.7v5.1h1.7zm4.556 5.1425-1.1985-1.1985-1.802 1.802 1.1985 1.1985zm-1.156 3.3575v1.7h5.1v-1.7zm-4.25-1.7c-1.411 0-2.55 1.139-2.55 2.55s1.139 2.55 2.55 2.55 2.55-1.139 2.55-2.55-1.139-2.55-2.55-2.55zm2.4055 6.154 1.802 1.802 1.1985-1.1985-1.802-1.802zm-7.8115.6035 1.1985 1.1985 1.802-1.802-1.1985-1.1985zm4.556 5.1425h1.7v-5.1h-1.7z",
+  fill: "currentColor",
+  fillRule: "nonzero"
+})));
+icons.image = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  "aria-hidden": true,
+  className: "dashicon",
+  role: "img",
+  focusable: "false",
+  height: "24",
+  viewBox: "0 0 24 24",
+  width: "24",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", {
+  fill: "none",
+  fillRule: "evenodd"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m0 0h24v24h-24z"
+}), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m19 3h-14c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm0 16h-14v-14h14zm-5.04-6.71-2.75 3.54-1.96-2.36-2.75 3.53h11z",
+  fill: "currentColor",
+  fillRule: "nonzero"
+})));
+icons.trash = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("svg", {
+  className: "dashicon",
+  "aria-hidden": true,
+  role: "img",
+  focusable: "false",
+  height: "20",
+  viewBox: "0 0 20 20",
+  width: "20",
+  xmlns: "http://www.w3.org/2000/svg"
+}, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
+  d: "m9 6.00065104v7.99934896h-6v-7.99934896zm-.85714286-6.00065104.85714286 1.00907841h3v2.01815683h-12v-2.01815683h3l.85714286-1.00907841zm-7.12701513 4.01388889h9.99696179v10.27380951c0 .9417659-.6413752 1.7123016-1.58423237 1.7123016h-6.85714286c-.94285714 0-1.55558656-.7705357-1.55558656-1.7123016z",
+  transform: "translate(4 2)"
+}));
+/* harmony default export */ __webpack_exports__["default"] = (icons);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/utils/link-options.js":
+/*!*********************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/utils/link-options.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/**
+ * WordPress dependencies
+ */
+const {
+  __
+} = wp.i18n;
+/**
+ * Link options.
+ */
+
+const linkOptions = [{
+  value: 'attachment',
+  label: __('Attachment Page')
+}, {
+  value: 'media',
+  label: __('Media File')
+}, {
+  value: 'none',
+  label: __('None')
+}];
+/* harmony default export */ __webpack_exports__["default"] = (linkOptions);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/utils/mind-image.js":
+/*!*******************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/utils/mind-image.js ***!
+  \*******************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ MindImage; }
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/*jshint esversion: 9 */
+const {
+  withSelect
+} = wp.data;
+const {
+  compose
+} = wp.compose;
+const {
+  Component
+} = wp.element;
+class MindImage extends Component {
+  constructor() {
+    super(...arguments);
+  }
+
+  render() {
+    console.log('MindImage - save image data');
+    const {
+      image
+    } = this.props;
+    console.log(image);
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("image", {
+      className: 'orbit-image',
+      src: image.url,
+      alt: image.alt,
+      "data-id": image.id,
+      i_w: image.i_w,
+      i_h: image.i_h,
+      description: image.description,
+      title: image.title,
+      srcset: image.srcset,
+      sizes: image.sizes
+    });
+  }
+
+}
+;
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/components/utils/type-options.js":
+/*!*********************************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/components/utils/type-options.js ***!
+  \*********************************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/**
+ * WordPress dependencies
+ */
+const {
+  __
+} = wp.i18n;
+/**
+ * Link options.
+ */
+
+const typeOptions = [{
+  value: 'foundation',
+  label: __('Foundation')
+}, {
+  value: 'react-based',
+  label: __('React Based')
+}];
+/* harmony default export */ __webpack_exports__["default"] = (typeOptions);
+
+/***/ }),
+
+/***/ "./src/gutenberg/blocks/mindgallery-block/mind-gallery.js":
+/*!****************************************************************!*\
+  !*** ./src/gutenberg/blocks/mindgallery-block/mind-gallery.js ***!
+  \****************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "icon": function() { return /* binding */ icon; },
+/* harmony export */   "name": function() { return /* binding */ name; },
+/* harmony export */   "settings": function() { return /* binding */ settings; },
+/* harmony export */   "title": function() { return /* binding */ title; }
+/* harmony export */ });
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var lodash_filter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash/filter */ "./node_modules/lodash/filter.js");
+/* harmony import */ var lodash_filter__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lodash_filter__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/edit */ "./src/gutenberg/blocks/mindgallery-block/components/edit.js");
+/* harmony import */ var _components_utils_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/utils/icons */ "./src/gutenberg/blocks/mindgallery-block/components/utils/icons.js");
+/* harmony import */ var _components_utils_mind_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/utils/mind-image */ "./src/gutenberg/blocks/mindgallery-block/components/utils/mind-image.js");
+/* harmony import */ var _components_global__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/global */ "./src/gutenberg/blocks/mindgallery-block/components/global/index.js");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_background__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/background */ "./src/gutenberg/blocks/mindgallery-block/components/background/index.js");
+
+
+/*jshint esversion: 9 */
+
+/**
+ * External dependencies
+ */
+
+/**
+ * Internal dependencies
+ */
+
+
+
+
+
+
+
+
+const {
+  RichText,
+  getFontSizeClass
+} = wp.blockEditor;
+/**
+ * WordPress dependencies
+ */
+
+const {
+  __
+} = wp.i18n;
+const {
+  createBlock
+} = wp.blocks;
+/**
+ * Block constants
+ */
+
+const name = 'Mindgallery';
+
+const title = __('Mindgallery');
+
+const category = 'layout'; //const icon = icons.stacked;
+
+const icon = 'format-image';
+const keywords = [__('gallery'), __('images'), __('photos')];
+const blockAttributes = { ..._components_global__WEBPACK_IMPORTED_MODULE_5__.GlobalAttributes,
+  // Block specific attributes and overrides.
+  align: {
+    type: 'string',
+    default: 'full'
+  },
+  captionStyle: {
+    type: 'string'
+  },
+  fullwidth: {
+    type: 'boolean',
+    default: true
+  },
+  gutter: {
+    type: 'number',
+    default: 0
+  },
+  gutterMobile: {
+    type: 'number',
+    default: 0
+  }
+};
+const settings = {
+  title: title,
+  icon: icon,
+  category: category,
+  description: __('Mindgallery settings for the default gallery.'),
+  keywords: keywords,
+  attributes: blockAttributes,
+  supports: {
+    align: ['wide', 'full']
+  },
+  transforms: {
+    from: [{
+      type: 'block',
+      blocks: ['blockgallery/masonry'],
+      transform: attributes => createBlock(`blockgallery/${name}`, { ...(0,_components_global__WEBPACK_IMPORTED_MODULE_5__.GlobalTransforms)(attributes)
+      })
+    }, {
+      type: 'block',
+      blocks: ['blockgallery/carousel'],
+      transform: attributes => createBlock(`blockgallery/${name}`, { ...(0,_components_global__WEBPACK_IMPORTED_MODULE_5__.GlobalTransforms)(attributes)
+      })
+    }, {
+      type: 'block',
+      blocks: ['blockgallery/thumbnails'],
+      transform: attributes => createBlock(`blockgallery/${name}`, { ...(0,_components_global__WEBPACK_IMPORTED_MODULE_5__.GlobalTransforms)(attributes)
+      })
+    }, {
+      type: 'block',
+      blocks: ['blockgallery/offset'],
+      transform: attributes => createBlock(`blockgallery/${name}`, { ...(0,_components_global__WEBPACK_IMPORTED_MODULE_5__.GlobalTransforms)(attributes)
+      })
+    }, {
+      type: 'block',
+      blocks: ['blockgallery/auto-height'],
+      transform: attributes => createBlock(`blockgallery/${name}`, { ...(0,_components_global__WEBPACK_IMPORTED_MODULE_5__.GlobalTransforms)(attributes)
+      })
+    }, {
+      type: 'block',
+      blocks: ['core/gallery'],
+      transform: attributes => createBlock(`blockgallery/${name}`, { ...(0,_components_global__WEBPACK_IMPORTED_MODULE_5__.GlobalTransforms)(attributes)
+      })
+    }, {
+      type: 'block',
+      isMultiBlock: true,
+      blocks: ['core/image'],
+      transform: attributes => {
+        const validImages = lodash_filter__WEBPACK_IMPORTED_MODULE_1___default()(attributes, _ref => {
+          let {
+            id,
+            url
+          } = _ref;
+          return id && url;
+        });
+
+        if (validImages.length > 0) {
+          return createBlock(`blockgallery/${name}`, {
+            images: validImages.map(_ref2 => {
+              let {
+                id,
+                url,
+                alt,
+                caption
+              } = _ref2;
+              return {
+                id,
+                url,
+                alt,
+                caption
+              };
+            }),
+            ids: validImages.map(_ref3 => {
+              let {
+                id
+              } = _ref3;
+              return id;
+            })
+          });
+        }
+
+        return createBlock(`blockgallery/${name}`);
+      }
+    }, {
+      type: 'prefix',
+      prefix: ':stacked',
+      transform: function (content) {
+        return createBlock(`blockgallery/${name}`, {
+          content
+        });
+      }
+    }],
+    to: [{
+      type: 'block',
+      blocks: ['core/gallery'],
+      transform: attributes => createBlock('core/gallery', { ...(0,_components_global__WEBPACK_IMPORTED_MODULE_5__.GlobalTransforms)(attributes)
+      })
+    }]
+  },
+  edit: _components_edit__WEBPACK_IMPORTED_MODULE_2__["default"],
+
+  save(_ref4) {
+    let {
+      attributes,
+      className
+    } = _ref4;
+    const {
+      captions,
+      customFontSize,
+      fontSize,
+      fullwidth,
+      gutter,
+      gutterMobile,
+      images,
+      linkTo,
+      typeTo
+    } = attributes;
+    console.log('SAVING IN THE INIT');
+    console.log(attributes);
+    const wrapperClasses = classnames__WEBPACK_IMPORTED_MODULE_7___default()(...(0,_components_global__WEBPACK_IMPORTED_MODULE_5__.GlobalClasses)(attributes), 'orbit-container', {
+      'has-fullwidth-images': fullwidth,
+      [`has-margin`]: gutter > 0
+    });
+    const wrapperStyles = { ...(0,_components_global__WEBPACK_IMPORTED_MODULE_5__.GlobalStyles)(attributes),
+      ...(0,_components_background__WEBPACK_IMPORTED_MODULE_8__.BackgroundStyles)(attributes)
+    };
+    const fontSizeClass = getFontSizeClass(fontSize);
+    const figureClasses = classnames__WEBPACK_IMPORTED_MODULE_7___default()('blockgallery--figure', 'orbit-figure', {
+      [`has-margin-bottom-${gutter}`]: gutter > 0,
+      [`has-margin-bottom-mobile-${gutterMobile}`]: gutterMobile > 0,
+      [fontSizeClass]: fontSizeClass
+    });
+    const captionClasses = classnames__WEBPACK_IMPORTED_MODULE_7___default()('orbit-caption', 'blockgallery--caption', {
+      [fontSizeClass]: fontSizeClass
+    });
+    const captionStyles = {
+      fontSize: fontSizeClass ? undefined : customFontSize
+    };
+
+    switch (attributes.typeTo) {
+      case 'react-based':
+        return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+          id: "ahojvole"
+        }, "ahojvole");
+        break;
+
+      case 'foundation':
+        return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+          className: className
+        }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+          className: "orbit",
+          role: "region",
+          "aria-label": "Favorite Space Pictures",
+          "data-orbit": true,
+          "data-options": "animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;"
+        }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+          className: "orbit-wrapper"
+        }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+          className: "orbit-controls"
+        }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+          className: "orbit-previous"
+        }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+          className: "show-for-sr"
+        }, __('Previous Slide', 'mindgallery')), "\u25C0\uFE0E"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+          className: "orbit-next"
+        }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+          className: "show-for-sr"
+        }, __('Next Slide', 'mindgallery')), "\u25B6\uFE0E")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
+          className: wrapperClasses,
+          style: wrapperStyles
+        }, images.map(image => {
+          let href;
+
+          switch (linkTo) {
+            case 'media':
+              href = image.url;
+              break;
+
+            case 'attachment':
+              href = image.link;
+              break;
+          }
+
+          const imgClasses = classnames__WEBPACK_IMPORTED_MODULE_7___default()(image.id ? [`wp-image-${image.id}`] : null);
+          const img = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_utils_mind_image__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            image: image
+          });
+          return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
+            key: image.id || image.url,
+            className: "blockgallery--item orbit-slide"
+          }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("figure", {
+            className: figureClasses
+          }, href ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+            href: href
+          }, img) : img, captions && image.caption && image.caption.length > 0 && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(RichText.Content, {
+            tagName: "figcaption",
+            className: captionClasses,
+            value: image.caption,
+            styles: captionStyles
+          })));
+        })))));
+        break;
+
+      default:
+        return 'ahojvole';
+        break;
+    }
+  }
+
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/classnames/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
+/***/ (function(module, exports) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2018 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames() {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg)) {
+				if (arg.length) {
+					var inner = classNames.apply(null, arg);
+					if (inner) {
+						classes.push(inner);
+					}
+				}
+			} else if (argType === 'object') {
+				if (arg.toString === Object.prototype.toString) {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(key);
+						}
+					}
+				} else {
+					classes.push(arg.toString());
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if ( true && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_DataView.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_DataView.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
+    root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
+
+/* Built-in method references that are verified to be native. */
+var DataView = getNative(root, 'DataView');
+
+module.exports = DataView;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_Hash.js":
+/*!**************************************!*\
+  !*** ./node_modules/lodash/_Hash.js ***!
+  \**************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var hashClear = __webpack_require__(/*! ./_hashClear */ "./node_modules/lodash/_hashClear.js"),
+    hashDelete = __webpack_require__(/*! ./_hashDelete */ "./node_modules/lodash/_hashDelete.js"),
+    hashGet = __webpack_require__(/*! ./_hashGet */ "./node_modules/lodash/_hashGet.js"),
+    hashHas = __webpack_require__(/*! ./_hashHas */ "./node_modules/lodash/_hashHas.js"),
+    hashSet = __webpack_require__(/*! ./_hashSet */ "./node_modules/lodash/_hashSet.js");
+
+/**
+ * Creates a hash object.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+function Hash(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+
+  this.clear();
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+}
+
+// Add methods to `Hash`.
+Hash.prototype.clear = hashClear;
+Hash.prototype['delete'] = hashDelete;
+Hash.prototype.get = hashGet;
+Hash.prototype.has = hashHas;
+Hash.prototype.set = hashSet;
+
+module.exports = Hash;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_ListCache.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_ListCache.js ***!
+  \*******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var listCacheClear = __webpack_require__(/*! ./_listCacheClear */ "./node_modules/lodash/_listCacheClear.js"),
+    listCacheDelete = __webpack_require__(/*! ./_listCacheDelete */ "./node_modules/lodash/_listCacheDelete.js"),
+    listCacheGet = __webpack_require__(/*! ./_listCacheGet */ "./node_modules/lodash/_listCacheGet.js"),
+    listCacheHas = __webpack_require__(/*! ./_listCacheHas */ "./node_modules/lodash/_listCacheHas.js"),
+    listCacheSet = __webpack_require__(/*! ./_listCacheSet */ "./node_modules/lodash/_listCacheSet.js");
+
+/**
+ * Creates an list cache object.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+function ListCache(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+
+  this.clear();
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+}
+
+// Add methods to `ListCache`.
+ListCache.prototype.clear = listCacheClear;
+ListCache.prototype['delete'] = listCacheDelete;
+ListCache.prototype.get = listCacheGet;
+ListCache.prototype.has = listCacheHas;
+ListCache.prototype.set = listCacheSet;
+
+module.exports = ListCache;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_Map.js":
+/*!*************************************!*\
+  !*** ./node_modules/lodash/_Map.js ***!
+  \*************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
+    root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
+
+/* Built-in method references that are verified to be native. */
+var Map = getNative(root, 'Map');
+
+module.exports = Map;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_MapCache.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_MapCache.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var mapCacheClear = __webpack_require__(/*! ./_mapCacheClear */ "./node_modules/lodash/_mapCacheClear.js"),
+    mapCacheDelete = __webpack_require__(/*! ./_mapCacheDelete */ "./node_modules/lodash/_mapCacheDelete.js"),
+    mapCacheGet = __webpack_require__(/*! ./_mapCacheGet */ "./node_modules/lodash/_mapCacheGet.js"),
+    mapCacheHas = __webpack_require__(/*! ./_mapCacheHas */ "./node_modules/lodash/_mapCacheHas.js"),
+    mapCacheSet = __webpack_require__(/*! ./_mapCacheSet */ "./node_modules/lodash/_mapCacheSet.js");
+
+/**
+ * Creates a map cache object to store key-value pairs.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+function MapCache(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+
+  this.clear();
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+}
+
+// Add methods to `MapCache`.
+MapCache.prototype.clear = mapCacheClear;
+MapCache.prototype['delete'] = mapCacheDelete;
+MapCache.prototype.get = mapCacheGet;
+MapCache.prototype.has = mapCacheHas;
+MapCache.prototype.set = mapCacheSet;
+
+module.exports = MapCache;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_Promise.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_Promise.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
+    root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
+
+/* Built-in method references that are verified to be native. */
+var Promise = getNative(root, 'Promise');
+
+module.exports = Promise;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_Set.js":
+/*!*************************************!*\
+  !*** ./node_modules/lodash/_Set.js ***!
+  \*************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
+    root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
+
+/* Built-in method references that are verified to be native. */
+var Set = getNative(root, 'Set');
+
+module.exports = Set;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_SetCache.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_SetCache.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var MapCache = __webpack_require__(/*! ./_MapCache */ "./node_modules/lodash/_MapCache.js"),
+    setCacheAdd = __webpack_require__(/*! ./_setCacheAdd */ "./node_modules/lodash/_setCacheAdd.js"),
+    setCacheHas = __webpack_require__(/*! ./_setCacheHas */ "./node_modules/lodash/_setCacheHas.js");
+
+/**
+ *
+ * Creates an array cache object to store unique values.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [values] The values to cache.
+ */
+function SetCache(values) {
+  var index = -1,
+      length = values == null ? 0 : values.length;
+
+  this.__data__ = new MapCache;
+  while (++index < length) {
+    this.add(values[index]);
+  }
+}
+
+// Add methods to `SetCache`.
+SetCache.prototype.add = SetCache.prototype.push = setCacheAdd;
+SetCache.prototype.has = setCacheHas;
+
+module.exports = SetCache;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_Stack.js":
+/*!***************************************!*\
+  !*** ./node_modules/lodash/_Stack.js ***!
+  \***************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js"),
+    stackClear = __webpack_require__(/*! ./_stackClear */ "./node_modules/lodash/_stackClear.js"),
+    stackDelete = __webpack_require__(/*! ./_stackDelete */ "./node_modules/lodash/_stackDelete.js"),
+    stackGet = __webpack_require__(/*! ./_stackGet */ "./node_modules/lodash/_stackGet.js"),
+    stackHas = __webpack_require__(/*! ./_stackHas */ "./node_modules/lodash/_stackHas.js"),
+    stackSet = __webpack_require__(/*! ./_stackSet */ "./node_modules/lodash/_stackSet.js");
+
+/**
+ * Creates a stack cache object to store key-value pairs.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+function Stack(entries) {
+  var data = this.__data__ = new ListCache(entries);
+  this.size = data.size;
+}
+
+// Add methods to `Stack`.
+Stack.prototype.clear = stackClear;
+Stack.prototype['delete'] = stackDelete;
+Stack.prototype.get = stackGet;
+Stack.prototype.has = stackHas;
+Stack.prototype.set = stackSet;
+
+module.exports = Stack;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_Symbol.js":
+/*!****************************************!*\
+  !*** ./node_modules/lodash/_Symbol.js ***!
+  \****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
+
+/** Built-in value references. */
+var Symbol = root.Symbol;
+
+module.exports = Symbol;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_Uint8Array.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_Uint8Array.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
+
+/** Built-in value references. */
+var Uint8Array = root.Uint8Array;
+
+module.exports = Uint8Array;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_WeakMap.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_WeakMap.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
+    root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
+
+/* Built-in method references that are verified to be native. */
+var WeakMap = getNative(root, 'WeakMap');
+
+module.exports = WeakMap;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_apply.js":
+/*!***************************************!*\
+  !*** ./node_modules/lodash/_apply.js ***!
+  \***************************************/
+/***/ (function(module) {
+
+/**
+ * A faster alternative to `Function#apply`, this function invokes `func`
+ * with the `this` binding of `thisArg` and the arguments of `args`.
+ *
+ * @private
+ * @param {Function} func The function to invoke.
+ * @param {*} thisArg The `this` binding of `func`.
+ * @param {Array} args The arguments to invoke `func` with.
+ * @returns {*} Returns the result of `func`.
+ */
+function apply(func, thisArg, args) {
+  switch (args.length) {
+    case 0: return func.call(thisArg);
+    case 1: return func.call(thisArg, args[0]);
+    case 2: return func.call(thisArg, args[0], args[1]);
+    case 3: return func.call(thisArg, args[0], args[1], args[2]);
+  }
+  return func.apply(thisArg, args);
+}
+
+module.exports = apply;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_arrayFilter.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_arrayFilter.js ***!
+  \*********************************************/
+/***/ (function(module) {
+
+/**
+ * A specialized version of `_.filter` for arrays without support for
+ * iteratee shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} predicate The function invoked per iteration.
+ * @returns {Array} Returns the new filtered array.
+ */
+function arrayFilter(array, predicate) {
+  var index = -1,
+      length = array == null ? 0 : array.length,
+      resIndex = 0,
+      result = [];
+
+  while (++index < length) {
+    var value = array[index];
+    if (predicate(value, index, array)) {
+      result[resIndex++] = value;
+    }
+  }
+  return result;
+}
+
+module.exports = arrayFilter;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_arrayLikeKeys.js":
+/*!***********************************************!*\
+  !*** ./node_modules/lodash/_arrayLikeKeys.js ***!
+  \***********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseTimes = __webpack_require__(/*! ./_baseTimes */ "./node_modules/lodash/_baseTimes.js"),
+    isArguments = __webpack_require__(/*! ./isArguments */ "./node_modules/lodash/isArguments.js"),
+    isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
+    isBuffer = __webpack_require__(/*! ./isBuffer */ "./node_modules/lodash/isBuffer.js"),
+    isIndex = __webpack_require__(/*! ./_isIndex */ "./node_modules/lodash/_isIndex.js"),
+    isTypedArray = __webpack_require__(/*! ./isTypedArray */ "./node_modules/lodash/isTypedArray.js");
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Creates an array of the enumerable property names of the array-like `value`.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @param {boolean} inherited Specify returning inherited property names.
+ * @returns {Array} Returns the array of property names.
+ */
+function arrayLikeKeys(value, inherited) {
+  var isArr = isArray(value),
+      isArg = !isArr && isArguments(value),
+      isBuff = !isArr && !isArg && isBuffer(value),
+      isType = !isArr && !isArg && !isBuff && isTypedArray(value),
+      skipIndexes = isArr || isArg || isBuff || isType,
+      result = skipIndexes ? baseTimes(value.length, String) : [],
+      length = result.length;
+
+  for (var key in value) {
+    if ((inherited || hasOwnProperty.call(value, key)) &&
+        !(skipIndexes && (
+           // Safari 9 has enumerable `arguments.length` in strict mode.
+           key == 'length' ||
+           // Node.js 0.10 has enumerable non-index properties on buffers.
+           (isBuff && (key == 'offset' || key == 'parent')) ||
+           // PhantomJS 2 has enumerable non-index properties on typed arrays.
+           (isType && (key == 'buffer' || key == 'byteLength' || key == 'byteOffset')) ||
+           // Skip index properties.
+           isIndex(key, length)
+        ))) {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+module.exports = arrayLikeKeys;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_arrayMap.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_arrayMap.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+/**
+ * A specialized version of `_.map` for arrays without support for iteratee
+ * shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns the new mapped array.
+ */
+function arrayMap(array, iteratee) {
+  var index = -1,
+      length = array == null ? 0 : array.length,
+      result = Array(length);
+
+  while (++index < length) {
+    result[index] = iteratee(array[index], index, array);
+  }
+  return result;
+}
+
+module.exports = arrayMap;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_arrayPush.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_arrayPush.js ***!
+  \*******************************************/
+/***/ (function(module) {
+
+/**
+ * Appends the elements of `values` to `array`.
+ *
+ * @private
+ * @param {Array} array The array to modify.
+ * @param {Array} values The values to append.
+ * @returns {Array} Returns `array`.
+ */
+function arrayPush(array, values) {
+  var index = -1,
+      length = values.length,
+      offset = array.length;
+
+  while (++index < length) {
+    array[offset + index] = values[index];
+  }
+  return array;
+}
+
+module.exports = arrayPush;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_arraySome.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_arraySome.js ***!
+  \*******************************************/
+/***/ (function(module) {
+
+/**
+ * A specialized version of `_.some` for arrays without support for iteratee
+ * shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} predicate The function invoked per iteration.
+ * @returns {boolean} Returns `true` if any element passes the predicate check,
+ *  else `false`.
+ */
+function arraySome(array, predicate) {
+  var index = -1,
+      length = array == null ? 0 : array.length;
+
+  while (++index < length) {
+    if (predicate(array[index], index, array)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+module.exports = arraySome;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_assignValue.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_assignValue.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseAssignValue = __webpack_require__(/*! ./_baseAssignValue */ "./node_modules/lodash/_baseAssignValue.js"),
+    eq = __webpack_require__(/*! ./eq */ "./node_modules/lodash/eq.js");
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Assigns `value` to `key` of `object` if the existing value is not equivalent
+ * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * for equality comparisons.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */
+function assignValue(object, key, value) {
+  var objValue = object[key];
+  if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) ||
+      (value === undefined && !(key in object))) {
+    baseAssignValue(object, key, value);
+  }
+}
+
+module.exports = assignValue;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_assocIndexOf.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_assocIndexOf.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var eq = __webpack_require__(/*! ./eq */ "./node_modules/lodash/eq.js");
+
+/**
+ * Gets the index at which the `key` is found in `array` of key-value pairs.
+ *
+ * @private
+ * @param {Array} array The array to inspect.
+ * @param {*} key The key to search for.
+ * @returns {number} Returns the index of the matched value, else `-1`.
+ */
+function assocIndexOf(array, key) {
+  var length = array.length;
+  while (length--) {
+    if (eq(array[length][0], key)) {
+      return length;
+    }
+  }
+  return -1;
+}
+
+module.exports = assocIndexOf;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseAssignValue.js":
+/*!*************************************************!*\
+  !*** ./node_modules/lodash/_baseAssignValue.js ***!
+  \*************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var defineProperty = __webpack_require__(/*! ./_defineProperty */ "./node_modules/lodash/_defineProperty.js");
+
+/**
+ * The base implementation of `assignValue` and `assignMergeValue` without
+ * value checks.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */
+function baseAssignValue(object, key, value) {
+  if (key == '__proto__' && defineProperty) {
+    defineProperty(object, key, {
+      'configurable': true,
+      'enumerable': true,
+      'value': value,
+      'writable': true
+    });
+  } else {
+    object[key] = value;
+  }
+}
+
+module.exports = baseAssignValue;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseEach.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_baseEach.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseForOwn = __webpack_require__(/*! ./_baseForOwn */ "./node_modules/lodash/_baseForOwn.js"),
+    createBaseEach = __webpack_require__(/*! ./_createBaseEach */ "./node_modules/lodash/_createBaseEach.js");
+
+/**
+ * The base implementation of `_.forEach` without support for iteratee shorthands.
+ *
+ * @private
+ * @param {Array|Object} collection The collection to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array|Object} Returns `collection`.
+ */
+var baseEach = createBaseEach(baseForOwn);
+
+module.exports = baseEach;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseFilter.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_baseFilter.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseEach = __webpack_require__(/*! ./_baseEach */ "./node_modules/lodash/_baseEach.js");
+
+/**
+ * The base implementation of `_.filter` without support for iteratee shorthands.
+ *
+ * @private
+ * @param {Array|Object} collection The collection to iterate over.
+ * @param {Function} predicate The function invoked per iteration.
+ * @returns {Array} Returns the new filtered array.
+ */
+function baseFilter(collection, predicate) {
+  var result = [];
+  baseEach(collection, function(value, index, collection) {
+    if (predicate(value, index, collection)) {
+      result.push(value);
+    }
+  });
+  return result;
+}
+
+module.exports = baseFilter;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseFlatten.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_baseFlatten.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var arrayPush = __webpack_require__(/*! ./_arrayPush */ "./node_modules/lodash/_arrayPush.js"),
+    isFlattenable = __webpack_require__(/*! ./_isFlattenable */ "./node_modules/lodash/_isFlattenable.js");
+
+/**
+ * The base implementation of `_.flatten` with support for restricting flattening.
+ *
+ * @private
+ * @param {Array} array The array to flatten.
+ * @param {number} depth The maximum recursion depth.
+ * @param {boolean} [predicate=isFlattenable] The function invoked per iteration.
+ * @param {boolean} [isStrict] Restrict to values that pass `predicate` checks.
+ * @param {Array} [result=[]] The initial result value.
+ * @returns {Array} Returns the new flattened array.
+ */
+function baseFlatten(array, depth, predicate, isStrict, result) {
+  var index = -1,
+      length = array.length;
+
+  predicate || (predicate = isFlattenable);
+  result || (result = []);
+
+  while (++index < length) {
+    var value = array[index];
+    if (depth > 0 && predicate(value)) {
+      if (depth > 1) {
+        // Recursively flatten arrays (susceptible to call stack limits).
+        baseFlatten(value, depth - 1, predicate, isStrict, result);
+      } else {
+        arrayPush(result, value);
+      }
+    } else if (!isStrict) {
+      result[result.length] = value;
+    }
+  }
+  return result;
+}
+
+module.exports = baseFlatten;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseFor.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_baseFor.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var createBaseFor = __webpack_require__(/*! ./_createBaseFor */ "./node_modules/lodash/_createBaseFor.js");
+
+/**
+ * The base implementation of `baseForOwn` which iterates over `object`
+ * properties returned by `keysFunc` and invokes `iteratee` for each property.
+ * Iteratee functions may exit iteration early by explicitly returning `false`.
+ *
+ * @private
+ * @param {Object} object The object to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @param {Function} keysFunc The function to get the keys of `object`.
+ * @returns {Object} Returns `object`.
+ */
+var baseFor = createBaseFor();
+
+module.exports = baseFor;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseForOwn.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_baseForOwn.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseFor = __webpack_require__(/*! ./_baseFor */ "./node_modules/lodash/_baseFor.js"),
+    keys = __webpack_require__(/*! ./keys */ "./node_modules/lodash/keys.js");
+
+/**
+ * The base implementation of `_.forOwn` without support for iteratee shorthands.
+ *
+ * @private
+ * @param {Object} object The object to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Object} Returns `object`.
+ */
+function baseForOwn(object, iteratee) {
+  return object && baseFor(object, iteratee, keys);
+}
+
+module.exports = baseForOwn;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseGet.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_baseGet.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var castPath = __webpack_require__(/*! ./_castPath */ "./node_modules/lodash/_castPath.js"),
+    toKey = __webpack_require__(/*! ./_toKey */ "./node_modules/lodash/_toKey.js");
+
+/**
+ * The base implementation of `_.get` without support for default values.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {Array|string} path The path of the property to get.
+ * @returns {*} Returns the resolved value.
+ */
+function baseGet(object, path) {
+  path = castPath(path, object);
+
+  var index = 0,
+      length = path.length;
+
+  while (object != null && index < length) {
+    object = object[toKey(path[index++])];
+  }
+  return (index && index == length) ? object : undefined;
+}
+
+module.exports = baseGet;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseGetAllKeys.js":
+/*!************************************************!*\
+  !*** ./node_modules/lodash/_baseGetAllKeys.js ***!
+  \************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var arrayPush = __webpack_require__(/*! ./_arrayPush */ "./node_modules/lodash/_arrayPush.js"),
+    isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js");
+
+/**
+ * The base implementation of `getAllKeys` and `getAllKeysIn` which uses
+ * `keysFunc` and `symbolsFunc` to get the enumerable property names and
+ * symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {Function} keysFunc The function to get the keys of `object`.
+ * @param {Function} symbolsFunc The function to get the symbols of `object`.
+ * @returns {Array} Returns the array of property names and symbols.
+ */
+function baseGetAllKeys(object, keysFunc, symbolsFunc) {
+  var result = keysFunc(object);
+  return isArray(object) ? result : arrayPush(result, symbolsFunc(object));
+}
+
+module.exports = baseGetAllKeys;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseGetTag.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_baseGetTag.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js"),
+    getRawTag = __webpack_require__(/*! ./_getRawTag */ "./node_modules/lodash/_getRawTag.js"),
+    objectToString = __webpack_require__(/*! ./_objectToString */ "./node_modules/lodash/_objectToString.js");
+
+/** `Object#toString` result references. */
+var nullTag = '[object Null]',
+    undefinedTag = '[object Undefined]';
+
+/** Built-in value references. */
+var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+
+/**
+ * The base implementation of `getTag` without fallbacks for buggy environments.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the `toStringTag`.
+ */
+function baseGetTag(value) {
+  if (value == null) {
+    return value === undefined ? undefinedTag : nullTag;
+  }
+  return (symToStringTag && symToStringTag in Object(value))
+    ? getRawTag(value)
+    : objectToString(value);
+}
+
+module.exports = baseGetTag;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseHasIn.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_baseHasIn.js ***!
+  \*******************************************/
+/***/ (function(module) {
+
+/**
+ * The base implementation of `_.hasIn` without support for deep paths.
+ *
+ * @private
+ * @param {Object} [object] The object to query.
+ * @param {Array|string} key The key to check.
+ * @returns {boolean} Returns `true` if `key` exists, else `false`.
+ */
+function baseHasIn(object, key) {
+  return object != null && key in Object(object);
+}
+
+module.exports = baseHasIn;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseIsArguments.js":
+/*!*************************************************!*\
+  !*** ./node_modules/lodash/_baseIsArguments.js ***!
+  \*************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
+    isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
+
+/** `Object#toString` result references. */
+var argsTag = '[object Arguments]';
+
+/**
+ * The base implementation of `_.isArguments`.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ */
+function baseIsArguments(value) {
+  return isObjectLike(value) && baseGetTag(value) == argsTag;
+}
+
+module.exports = baseIsArguments;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseIsEqual.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_baseIsEqual.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseIsEqualDeep = __webpack_require__(/*! ./_baseIsEqualDeep */ "./node_modules/lodash/_baseIsEqualDeep.js"),
+    isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
+
+/**
+ * The base implementation of `_.isEqual` which supports partial comparisons
+ * and tracks traversed objects.
+ *
+ * @private
+ * @param {*} value The value to compare.
+ * @param {*} other The other value to compare.
+ * @param {boolean} bitmask The bitmask flags.
+ *  1 - Unordered comparison
+ *  2 - Partial comparison
+ * @param {Function} [customizer] The function to customize comparisons.
+ * @param {Object} [stack] Tracks traversed `value` and `other` objects.
+ * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+ */
+function baseIsEqual(value, other, bitmask, customizer, stack) {
+  if (value === other) {
+    return true;
+  }
+  if (value == null || other == null || (!isObjectLike(value) && !isObjectLike(other))) {
+    return value !== value && other !== other;
+  }
+  return baseIsEqualDeep(value, other, bitmask, customizer, baseIsEqual, stack);
+}
+
+module.exports = baseIsEqual;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseIsEqualDeep.js":
+/*!*************************************************!*\
+  !*** ./node_modules/lodash/_baseIsEqualDeep.js ***!
+  \*************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var Stack = __webpack_require__(/*! ./_Stack */ "./node_modules/lodash/_Stack.js"),
+    equalArrays = __webpack_require__(/*! ./_equalArrays */ "./node_modules/lodash/_equalArrays.js"),
+    equalByTag = __webpack_require__(/*! ./_equalByTag */ "./node_modules/lodash/_equalByTag.js"),
+    equalObjects = __webpack_require__(/*! ./_equalObjects */ "./node_modules/lodash/_equalObjects.js"),
+    getTag = __webpack_require__(/*! ./_getTag */ "./node_modules/lodash/_getTag.js"),
+    isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
+    isBuffer = __webpack_require__(/*! ./isBuffer */ "./node_modules/lodash/isBuffer.js"),
+    isTypedArray = __webpack_require__(/*! ./isTypedArray */ "./node_modules/lodash/isTypedArray.js");
+
+/** Used to compose bitmasks for value comparisons. */
+var COMPARE_PARTIAL_FLAG = 1;
+
+/** `Object#toString` result references. */
+var argsTag = '[object Arguments]',
+    arrayTag = '[object Array]',
+    objectTag = '[object Object]';
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * A specialized version of `baseIsEqual` for arrays and objects which performs
+ * deep comparisons and tracks traversed objects enabling objects with circular
+ * references to be compared.
+ *
+ * @private
+ * @param {Object} object The object to compare.
+ * @param {Object} other The other object to compare.
+ * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+ * @param {Function} customizer The function to customize comparisons.
+ * @param {Function} equalFunc The function to determine equivalents of values.
+ * @param {Object} [stack] Tracks traversed `object` and `other` objects.
+ * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+ */
+function baseIsEqualDeep(object, other, bitmask, customizer, equalFunc, stack) {
+  var objIsArr = isArray(object),
+      othIsArr = isArray(other),
+      objTag = objIsArr ? arrayTag : getTag(object),
+      othTag = othIsArr ? arrayTag : getTag(other);
+
+  objTag = objTag == argsTag ? objectTag : objTag;
+  othTag = othTag == argsTag ? objectTag : othTag;
+
+  var objIsObj = objTag == objectTag,
+      othIsObj = othTag == objectTag,
+      isSameTag = objTag == othTag;
+
+  if (isSameTag && isBuffer(object)) {
+    if (!isBuffer(other)) {
+      return false;
+    }
+    objIsArr = true;
+    objIsObj = false;
+  }
+  if (isSameTag && !objIsObj) {
+    stack || (stack = new Stack);
+    return (objIsArr || isTypedArray(object))
+      ? equalArrays(object, other, bitmask, customizer, equalFunc, stack)
+      : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
+  }
+  if (!(bitmask & COMPARE_PARTIAL_FLAG)) {
+    var objIsWrapped = objIsObj && hasOwnProperty.call(object, '__wrapped__'),
+        othIsWrapped = othIsObj && hasOwnProperty.call(other, '__wrapped__');
+
+    if (objIsWrapped || othIsWrapped) {
+      var objUnwrapped = objIsWrapped ? object.value() : object,
+          othUnwrapped = othIsWrapped ? other.value() : other;
+
+      stack || (stack = new Stack);
+      return equalFunc(objUnwrapped, othUnwrapped, bitmask, customizer, stack);
+    }
+  }
+  if (!isSameTag) {
+    return false;
+  }
+  stack || (stack = new Stack);
+  return equalObjects(object, other, bitmask, customizer, equalFunc, stack);
+}
+
+module.exports = baseIsEqualDeep;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseIsMatch.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_baseIsMatch.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var Stack = __webpack_require__(/*! ./_Stack */ "./node_modules/lodash/_Stack.js"),
+    baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ "./node_modules/lodash/_baseIsEqual.js");
+
+/** Used to compose bitmasks for value comparisons. */
+var COMPARE_PARTIAL_FLAG = 1,
+    COMPARE_UNORDERED_FLAG = 2;
+
+/**
+ * The base implementation of `_.isMatch` without support for iteratee shorthands.
+ *
+ * @private
+ * @param {Object} object The object to inspect.
+ * @param {Object} source The object of property values to match.
+ * @param {Array} matchData The property names, values, and compare flags to match.
+ * @param {Function} [customizer] The function to customize comparisons.
+ * @returns {boolean} Returns `true` if `object` is a match, else `false`.
+ */
+function baseIsMatch(object, source, matchData, customizer) {
+  var index = matchData.length,
+      length = index,
+      noCustomizer = !customizer;
+
+  if (object == null) {
+    return !length;
+  }
+  object = Object(object);
+  while (index--) {
+    var data = matchData[index];
+    if ((noCustomizer && data[2])
+          ? data[1] !== object[data[0]]
+          : !(data[0] in object)
+        ) {
+      return false;
+    }
+  }
+  while (++index < length) {
+    data = matchData[index];
+    var key = data[0],
+        objValue = object[key],
+        srcValue = data[1];
+
+    if (noCustomizer && data[2]) {
+      if (objValue === undefined && !(key in object)) {
+        return false;
+      }
+    } else {
+      var stack = new Stack;
+      if (customizer) {
+        var result = customizer(objValue, srcValue, key, object, source, stack);
+      }
+      if (!(result === undefined
+            ? baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG, customizer, stack)
+            : result
+          )) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+module.exports = baseIsMatch;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseIsNative.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_baseIsNative.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var isFunction = __webpack_require__(/*! ./isFunction */ "./node_modules/lodash/isFunction.js"),
+    isMasked = __webpack_require__(/*! ./_isMasked */ "./node_modules/lodash/_isMasked.js"),
+    isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js"),
+    toSource = __webpack_require__(/*! ./_toSource */ "./node_modules/lodash/_toSource.js");
+
+/**
+ * Used to match `RegExp`
+ * [syntax characters](http://ecma-international.org/ecma-262/7.0/#sec-patterns).
+ */
+var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
+
+/** Used to detect host constructors (Safari). */
+var reIsHostCtor = /^\[object .+?Constructor\]$/;
+
+/** Used for built-in method references. */
+var funcProto = Function.prototype,
+    objectProto = Object.prototype;
+
+/** Used to resolve the decompiled source of functions. */
+var funcToString = funcProto.toString;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/** Used to detect if a method is native. */
+var reIsNative = RegExp('^' +
+  funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\$&')
+  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
+);
+
+/**
+ * The base implementation of `_.isNative` without bad shim checks.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a native function,
+ *  else `false`.
+ */
+function baseIsNative(value) {
+  if (!isObject(value) || isMasked(value)) {
+    return false;
+  }
+  var pattern = isFunction(value) ? reIsNative : reIsHostCtor;
+  return pattern.test(toSource(value));
+}
+
+module.exports = baseIsNative;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseIsTypedArray.js":
+/*!**************************************************!*\
+  !*** ./node_modules/lodash/_baseIsTypedArray.js ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
+    isLength = __webpack_require__(/*! ./isLength */ "./node_modules/lodash/isLength.js"),
+    isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
+
+/** `Object#toString` result references. */
+var argsTag = '[object Arguments]',
+    arrayTag = '[object Array]',
+    boolTag = '[object Boolean]',
+    dateTag = '[object Date]',
+    errorTag = '[object Error]',
+    funcTag = '[object Function]',
+    mapTag = '[object Map]',
+    numberTag = '[object Number]',
+    objectTag = '[object Object]',
+    regexpTag = '[object RegExp]',
+    setTag = '[object Set]',
+    stringTag = '[object String]',
+    weakMapTag = '[object WeakMap]';
+
+var arrayBufferTag = '[object ArrayBuffer]',
+    dataViewTag = '[object DataView]',
+    float32Tag = '[object Float32Array]',
+    float64Tag = '[object Float64Array]',
+    int8Tag = '[object Int8Array]',
+    int16Tag = '[object Int16Array]',
+    int32Tag = '[object Int32Array]',
+    uint8Tag = '[object Uint8Array]',
+    uint8ClampedTag = '[object Uint8ClampedArray]',
+    uint16Tag = '[object Uint16Array]',
+    uint32Tag = '[object Uint32Array]';
+
+/** Used to identify `toStringTag` values of typed arrays. */
+var typedArrayTags = {};
+typedArrayTags[float32Tag] = typedArrayTags[float64Tag] =
+typedArrayTags[int8Tag] = typedArrayTags[int16Tag] =
+typedArrayTags[int32Tag] = typedArrayTags[uint8Tag] =
+typedArrayTags[uint8ClampedTag] = typedArrayTags[uint16Tag] =
+typedArrayTags[uint32Tag] = true;
+typedArrayTags[argsTag] = typedArrayTags[arrayTag] =
+typedArrayTags[arrayBufferTag] = typedArrayTags[boolTag] =
+typedArrayTags[dataViewTag] = typedArrayTags[dateTag] =
+typedArrayTags[errorTag] = typedArrayTags[funcTag] =
+typedArrayTags[mapTag] = typedArrayTags[numberTag] =
+typedArrayTags[objectTag] = typedArrayTags[regexpTag] =
+typedArrayTags[setTag] = typedArrayTags[stringTag] =
+typedArrayTags[weakMapTag] = false;
+
+/**
+ * The base implementation of `_.isTypedArray` without Node.js optimizations.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+ */
+function baseIsTypedArray(value) {
+  return isObjectLike(value) &&
+    isLength(value.length) && !!typedArrayTags[baseGetTag(value)];
+}
+
+module.exports = baseIsTypedArray;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseIteratee.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_baseIteratee.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseMatches = __webpack_require__(/*! ./_baseMatches */ "./node_modules/lodash/_baseMatches.js"),
+    baseMatchesProperty = __webpack_require__(/*! ./_baseMatchesProperty */ "./node_modules/lodash/_baseMatchesProperty.js"),
+    identity = __webpack_require__(/*! ./identity */ "./node_modules/lodash/identity.js"),
+    isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
+    property = __webpack_require__(/*! ./property */ "./node_modules/lodash/property.js");
+
+/**
+ * The base implementation of `_.iteratee`.
+ *
+ * @private
+ * @param {*} [value=_.identity] The value to convert to an iteratee.
+ * @returns {Function} Returns the iteratee.
+ */
+function baseIteratee(value) {
+  // Don't store the `typeof` result in a variable to avoid a JIT bug in Safari 9.
+  // See https://bugs.webkit.org/show_bug.cgi?id=156034 for more details.
+  if (typeof value == 'function') {
+    return value;
+  }
+  if (value == null) {
+    return identity;
+  }
+  if (typeof value == 'object') {
+    return isArray(value)
+      ? baseMatchesProperty(value[0], value[1])
+      : baseMatches(value);
+  }
+  return property(value);
+}
+
+module.exports = baseIteratee;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseKeys.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_baseKeys.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var isPrototype = __webpack_require__(/*! ./_isPrototype */ "./node_modules/lodash/_isPrototype.js"),
+    nativeKeys = __webpack_require__(/*! ./_nativeKeys */ "./node_modules/lodash/_nativeKeys.js");
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * The base implementation of `_.keys` which doesn't treat sparse arrays as dense.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function baseKeys(object) {
+  if (!isPrototype(object)) {
+    return nativeKeys(object);
+  }
+  var result = [];
+  for (var key in Object(object)) {
+    if (hasOwnProperty.call(object, key) && key != 'constructor') {
+      result.push(key);
+    }
+  }
+  return result;
+}
+
+module.exports = baseKeys;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseMatches.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_baseMatches.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseIsMatch = __webpack_require__(/*! ./_baseIsMatch */ "./node_modules/lodash/_baseIsMatch.js"),
+    getMatchData = __webpack_require__(/*! ./_getMatchData */ "./node_modules/lodash/_getMatchData.js"),
+    matchesStrictComparable = __webpack_require__(/*! ./_matchesStrictComparable */ "./node_modules/lodash/_matchesStrictComparable.js");
+
+/**
+ * The base implementation of `_.matches` which doesn't clone `source`.
+ *
+ * @private
+ * @param {Object} source The object of property values to match.
+ * @returns {Function} Returns the new spec function.
+ */
+function baseMatches(source) {
+  var matchData = getMatchData(source);
+  if (matchData.length == 1 && matchData[0][2]) {
+    return matchesStrictComparable(matchData[0][0], matchData[0][1]);
+  }
+  return function(object) {
+    return object === source || baseIsMatch(object, source, matchData);
+  };
+}
+
+module.exports = baseMatches;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseMatchesProperty.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/lodash/_baseMatchesProperty.js ***!
+  \*****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ "./node_modules/lodash/_baseIsEqual.js"),
+    get = __webpack_require__(/*! ./get */ "./node_modules/lodash/get.js"),
+    hasIn = __webpack_require__(/*! ./hasIn */ "./node_modules/lodash/hasIn.js"),
+    isKey = __webpack_require__(/*! ./_isKey */ "./node_modules/lodash/_isKey.js"),
+    isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ "./node_modules/lodash/_isStrictComparable.js"),
+    matchesStrictComparable = __webpack_require__(/*! ./_matchesStrictComparable */ "./node_modules/lodash/_matchesStrictComparable.js"),
+    toKey = __webpack_require__(/*! ./_toKey */ "./node_modules/lodash/_toKey.js");
+
+/** Used to compose bitmasks for value comparisons. */
+var COMPARE_PARTIAL_FLAG = 1,
+    COMPARE_UNORDERED_FLAG = 2;
+
+/**
+ * The base implementation of `_.matchesProperty` which doesn't clone `srcValue`.
+ *
+ * @private
+ * @param {string} path The path of the property to get.
+ * @param {*} srcValue The value to match.
+ * @returns {Function} Returns the new spec function.
+ */
+function baseMatchesProperty(path, srcValue) {
+  if (isKey(path) && isStrictComparable(srcValue)) {
+    return matchesStrictComparable(toKey(path), srcValue);
+  }
+  return function(object) {
+    var objValue = get(object, path);
+    return (objValue === undefined && objValue === srcValue)
+      ? hasIn(object, path)
+      : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
+  };
+}
+
+module.exports = baseMatchesProperty;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_basePick.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_basePick.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var basePickBy = __webpack_require__(/*! ./_basePickBy */ "./node_modules/lodash/_basePickBy.js"),
+    hasIn = __webpack_require__(/*! ./hasIn */ "./node_modules/lodash/hasIn.js");
+
+/**
+ * The base implementation of `_.pick` without support for individual
+ * property identifiers.
+ *
+ * @private
+ * @param {Object} object The source object.
+ * @param {string[]} paths The property paths to pick.
+ * @returns {Object} Returns the new object.
+ */
+function basePick(object, paths) {
+  return basePickBy(object, paths, function(value, path) {
+    return hasIn(object, path);
+  });
+}
+
+module.exports = basePick;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_basePickBy.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_basePickBy.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseGet = __webpack_require__(/*! ./_baseGet */ "./node_modules/lodash/_baseGet.js"),
+    baseSet = __webpack_require__(/*! ./_baseSet */ "./node_modules/lodash/_baseSet.js"),
+    castPath = __webpack_require__(/*! ./_castPath */ "./node_modules/lodash/_castPath.js");
+
+/**
+ * The base implementation of  `_.pickBy` without support for iteratee shorthands.
+ *
+ * @private
+ * @param {Object} object The source object.
+ * @param {string[]} paths The property paths to pick.
+ * @param {Function} predicate The function invoked per property.
+ * @returns {Object} Returns the new object.
+ */
+function basePickBy(object, paths, predicate) {
+  var index = -1,
+      length = paths.length,
+      result = {};
+
+  while (++index < length) {
+    var path = paths[index],
+        value = baseGet(object, path);
+
+    if (predicate(value, path)) {
+      baseSet(result, castPath(path, object), value);
+    }
+  }
+  return result;
+}
+
+module.exports = basePickBy;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseProperty.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_baseProperty.js ***!
+  \**********************************************/
+/***/ (function(module) {
+
+/**
+ * The base implementation of `_.property` without support for deep paths.
+ *
+ * @private
+ * @param {string} key The key of the property to get.
+ * @returns {Function} Returns the new accessor function.
+ */
+function baseProperty(key) {
+  return function(object) {
+    return object == null ? undefined : object[key];
+  };
+}
+
+module.exports = baseProperty;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_basePropertyDeep.js":
+/*!**************************************************!*\
+  !*** ./node_modules/lodash/_basePropertyDeep.js ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseGet = __webpack_require__(/*! ./_baseGet */ "./node_modules/lodash/_baseGet.js");
+
+/**
+ * A specialized version of `baseProperty` which supports deep paths.
+ *
+ * @private
+ * @param {Array|string} path The path of the property to get.
+ * @returns {Function} Returns the new accessor function.
+ */
+function basePropertyDeep(path) {
+  return function(object) {
+    return baseGet(object, path);
+  };
+}
+
+module.exports = basePropertyDeep;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseSet.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_baseSet.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var assignValue = __webpack_require__(/*! ./_assignValue */ "./node_modules/lodash/_assignValue.js"),
+    castPath = __webpack_require__(/*! ./_castPath */ "./node_modules/lodash/_castPath.js"),
+    isIndex = __webpack_require__(/*! ./_isIndex */ "./node_modules/lodash/_isIndex.js"),
+    isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js"),
+    toKey = __webpack_require__(/*! ./_toKey */ "./node_modules/lodash/_toKey.js");
+
+/**
+ * The base implementation of `_.set`.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {Array|string} path The path of the property to set.
+ * @param {*} value The value to set.
+ * @param {Function} [customizer] The function to customize path creation.
+ * @returns {Object} Returns `object`.
+ */
+function baseSet(object, path, value, customizer) {
+  if (!isObject(object)) {
+    return object;
+  }
+  path = castPath(path, object);
+
+  var index = -1,
+      length = path.length,
+      lastIndex = length - 1,
+      nested = object;
+
+  while (nested != null && ++index < length) {
+    var key = toKey(path[index]),
+        newValue = value;
+
+    if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+      return object;
+    }
+
+    if (index != lastIndex) {
+      var objValue = nested[key];
+      newValue = customizer ? customizer(objValue, key, nested) : undefined;
+      if (newValue === undefined) {
+        newValue = isObject(objValue)
+          ? objValue
+          : (isIndex(path[index + 1]) ? [] : {});
+      }
+    }
+    assignValue(nested, key, newValue);
+    nested = nested[key];
+  }
+  return object;
+}
+
+module.exports = baseSet;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseSetToString.js":
+/*!*************************************************!*\
+  !*** ./node_modules/lodash/_baseSetToString.js ***!
+  \*************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var constant = __webpack_require__(/*! ./constant */ "./node_modules/lodash/constant.js"),
+    defineProperty = __webpack_require__(/*! ./_defineProperty */ "./node_modules/lodash/_defineProperty.js"),
+    identity = __webpack_require__(/*! ./identity */ "./node_modules/lodash/identity.js");
+
+/**
+ * The base implementation of `setToString` without support for hot loop shorting.
+ *
+ * @private
+ * @param {Function} func The function to modify.
+ * @param {Function} string The `toString` result.
+ * @returns {Function} Returns `func`.
+ */
+var baseSetToString = !defineProperty ? identity : function(func, string) {
+  return defineProperty(func, 'toString', {
+    'configurable': true,
+    'enumerable': false,
+    'value': constant(string),
+    'writable': true
+  });
+};
+
+module.exports = baseSetToString;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseTimes.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_baseTimes.js ***!
+  \*******************************************/
+/***/ (function(module) {
+
+/**
+ * The base implementation of `_.times` without support for iteratee shorthands
+ * or max array length checks.
+ *
+ * @private
+ * @param {number} n The number of times to invoke `iteratee`.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns the array of results.
+ */
+function baseTimes(n, iteratee) {
+  var index = -1,
+      result = Array(n);
+
+  while (++index < n) {
+    result[index] = iteratee(index);
+  }
+  return result;
+}
+
+module.exports = baseTimes;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseToString.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_baseToString.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js"),
+    arrayMap = __webpack_require__(/*! ./_arrayMap */ "./node_modules/lodash/_arrayMap.js"),
+    isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
+    isSymbol = __webpack_require__(/*! ./isSymbol */ "./node_modules/lodash/isSymbol.js");
+
+/** Used as references for various `Number` constants. */
+var INFINITY = 1 / 0;
+
+/** Used to convert symbols to primitives and strings. */
+var symbolProto = Symbol ? Symbol.prototype : undefined,
+    symbolToString = symbolProto ? symbolProto.toString : undefined;
+
+/**
+ * The base implementation of `_.toString` which doesn't convert nullish
+ * values to empty strings.
+ *
+ * @private
+ * @param {*} value The value to process.
+ * @returns {string} Returns the string.
+ */
+function baseToString(value) {
+  // Exit early for strings to avoid a performance hit in some environments.
+  if (typeof value == 'string') {
+    return value;
+  }
+  if (isArray(value)) {
+    // Recursively convert values (susceptible to call stack limits).
+    return arrayMap(value, baseToString) + '';
+  }
+  if (isSymbol(value)) {
+    return symbolToString ? symbolToString.call(value) : '';
+  }
+  var result = (value + '');
+  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+}
+
+module.exports = baseToString;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_baseUnary.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_baseUnary.js ***!
+  \*******************************************/
+/***/ (function(module) {
+
+/**
+ * The base implementation of `_.unary` without support for storing metadata.
+ *
+ * @private
+ * @param {Function} func The function to cap arguments for.
+ * @returns {Function} Returns the new capped function.
+ */
+function baseUnary(func) {
+  return function(value) {
+    return func(value);
+  };
+}
+
+module.exports = baseUnary;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_cacheHas.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_cacheHas.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+/**
+ * Checks if a `cache` value for `key` exists.
+ *
+ * @private
+ * @param {Object} cache The cache to query.
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function cacheHas(cache, key) {
+  return cache.has(key);
+}
+
+module.exports = cacheHas;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_castPath.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_castPath.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
+    isKey = __webpack_require__(/*! ./_isKey */ "./node_modules/lodash/_isKey.js"),
+    stringToPath = __webpack_require__(/*! ./_stringToPath */ "./node_modules/lodash/_stringToPath.js"),
+    toString = __webpack_require__(/*! ./toString */ "./node_modules/lodash/toString.js");
+
+/**
+ * Casts `value` to a path array if it's not one.
+ *
+ * @private
+ * @param {*} value The value to inspect.
+ * @param {Object} [object] The object to query keys on.
+ * @returns {Array} Returns the cast property path array.
+ */
+function castPath(value, object) {
+  if (isArray(value)) {
+    return value;
+  }
+  return isKey(value, object) ? [value] : stringToPath(toString(value));
+}
+
+module.exports = castPath;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_coreJsData.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_coreJsData.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
+
+/** Used to detect overreaching core-js shims. */
+var coreJsData = root['__core-js_shared__'];
+
+module.exports = coreJsData;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_createBaseEach.js":
+/*!************************************************!*\
+  !*** ./node_modules/lodash/_createBaseEach.js ***!
+  \************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var isArrayLike = __webpack_require__(/*! ./isArrayLike */ "./node_modules/lodash/isArrayLike.js");
+
+/**
+ * Creates a `baseEach` or `baseEachRight` function.
+ *
+ * @private
+ * @param {Function} eachFunc The function to iterate over a collection.
+ * @param {boolean} [fromRight] Specify iterating from right to left.
+ * @returns {Function} Returns the new base function.
+ */
+function createBaseEach(eachFunc, fromRight) {
+  return function(collection, iteratee) {
+    if (collection == null) {
+      return collection;
+    }
+    if (!isArrayLike(collection)) {
+      return eachFunc(collection, iteratee);
+    }
+    var length = collection.length,
+        index = fromRight ? length : -1,
+        iterable = Object(collection);
+
+    while ((fromRight ? index-- : ++index < length)) {
+      if (iteratee(iterable[index], index, iterable) === false) {
+        break;
+      }
+    }
+    return collection;
+  };
+}
+
+module.exports = createBaseEach;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_createBaseFor.js":
+/*!***********************************************!*\
+  !*** ./node_modules/lodash/_createBaseFor.js ***!
+  \***********************************************/
+/***/ (function(module) {
+
+/**
+ * Creates a base function for methods like `_.forIn` and `_.forOwn`.
+ *
+ * @private
+ * @param {boolean} [fromRight] Specify iterating from right to left.
+ * @returns {Function} Returns the new base function.
+ */
+function createBaseFor(fromRight) {
+  return function(object, iteratee, keysFunc) {
+    var index = -1,
+        iterable = Object(object),
+        props = keysFunc(object),
+        length = props.length;
+
+    while (length--) {
+      var key = props[fromRight ? length : ++index];
+      if (iteratee(iterable[key], key, iterable) === false) {
+        break;
+      }
+    }
+    return object;
+  };
+}
+
+module.exports = createBaseFor;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_defineProperty.js":
+/*!************************************************!*\
+  !*** ./node_modules/lodash/_defineProperty.js ***!
+  \************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js");
+
+var defineProperty = (function() {
+  try {
+    var func = getNative(Object, 'defineProperty');
+    func({}, '', {});
+    return func;
+  } catch (e) {}
+}());
+
+module.exports = defineProperty;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_equalArrays.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_equalArrays.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var SetCache = __webpack_require__(/*! ./_SetCache */ "./node_modules/lodash/_SetCache.js"),
+    arraySome = __webpack_require__(/*! ./_arraySome */ "./node_modules/lodash/_arraySome.js"),
+    cacheHas = __webpack_require__(/*! ./_cacheHas */ "./node_modules/lodash/_cacheHas.js");
+
+/** Used to compose bitmasks for value comparisons. */
+var COMPARE_PARTIAL_FLAG = 1,
+    COMPARE_UNORDERED_FLAG = 2;
+
+/**
+ * A specialized version of `baseIsEqualDeep` for arrays with support for
+ * partial deep comparisons.
+ *
+ * @private
+ * @param {Array} array The array to compare.
+ * @param {Array} other The other array to compare.
+ * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+ * @param {Function} customizer The function to customize comparisons.
+ * @param {Function} equalFunc The function to determine equivalents of values.
+ * @param {Object} stack Tracks traversed `array` and `other` objects.
+ * @returns {boolean} Returns `true` if the arrays are equivalent, else `false`.
+ */
+function equalArrays(array, other, bitmask, customizer, equalFunc, stack) {
+  var isPartial = bitmask & COMPARE_PARTIAL_FLAG,
+      arrLength = array.length,
+      othLength = other.length;
+
+  if (arrLength != othLength && !(isPartial && othLength > arrLength)) {
+    return false;
+  }
+  // Check that cyclic values are equal.
+  var arrStacked = stack.get(array);
+  var othStacked = stack.get(other);
+  if (arrStacked && othStacked) {
+    return arrStacked == other && othStacked == array;
+  }
+  var index = -1,
+      result = true,
+      seen = (bitmask & COMPARE_UNORDERED_FLAG) ? new SetCache : undefined;
+
+  stack.set(array, other);
+  stack.set(other, array);
+
+  // Ignore non-index properties.
+  while (++index < arrLength) {
+    var arrValue = array[index],
+        othValue = other[index];
+
+    if (customizer) {
+      var compared = isPartial
+        ? customizer(othValue, arrValue, index, other, array, stack)
+        : customizer(arrValue, othValue, index, array, other, stack);
+    }
+    if (compared !== undefined) {
+      if (compared) {
+        continue;
+      }
+      result = false;
+      break;
+    }
+    // Recursively compare arrays (susceptible to call stack limits).
+    if (seen) {
+      if (!arraySome(other, function(othValue, othIndex) {
+            if (!cacheHas(seen, othIndex) &&
+                (arrValue === othValue || equalFunc(arrValue, othValue, bitmask, customizer, stack))) {
+              return seen.push(othIndex);
+            }
+          })) {
+        result = false;
+        break;
+      }
+    } else if (!(
+          arrValue === othValue ||
+            equalFunc(arrValue, othValue, bitmask, customizer, stack)
+        )) {
+      result = false;
+      break;
+    }
+  }
+  stack['delete'](array);
+  stack['delete'](other);
+  return result;
+}
+
+module.exports = equalArrays;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_equalByTag.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_equalByTag.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js"),
+    Uint8Array = __webpack_require__(/*! ./_Uint8Array */ "./node_modules/lodash/_Uint8Array.js"),
+    eq = __webpack_require__(/*! ./eq */ "./node_modules/lodash/eq.js"),
+    equalArrays = __webpack_require__(/*! ./_equalArrays */ "./node_modules/lodash/_equalArrays.js"),
+    mapToArray = __webpack_require__(/*! ./_mapToArray */ "./node_modules/lodash/_mapToArray.js"),
+    setToArray = __webpack_require__(/*! ./_setToArray */ "./node_modules/lodash/_setToArray.js");
+
+/** Used to compose bitmasks for value comparisons. */
+var COMPARE_PARTIAL_FLAG = 1,
+    COMPARE_UNORDERED_FLAG = 2;
+
+/** `Object#toString` result references. */
+var boolTag = '[object Boolean]',
+    dateTag = '[object Date]',
+    errorTag = '[object Error]',
+    mapTag = '[object Map]',
+    numberTag = '[object Number]',
+    regexpTag = '[object RegExp]',
+    setTag = '[object Set]',
+    stringTag = '[object String]',
+    symbolTag = '[object Symbol]';
+
+var arrayBufferTag = '[object ArrayBuffer]',
+    dataViewTag = '[object DataView]';
+
+/** Used to convert symbols to primitives and strings. */
+var symbolProto = Symbol ? Symbol.prototype : undefined,
+    symbolValueOf = symbolProto ? symbolProto.valueOf : undefined;
+
+/**
+ * A specialized version of `baseIsEqualDeep` for comparing objects of
+ * the same `toStringTag`.
+ *
+ * **Note:** This function only supports comparing values with tags of
+ * `Boolean`, `Date`, `Error`, `Number`, `RegExp`, or `String`.
+ *
+ * @private
+ * @param {Object} object The object to compare.
+ * @param {Object} other The other object to compare.
+ * @param {string} tag The `toStringTag` of the objects to compare.
+ * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+ * @param {Function} customizer The function to customize comparisons.
+ * @param {Function} equalFunc The function to determine equivalents of values.
+ * @param {Object} stack Tracks traversed `object` and `other` objects.
+ * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+ */
+function equalByTag(object, other, tag, bitmask, customizer, equalFunc, stack) {
+  switch (tag) {
+    case dataViewTag:
+      if ((object.byteLength != other.byteLength) ||
+          (object.byteOffset != other.byteOffset)) {
+        return false;
+      }
+      object = object.buffer;
+      other = other.buffer;
+
+    case arrayBufferTag:
+      if ((object.byteLength != other.byteLength) ||
+          !equalFunc(new Uint8Array(object), new Uint8Array(other))) {
+        return false;
+      }
+      return true;
+
+    case boolTag:
+    case dateTag:
+    case numberTag:
+      // Coerce booleans to `1` or `0` and dates to milliseconds.
+      // Invalid dates are coerced to `NaN`.
+      return eq(+object, +other);
+
+    case errorTag:
+      return object.name == other.name && object.message == other.message;
+
+    case regexpTag:
+    case stringTag:
+      // Coerce regexes to strings and treat strings, primitives and objects,
+      // as equal. See http://www.ecma-international.org/ecma-262/7.0/#sec-regexp.prototype.tostring
+      // for more details.
+      return object == (other + '');
+
+    case mapTag:
+      var convert = mapToArray;
+
+    case setTag:
+      var isPartial = bitmask & COMPARE_PARTIAL_FLAG;
+      convert || (convert = setToArray);
+
+      if (object.size != other.size && !isPartial) {
+        return false;
+      }
+      // Assume cyclic values are equal.
+      var stacked = stack.get(object);
+      if (stacked) {
+        return stacked == other;
+      }
+      bitmask |= COMPARE_UNORDERED_FLAG;
+
+      // Recursively compare objects (susceptible to call stack limits).
+      stack.set(object, other);
+      var result = equalArrays(convert(object), convert(other), bitmask, customizer, equalFunc, stack);
+      stack['delete'](object);
+      return result;
+
+    case symbolTag:
+      if (symbolValueOf) {
+        return symbolValueOf.call(object) == symbolValueOf.call(other);
+      }
+  }
+  return false;
+}
+
+module.exports = equalByTag;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_equalObjects.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_equalObjects.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getAllKeys = __webpack_require__(/*! ./_getAllKeys */ "./node_modules/lodash/_getAllKeys.js");
+
+/** Used to compose bitmasks for value comparisons. */
+var COMPARE_PARTIAL_FLAG = 1;
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * A specialized version of `baseIsEqualDeep` for objects with support for
+ * partial deep comparisons.
+ *
+ * @private
+ * @param {Object} object The object to compare.
+ * @param {Object} other The other object to compare.
+ * @param {number} bitmask The bitmask flags. See `baseIsEqual` for more details.
+ * @param {Function} customizer The function to customize comparisons.
+ * @param {Function} equalFunc The function to determine equivalents of values.
+ * @param {Object} stack Tracks traversed `object` and `other` objects.
+ * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
+ */
+function equalObjects(object, other, bitmask, customizer, equalFunc, stack) {
+  var isPartial = bitmask & COMPARE_PARTIAL_FLAG,
+      objProps = getAllKeys(object),
+      objLength = objProps.length,
+      othProps = getAllKeys(other),
+      othLength = othProps.length;
+
+  if (objLength != othLength && !isPartial) {
+    return false;
+  }
+  var index = objLength;
+  while (index--) {
+    var key = objProps[index];
+    if (!(isPartial ? key in other : hasOwnProperty.call(other, key))) {
+      return false;
+    }
+  }
+  // Check that cyclic values are equal.
+  var objStacked = stack.get(object);
+  var othStacked = stack.get(other);
+  if (objStacked && othStacked) {
+    return objStacked == other && othStacked == object;
+  }
+  var result = true;
+  stack.set(object, other);
+  stack.set(other, object);
+
+  var skipCtor = isPartial;
+  while (++index < objLength) {
+    key = objProps[index];
+    var objValue = object[key],
+        othValue = other[key];
+
+    if (customizer) {
+      var compared = isPartial
+        ? customizer(othValue, objValue, key, other, object, stack)
+        : customizer(objValue, othValue, key, object, other, stack);
+    }
+    // Recursively compare objects (susceptible to call stack limits).
+    if (!(compared === undefined
+          ? (objValue === othValue || equalFunc(objValue, othValue, bitmask, customizer, stack))
+          : compared
+        )) {
+      result = false;
+      break;
+    }
+    skipCtor || (skipCtor = key == 'constructor');
+  }
+  if (result && !skipCtor) {
+    var objCtor = object.constructor,
+        othCtor = other.constructor;
+
+    // Non `Object` object instances with different constructors are not equal.
+    if (objCtor != othCtor &&
+        ('constructor' in object && 'constructor' in other) &&
+        !(typeof objCtor == 'function' && objCtor instanceof objCtor &&
+          typeof othCtor == 'function' && othCtor instanceof othCtor)) {
+      result = false;
+    }
+  }
+  stack['delete'](object);
+  stack['delete'](other);
+  return result;
+}
+
+module.exports = equalObjects;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_flatRest.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_flatRest.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var flatten = __webpack_require__(/*! ./flatten */ "./node_modules/lodash/flatten.js"),
+    overRest = __webpack_require__(/*! ./_overRest */ "./node_modules/lodash/_overRest.js"),
+    setToString = __webpack_require__(/*! ./_setToString */ "./node_modules/lodash/_setToString.js");
+
+/**
+ * A specialized version of `baseRest` which flattens the rest array.
+ *
+ * @private
+ * @param {Function} func The function to apply a rest parameter to.
+ * @returns {Function} Returns the new function.
+ */
+function flatRest(func) {
+  return setToString(overRest(func, undefined, flatten), func + '');
+}
+
+module.exports = flatRest;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_freeGlobal.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_freeGlobal.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof __webpack_require__.g == 'object' && __webpack_require__.g && __webpack_require__.g.Object === Object && __webpack_require__.g;
+
+module.exports = freeGlobal;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_getAllKeys.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_getAllKeys.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseGetAllKeys = __webpack_require__(/*! ./_baseGetAllKeys */ "./node_modules/lodash/_baseGetAllKeys.js"),
+    getSymbols = __webpack_require__(/*! ./_getSymbols */ "./node_modules/lodash/_getSymbols.js"),
+    keys = __webpack_require__(/*! ./keys */ "./node_modules/lodash/keys.js");
+
+/**
+ * Creates an array of own enumerable property names and symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names and symbols.
+ */
+function getAllKeys(object) {
+  return baseGetAllKeys(object, keys, getSymbols);
+}
+
+module.exports = getAllKeys;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_getMapData.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_getMapData.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var isKeyable = __webpack_require__(/*! ./_isKeyable */ "./node_modules/lodash/_isKeyable.js");
+
+/**
+ * Gets the data for `map`.
+ *
+ * @private
+ * @param {Object} map The map to query.
+ * @param {string} key The reference key.
+ * @returns {*} Returns the map data.
+ */
+function getMapData(map, key) {
+  var data = map.__data__;
+  return isKeyable(key)
+    ? data[typeof key == 'string' ? 'string' : 'hash']
+    : data.map;
+}
+
+module.exports = getMapData;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_getMatchData.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_getMatchData.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ "./node_modules/lodash/_isStrictComparable.js"),
+    keys = __webpack_require__(/*! ./keys */ "./node_modules/lodash/keys.js");
+
+/**
+ * Gets the property names, values, and compare flags of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the match data of `object`.
+ */
+function getMatchData(object) {
+  var result = keys(object),
+      length = result.length;
+
+  while (length--) {
+    var key = result[length],
+        value = object[key];
+
+    result[length] = [key, value, isStrictComparable(value)];
+  }
+  return result;
+}
+
+module.exports = getMatchData;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_getNative.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_getNative.js ***!
+  \*******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseIsNative = __webpack_require__(/*! ./_baseIsNative */ "./node_modules/lodash/_baseIsNative.js"),
+    getValue = __webpack_require__(/*! ./_getValue */ "./node_modules/lodash/_getValue.js");
+
+/**
+ * Gets the native function at `key` of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {string} key The key of the method to get.
+ * @returns {*} Returns the function if it's native, else `undefined`.
+ */
+function getNative(object, key) {
+  var value = getValue(object, key);
+  return baseIsNative(value) ? value : undefined;
+}
+
+module.exports = getNative;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_getRawTag.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_getRawTag.js ***!
+  \*******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js");
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto.toString;
+
+/** Built-in value references. */
+var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+
+/**
+ * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the raw `toStringTag`.
+ */
+function getRawTag(value) {
+  var isOwn = hasOwnProperty.call(value, symToStringTag),
+      tag = value[symToStringTag];
+
+  try {
+    value[symToStringTag] = undefined;
+    var unmasked = true;
+  } catch (e) {}
+
+  var result = nativeObjectToString.call(value);
+  if (unmasked) {
+    if (isOwn) {
+      value[symToStringTag] = tag;
+    } else {
+      delete value[symToStringTag];
+    }
+  }
+  return result;
+}
+
+module.exports = getRawTag;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_getSymbols.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_getSymbols.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var arrayFilter = __webpack_require__(/*! ./_arrayFilter */ "./node_modules/lodash/_arrayFilter.js"),
+    stubArray = __webpack_require__(/*! ./stubArray */ "./node_modules/lodash/stubArray.js");
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Built-in value references. */
+var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeGetSymbols = Object.getOwnPropertySymbols;
+
+/**
+ * Creates an array of the own enumerable symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of symbols.
+ */
+var getSymbols = !nativeGetSymbols ? stubArray : function(object) {
+  if (object == null) {
+    return [];
+  }
+  object = Object(object);
+  return arrayFilter(nativeGetSymbols(object), function(symbol) {
+    return propertyIsEnumerable.call(object, symbol);
+  });
+};
+
+module.exports = getSymbols;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_getTag.js":
+/*!****************************************!*\
+  !*** ./node_modules/lodash/_getTag.js ***!
+  \****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var DataView = __webpack_require__(/*! ./_DataView */ "./node_modules/lodash/_DataView.js"),
+    Map = __webpack_require__(/*! ./_Map */ "./node_modules/lodash/_Map.js"),
+    Promise = __webpack_require__(/*! ./_Promise */ "./node_modules/lodash/_Promise.js"),
+    Set = __webpack_require__(/*! ./_Set */ "./node_modules/lodash/_Set.js"),
+    WeakMap = __webpack_require__(/*! ./_WeakMap */ "./node_modules/lodash/_WeakMap.js"),
+    baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
+    toSource = __webpack_require__(/*! ./_toSource */ "./node_modules/lodash/_toSource.js");
+
+/** `Object#toString` result references. */
+var mapTag = '[object Map]',
+    objectTag = '[object Object]',
+    promiseTag = '[object Promise]',
+    setTag = '[object Set]',
+    weakMapTag = '[object WeakMap]';
+
+var dataViewTag = '[object DataView]';
+
+/** Used to detect maps, sets, and weakmaps. */
+var dataViewCtorString = toSource(DataView),
+    mapCtorString = toSource(Map),
+    promiseCtorString = toSource(Promise),
+    setCtorString = toSource(Set),
+    weakMapCtorString = toSource(WeakMap);
+
+/**
+ * Gets the `toStringTag` of `value`.
+ *
+ * @private
+ * @param {*} value The value to query.
+ * @returns {string} Returns the `toStringTag`.
+ */
+var getTag = baseGetTag;
+
+// Fallback for data views, maps, sets, and weak maps in IE 11 and promises in Node.js < 6.
+if ((DataView && getTag(new DataView(new ArrayBuffer(1))) != dataViewTag) ||
+    (Map && getTag(new Map) != mapTag) ||
+    (Promise && getTag(Promise.resolve()) != promiseTag) ||
+    (Set && getTag(new Set) != setTag) ||
+    (WeakMap && getTag(new WeakMap) != weakMapTag)) {
+  getTag = function(value) {
+    var result = baseGetTag(value),
+        Ctor = result == objectTag ? value.constructor : undefined,
+        ctorString = Ctor ? toSource(Ctor) : '';
+
+    if (ctorString) {
+      switch (ctorString) {
+        case dataViewCtorString: return dataViewTag;
+        case mapCtorString: return mapTag;
+        case promiseCtorString: return promiseTag;
+        case setCtorString: return setTag;
+        case weakMapCtorString: return weakMapTag;
+      }
+    }
+    return result;
+  };
+}
+
+module.exports = getTag;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_getValue.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_getValue.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+/**
+ * Gets the value at `key` of `object`.
+ *
+ * @private
+ * @param {Object} [object] The object to query.
+ * @param {string} key The key of the property to get.
+ * @returns {*} Returns the property value.
+ */
+function getValue(object, key) {
+  return object == null ? undefined : object[key];
+}
+
+module.exports = getValue;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_hasPath.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_hasPath.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var castPath = __webpack_require__(/*! ./_castPath */ "./node_modules/lodash/_castPath.js"),
+    isArguments = __webpack_require__(/*! ./isArguments */ "./node_modules/lodash/isArguments.js"),
+    isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
+    isIndex = __webpack_require__(/*! ./_isIndex */ "./node_modules/lodash/_isIndex.js"),
+    isLength = __webpack_require__(/*! ./isLength */ "./node_modules/lodash/isLength.js"),
+    toKey = __webpack_require__(/*! ./_toKey */ "./node_modules/lodash/_toKey.js");
+
+/**
+ * Checks if `path` exists on `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {Array|string} path The path to check.
+ * @param {Function} hasFunc The function to check properties.
+ * @returns {boolean} Returns `true` if `path` exists, else `false`.
+ */
+function hasPath(object, path, hasFunc) {
+  path = castPath(path, object);
+
+  var index = -1,
+      length = path.length,
+      result = false;
+
+  while (++index < length) {
+    var key = toKey(path[index]);
+    if (!(result = object != null && hasFunc(object, key))) {
+      break;
+    }
+    object = object[key];
+  }
+  if (result || ++index != length) {
+    return result;
+  }
+  length = object == null ? 0 : object.length;
+  return !!length && isLength(length) && isIndex(key, length) &&
+    (isArray(object) || isArguments(object));
+}
+
+module.exports = hasPath;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_hashClear.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_hashClear.js ***!
+  \*******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
+
+/**
+ * Removes all key-value entries from the hash.
+ *
+ * @private
+ * @name clear
+ * @memberOf Hash
+ */
+function hashClear() {
+  this.__data__ = nativeCreate ? nativeCreate(null) : {};
+  this.size = 0;
+}
+
+module.exports = hashClear;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_hashDelete.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_hashDelete.js ***!
+  \********************************************/
+/***/ (function(module) {
+
+/**
+ * Removes `key` and its value from the hash.
+ *
+ * @private
+ * @name delete
+ * @memberOf Hash
+ * @param {Object} hash The hash to modify.
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+function hashDelete(key) {
+  var result = this.has(key) && delete this.__data__[key];
+  this.size -= result ? 1 : 0;
+  return result;
+}
+
+module.exports = hashDelete;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_hashGet.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_hashGet.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
+
+/** Used to stand-in for `undefined` hash values. */
+var HASH_UNDEFINED = '__lodash_hash_undefined__';
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Gets the hash value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf Hash
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+function hashGet(key) {
+  var data = this.__data__;
+  if (nativeCreate) {
+    var result = data[key];
+    return result === HASH_UNDEFINED ? undefined : result;
+  }
+  return hasOwnProperty.call(data, key) ? data[key] : undefined;
+}
+
+module.exports = hashGet;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_hashHas.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_hashHas.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Checks if a hash value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf Hash
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function hashHas(key) {
+  var data = this.__data__;
+  return nativeCreate ? (data[key] !== undefined) : hasOwnProperty.call(data, key);
+}
+
+module.exports = hashHas;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_hashSet.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_hashSet.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
+
+/** Used to stand-in for `undefined` hash values. */
+var HASH_UNDEFINED = '__lodash_hash_undefined__';
+
+/**
+ * Sets the hash `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf Hash
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the hash instance.
+ */
+function hashSet(key, value) {
+  var data = this.__data__;
+  this.size += this.has(key) ? 0 : 1;
+  data[key] = (nativeCreate && value === undefined) ? HASH_UNDEFINED : value;
+  return this;
+}
+
+module.exports = hashSet;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_isFlattenable.js":
+/*!***********************************************!*\
+  !*** ./node_modules/lodash/_isFlattenable.js ***!
+  \***********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js"),
+    isArguments = __webpack_require__(/*! ./isArguments */ "./node_modules/lodash/isArguments.js"),
+    isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js");
+
+/** Built-in value references. */
+var spreadableSymbol = Symbol ? Symbol.isConcatSpreadable : undefined;
+
+/**
+ * Checks if `value` is a flattenable `arguments` object or array.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is flattenable, else `false`.
+ */
+function isFlattenable(value) {
+  return isArray(value) || isArguments(value) ||
+    !!(spreadableSymbol && value && value[spreadableSymbol]);
+}
+
+module.exports = isFlattenable;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_isIndex.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_isIndex.js ***!
+  \*****************************************/
+/***/ (function(module) {
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+
+/** Used to detect unsigned integer values. */
+var reIsUint = /^(?:0|[1-9]\d*)$/;
+
+/**
+ * Checks if `value` is a valid array-like index.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @param {number} [length=MAX_SAFE_INTEGER] The upper bounds of a valid index.
+ * @returns {boolean} Returns `true` if `value` is a valid index, else `false`.
+ */
+function isIndex(value, length) {
+  var type = typeof value;
+  length = length == null ? MAX_SAFE_INTEGER : length;
+
+  return !!length &&
+    (type == 'number' ||
+      (type != 'symbol' && reIsUint.test(value))) &&
+        (value > -1 && value % 1 == 0 && value < length);
+}
+
+module.exports = isIndex;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_isKey.js":
+/*!***************************************!*\
+  !*** ./node_modules/lodash/_isKey.js ***!
+  \***************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
+    isSymbol = __webpack_require__(/*! ./isSymbol */ "./node_modules/lodash/isSymbol.js");
+
+/** Used to match property names within property paths. */
+var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
+    reIsPlainProp = /^\w*$/;
+
+/**
+ * Checks if `value` is a property name and not a property path.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @param {Object} [object] The object to query keys on.
+ * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
+ */
+function isKey(value, object) {
+  if (isArray(value)) {
+    return false;
+  }
+  var type = typeof value;
+  if (type == 'number' || type == 'symbol' || type == 'boolean' ||
+      value == null || isSymbol(value)) {
+    return true;
+  }
+  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) ||
+    (object != null && value in Object(object));
+}
+
+module.exports = isKey;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_isKeyable.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/_isKeyable.js ***!
+  \*******************************************/
+/***/ (function(module) {
+
+/**
+ * Checks if `value` is suitable for use as unique object key.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
+ */
+function isKeyable(value) {
+  var type = typeof value;
+  return (type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean')
+    ? (value !== '__proto__')
+    : (value === null);
+}
+
+module.exports = isKeyable;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_isMasked.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_isMasked.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var coreJsData = __webpack_require__(/*! ./_coreJsData */ "./node_modules/lodash/_coreJsData.js");
+
+/** Used to detect methods masquerading as native. */
+var maskSrcKey = (function() {
+  var uid = /[^.]+$/.exec(coreJsData && coreJsData.keys && coreJsData.keys.IE_PROTO || '');
+  return uid ? ('Symbol(src)_1.' + uid) : '';
+}());
+
+/**
+ * Checks if `func` has its source masked.
+ *
+ * @private
+ * @param {Function} func The function to check.
+ * @returns {boolean} Returns `true` if `func` is masked, else `false`.
+ */
+function isMasked(func) {
+  return !!maskSrcKey && (maskSrcKey in func);
+}
+
+module.exports = isMasked;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_isPrototype.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_isPrototype.js ***!
+  \*********************************************/
+/***/ (function(module) {
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Checks if `value` is likely a prototype object.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
+ */
+function isPrototype(value) {
+  var Ctor = value && value.constructor,
+      proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
+
+  return value === proto;
+}
+
+module.exports = isPrototype;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_isStrictComparable.js":
+/*!****************************************************!*\
+  !*** ./node_modules/lodash/_isStrictComparable.js ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js");
+
+/**
+ * Checks if `value` is suitable for strict equality comparisons, i.e. `===`.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` if suitable for strict
+ *  equality comparisons, else `false`.
+ */
+function isStrictComparable(value) {
+  return value === value && !isObject(value);
+}
+
+module.exports = isStrictComparable;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_listCacheClear.js":
+/*!************************************************!*\
+  !*** ./node_modules/lodash/_listCacheClear.js ***!
+  \************************************************/
+/***/ (function(module) {
+
+/**
+ * Removes all key-value entries from the list cache.
+ *
+ * @private
+ * @name clear
+ * @memberOf ListCache
+ */
+function listCacheClear() {
+  this.__data__ = [];
+  this.size = 0;
+}
+
+module.exports = listCacheClear;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_listCacheDelete.js":
+/*!*************************************************!*\
+  !*** ./node_modules/lodash/_listCacheDelete.js ***!
+  \*************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
+
+/** Used for built-in method references. */
+var arrayProto = Array.prototype;
+
+/** Built-in value references. */
+var splice = arrayProto.splice;
+
+/**
+ * Removes `key` and its value from the list cache.
+ *
+ * @private
+ * @name delete
+ * @memberOf ListCache
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+function listCacheDelete(key) {
+  var data = this.__data__,
+      index = assocIndexOf(data, key);
+
+  if (index < 0) {
+    return false;
+  }
+  var lastIndex = data.length - 1;
+  if (index == lastIndex) {
+    data.pop();
+  } else {
+    splice.call(data, index, 1);
+  }
+  --this.size;
+  return true;
+}
+
+module.exports = listCacheDelete;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_listCacheGet.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_listCacheGet.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
+
+/**
+ * Gets the list cache value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf ListCache
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+function listCacheGet(key) {
+  var data = this.__data__,
+      index = assocIndexOf(data, key);
+
+  return index < 0 ? undefined : data[index][1];
+}
+
+module.exports = listCacheGet;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_listCacheHas.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_listCacheHas.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
+
+/**
+ * Checks if a list cache value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf ListCache
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function listCacheHas(key) {
+  return assocIndexOf(this.__data__, key) > -1;
+}
+
+module.exports = listCacheHas;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_listCacheSet.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_listCacheSet.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
+
+/**
+ * Sets the list cache `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf ListCache
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the list cache instance.
+ */
+function listCacheSet(key, value) {
+  var data = this.__data__,
+      index = assocIndexOf(data, key);
+
+  if (index < 0) {
+    ++this.size;
+    data.push([key, value]);
+  } else {
+    data[index][1] = value;
+  }
+  return this;
+}
+
+module.exports = listCacheSet;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_mapCacheClear.js":
+/*!***********************************************!*\
+  !*** ./node_modules/lodash/_mapCacheClear.js ***!
+  \***********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var Hash = __webpack_require__(/*! ./_Hash */ "./node_modules/lodash/_Hash.js"),
+    ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js"),
+    Map = __webpack_require__(/*! ./_Map */ "./node_modules/lodash/_Map.js");
+
+/**
+ * Removes all key-value entries from the map.
+ *
+ * @private
+ * @name clear
+ * @memberOf MapCache
+ */
+function mapCacheClear() {
+  this.size = 0;
+  this.__data__ = {
+    'hash': new Hash,
+    'map': new (Map || ListCache),
+    'string': new Hash
+  };
+}
+
+module.exports = mapCacheClear;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_mapCacheDelete.js":
+/*!************************************************!*\
+  !*** ./node_modules/lodash/_mapCacheDelete.js ***!
+  \************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
+
+/**
+ * Removes `key` and its value from the map.
+ *
+ * @private
+ * @name delete
+ * @memberOf MapCache
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+function mapCacheDelete(key) {
+  var result = getMapData(this, key)['delete'](key);
+  this.size -= result ? 1 : 0;
+  return result;
+}
+
+module.exports = mapCacheDelete;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_mapCacheGet.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_mapCacheGet.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
+
+/**
+ * Gets the map value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf MapCache
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+function mapCacheGet(key) {
+  return getMapData(this, key).get(key);
+}
+
+module.exports = mapCacheGet;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_mapCacheHas.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_mapCacheHas.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
+
+/**
+ * Checks if a map value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf MapCache
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function mapCacheHas(key) {
+  return getMapData(this, key).has(key);
+}
+
+module.exports = mapCacheHas;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_mapCacheSet.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_mapCacheSet.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
+
+/**
+ * Sets the map `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf MapCache
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the map cache instance.
+ */
+function mapCacheSet(key, value) {
+  var data = getMapData(this, key),
+      size = data.size;
+
+  data.set(key, value);
+  this.size += data.size == size ? 0 : 1;
+  return this;
+}
+
+module.exports = mapCacheSet;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_mapToArray.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_mapToArray.js ***!
+  \********************************************/
+/***/ (function(module) {
+
+/**
+ * Converts `map` to its key-value pairs.
+ *
+ * @private
+ * @param {Object} map The map to convert.
+ * @returns {Array} Returns the key-value pairs.
+ */
+function mapToArray(map) {
+  var index = -1,
+      result = Array(map.size);
+
+  map.forEach(function(value, key) {
+    result[++index] = [key, value];
+  });
+  return result;
+}
+
+module.exports = mapToArray;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_matchesStrictComparable.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/lodash/_matchesStrictComparable.js ***!
+  \*********************************************************/
+/***/ (function(module) {
+
+/**
+ * A specialized version of `matchesProperty` for source values suitable
+ * for strict equality comparisons, i.e. `===`.
+ *
+ * @private
+ * @param {string} key The key of the property to get.
+ * @param {*} srcValue The value to match.
+ * @returns {Function} Returns the new spec function.
+ */
+function matchesStrictComparable(key, srcValue) {
+  return function(object) {
+    if (object == null) {
+      return false;
+    }
+    return object[key] === srcValue &&
+      (srcValue !== undefined || (key in Object(object)));
+  };
+}
+
+module.exports = matchesStrictComparable;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_memoizeCapped.js":
+/*!***********************************************!*\
+  !*** ./node_modules/lodash/_memoizeCapped.js ***!
+  \***********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var memoize = __webpack_require__(/*! ./memoize */ "./node_modules/lodash/memoize.js");
+
+/** Used as the maximum memoize cache size. */
+var MAX_MEMOIZE_SIZE = 500;
+
+/**
+ * A specialized version of `_.memoize` which clears the memoized function's
+ * cache when it exceeds `MAX_MEMOIZE_SIZE`.
+ *
+ * @private
+ * @param {Function} func The function to have its output memoized.
+ * @returns {Function} Returns the new memoized function.
+ */
+function memoizeCapped(func) {
+  var result = memoize(func, function(key) {
+    if (cache.size === MAX_MEMOIZE_SIZE) {
+      cache.clear();
+    }
+    return key;
+  });
+
+  var cache = result.cache;
+  return result;
+}
+
+module.exports = memoizeCapped;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_nativeCreate.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_nativeCreate.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js");
+
+/* Built-in method references that are verified to be native. */
+var nativeCreate = getNative(Object, 'create');
+
+module.exports = nativeCreate;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_nativeKeys.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_nativeKeys.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var overArg = __webpack_require__(/*! ./_overArg */ "./node_modules/lodash/_overArg.js");
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeKeys = overArg(Object.keys, Object);
+
+module.exports = nativeKeys;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_nodeUtil.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_nodeUtil.js ***!
+  \******************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+/* module decorator */ module = __webpack_require__.nmd(module);
+var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ "./node_modules/lodash/_freeGlobal.js");
+
+/** Detect free variable `exports`. */
+var freeExports =  true && exports && !exports.nodeType && exports;
+
+/** Detect free variable `module`. */
+var freeModule = freeExports && "object" == 'object' && module && !module.nodeType && module;
+
+/** Detect the popular CommonJS extension `module.exports`. */
+var moduleExports = freeModule && freeModule.exports === freeExports;
+
+/** Detect free variable `process` from Node.js. */
+var freeProcess = moduleExports && freeGlobal.process;
+
+/** Used to access faster Node.js helpers. */
+var nodeUtil = (function() {
+  try {
+    // Use `util.types` for Node.js 10+.
+    var types = freeModule && freeModule.require && freeModule.require('util').types;
+
+    if (types) {
+      return types;
+    }
+
+    // Legacy `process.binding('util')` for Node.js < 10.
+    return freeProcess && freeProcess.binding && freeProcess.binding('util');
+  } catch (e) {}
+}());
+
+module.exports = nodeUtil;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_objectToString.js":
+/*!************************************************!*\
+  !*** ./node_modules/lodash/_objectToString.js ***!
+  \************************************************/
+/***/ (function(module) {
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the
+ * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var nativeObjectToString = objectProto.toString;
+
+/**
+ * Converts `value` to a string using `Object.prototype.toString`.
+ *
+ * @private
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ */
+function objectToString(value) {
+  return nativeObjectToString.call(value);
+}
+
+module.exports = objectToString;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_overArg.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/_overArg.js ***!
+  \*****************************************/
+/***/ (function(module) {
+
+/**
+ * Creates a unary function that invokes `func` with its argument transformed.
+ *
+ * @private
+ * @param {Function} func The function to wrap.
+ * @param {Function} transform The argument transform.
+ * @returns {Function} Returns the new function.
+ */
+function overArg(func, transform) {
+  return function(arg) {
+    return func(transform(arg));
+  };
+}
+
+module.exports = overArg;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_overRest.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_overRest.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var apply = __webpack_require__(/*! ./_apply */ "./node_modules/lodash/_apply.js");
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeMax = Math.max;
+
+/**
+ * A specialized version of `baseRest` which transforms the rest array.
+ *
+ * @private
+ * @param {Function} func The function to apply a rest parameter to.
+ * @param {number} [start=func.length-1] The start position of the rest parameter.
+ * @param {Function} transform The rest array transform.
+ * @returns {Function} Returns the new function.
+ */
+function overRest(func, start, transform) {
+  start = nativeMax(start === undefined ? (func.length - 1) : start, 0);
+  return function() {
+    var args = arguments,
+        index = -1,
+        length = nativeMax(args.length - start, 0),
+        array = Array(length);
+
+    while (++index < length) {
+      array[index] = args[start + index];
+    }
+    index = -1;
+    var otherArgs = Array(start + 1);
+    while (++index < start) {
+      otherArgs[index] = args[index];
+    }
+    otherArgs[start] = transform(array);
+    return apply(func, this, otherArgs);
+  };
+}
+
+module.exports = overRest;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_root.js":
+/*!**************************************!*\
+  !*** ./node_modules/lodash/_root.js ***!
+  \**************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ "./node_modules/lodash/_freeGlobal.js");
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+module.exports = root;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_setCacheAdd.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_setCacheAdd.js ***!
+  \*********************************************/
+/***/ (function(module) {
+
+/** Used to stand-in for `undefined` hash values. */
+var HASH_UNDEFINED = '__lodash_hash_undefined__';
+
+/**
+ * Adds `value` to the array cache.
+ *
+ * @private
+ * @name add
+ * @memberOf SetCache
+ * @alias push
+ * @param {*} value The value to cache.
+ * @returns {Object} Returns the cache instance.
+ */
+function setCacheAdd(value) {
+  this.__data__.set(value, HASH_UNDEFINED);
+  return this;
+}
+
+module.exports = setCacheAdd;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_setCacheHas.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_setCacheHas.js ***!
+  \*********************************************/
+/***/ (function(module) {
+
+/**
+ * Checks if `value` is in the array cache.
+ *
+ * @private
+ * @name has
+ * @memberOf SetCache
+ * @param {*} value The value to search for.
+ * @returns {number} Returns `true` if `value` is found, else `false`.
+ */
+function setCacheHas(value) {
+  return this.__data__.has(value);
+}
+
+module.exports = setCacheHas;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_setToArray.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_setToArray.js ***!
+  \********************************************/
+/***/ (function(module) {
+
+/**
+ * Converts `set` to an array of its values.
+ *
+ * @private
+ * @param {Object} set The set to convert.
+ * @returns {Array} Returns the values.
+ */
+function setToArray(set) {
+  var index = -1,
+      result = Array(set.size);
+
+  set.forEach(function(value) {
+    result[++index] = value;
+  });
+  return result;
+}
+
+module.exports = setToArray;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_setToString.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_setToString.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseSetToString = __webpack_require__(/*! ./_baseSetToString */ "./node_modules/lodash/_baseSetToString.js"),
+    shortOut = __webpack_require__(/*! ./_shortOut */ "./node_modules/lodash/_shortOut.js");
+
+/**
+ * Sets the `toString` method of `func` to return `string`.
+ *
+ * @private
+ * @param {Function} func The function to modify.
+ * @param {Function} string The `toString` result.
+ * @returns {Function} Returns `func`.
+ */
+var setToString = shortOut(baseSetToString);
+
+module.exports = setToString;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_shortOut.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_shortOut.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+/** Used to detect hot functions by number of calls within a span of milliseconds. */
+var HOT_COUNT = 800,
+    HOT_SPAN = 16;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeNow = Date.now;
+
+/**
+ * Creates a function that'll short out and invoke `identity` instead
+ * of `func` when it's called `HOT_COUNT` or more times in `HOT_SPAN`
+ * milliseconds.
+ *
+ * @private
+ * @param {Function} func The function to restrict.
+ * @returns {Function} Returns the new shortable function.
+ */
+function shortOut(func) {
+  var count = 0,
+      lastCalled = 0;
+
+  return function() {
+    var stamp = nativeNow(),
+        remaining = HOT_SPAN - (stamp - lastCalled);
+
+    lastCalled = stamp;
+    if (remaining > 0) {
+      if (++count >= HOT_COUNT) {
+        return arguments[0];
+      }
+    } else {
+      count = 0;
+    }
+    return func.apply(undefined, arguments);
+  };
+}
+
+module.exports = shortOut;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_stackClear.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/_stackClear.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js");
+
+/**
+ * Removes all key-value entries from the stack.
+ *
+ * @private
+ * @name clear
+ * @memberOf Stack
+ */
+function stackClear() {
+  this.__data__ = new ListCache;
+  this.size = 0;
+}
+
+module.exports = stackClear;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_stackDelete.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/_stackDelete.js ***!
+  \*********************************************/
+/***/ (function(module) {
+
+/**
+ * Removes `key` and its value from the stack.
+ *
+ * @private
+ * @name delete
+ * @memberOf Stack
+ * @param {string} key The key of the value to remove.
+ * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+ */
+function stackDelete(key) {
+  var data = this.__data__,
+      result = data['delete'](key);
+
+  this.size = data.size;
+  return result;
+}
+
+module.exports = stackDelete;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_stackGet.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_stackGet.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+/**
+ * Gets the stack value for `key`.
+ *
+ * @private
+ * @name get
+ * @memberOf Stack
+ * @param {string} key The key of the value to get.
+ * @returns {*} Returns the entry value.
+ */
+function stackGet(key) {
+  return this.__data__.get(key);
+}
+
+module.exports = stackGet;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_stackHas.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_stackHas.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+/**
+ * Checks if a stack value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf Stack
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function stackHas(key) {
+  return this.__data__.has(key);
+}
+
+module.exports = stackHas;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_stackSet.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_stackSet.js ***!
+  \******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js"),
+    Map = __webpack_require__(/*! ./_Map */ "./node_modules/lodash/_Map.js"),
+    MapCache = __webpack_require__(/*! ./_MapCache */ "./node_modules/lodash/_MapCache.js");
+
+/** Used as the size to enable large array optimizations. */
+var LARGE_ARRAY_SIZE = 200;
+
+/**
+ * Sets the stack `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf Stack
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the stack cache instance.
+ */
+function stackSet(key, value) {
+  var data = this.__data__;
+  if (data instanceof ListCache) {
+    var pairs = data.__data__;
+    if (!Map || (pairs.length < LARGE_ARRAY_SIZE - 1)) {
+      pairs.push([key, value]);
+      this.size = ++data.size;
+      return this;
+    }
+    data = this.__data__ = new MapCache(pairs);
+  }
+  data.set(key, value);
+  this.size = data.size;
+  return this;
+}
+
+module.exports = stackSet;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_stringToPath.js":
+/*!**********************************************!*\
+  !*** ./node_modules/lodash/_stringToPath.js ***!
+  \**********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var memoizeCapped = __webpack_require__(/*! ./_memoizeCapped */ "./node_modules/lodash/_memoizeCapped.js");
+
+/** Used to match property names within property paths. */
+var rePropName = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g;
+
+/** Used to match backslashes in property paths. */
+var reEscapeChar = /\\(\\)?/g;
+
+/**
+ * Converts `string` to a property path array.
+ *
+ * @private
+ * @param {string} string The string to convert.
+ * @returns {Array} Returns the property path array.
+ */
+var stringToPath = memoizeCapped(function(string) {
+  var result = [];
+  if (string.charCodeAt(0) === 46 /* . */) {
+    result.push('');
+  }
+  string.replace(rePropName, function(match, number, quote, subString) {
+    result.push(quote ? subString.replace(reEscapeChar, '$1') : (number || match));
+  });
+  return result;
+});
+
+module.exports = stringToPath;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_toKey.js":
+/*!***************************************!*\
+  !*** ./node_modules/lodash/_toKey.js ***!
+  \***************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var isSymbol = __webpack_require__(/*! ./isSymbol */ "./node_modules/lodash/isSymbol.js");
+
+/** Used as references for various `Number` constants. */
+var INFINITY = 1 / 0;
+
+/**
+ * Converts `value` to a string key if it's not a string or symbol.
+ *
+ * @private
+ * @param {*} value The value to inspect.
+ * @returns {string|symbol} Returns the key.
+ */
+function toKey(value) {
+  if (typeof value == 'string' || isSymbol(value)) {
+    return value;
+  }
+  var result = (value + '');
+  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+}
+
+module.exports = toKey;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/_toSource.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/_toSource.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+/** Used for built-in method references. */
+var funcProto = Function.prototype;
+
+/** Used to resolve the decompiled source of functions. */
+var funcToString = funcProto.toString;
+
+/**
+ * Converts `func` to its source code.
+ *
+ * @private
+ * @param {Function} func The function to convert.
+ * @returns {string} Returns the source code.
+ */
+function toSource(func) {
+  if (func != null) {
+    try {
+      return funcToString.call(func);
+    } catch (e) {}
+    try {
+      return (func + '');
+    } catch (e) {}
+  }
+  return '';
+}
+
+module.exports = toSource;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/constant.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/constant.js ***!
+  \*****************************************/
+/***/ (function(module) {
+
+/**
+ * Creates a function that returns `value`.
+ *
+ * @static
+ * @memberOf _
+ * @since 2.4.0
+ * @category Util
+ * @param {*} value The value to return from the new function.
+ * @returns {Function} Returns the new constant function.
+ * @example
+ *
+ * var objects = _.times(2, _.constant({ 'a': 1 }));
+ *
+ * console.log(objects);
+ * // => [{ 'a': 1 }, { 'a': 1 }]
+ *
+ * console.log(objects[0] === objects[1]);
+ * // => true
+ */
+function constant(value) {
+  return function() {
+    return value;
+  };
+}
+
+module.exports = constant;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/eq.js":
+/*!***********************************!*\
+  !*** ./node_modules/lodash/eq.js ***!
+  \***********************************/
+/***/ (function(module) {
+
+/**
+ * Performs a
+ * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * comparison between two values to determine if they are equivalent.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to compare.
+ * @param {*} other The other value to compare.
+ * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ * var other = { 'a': 1 };
+ *
+ * _.eq(object, object);
+ * // => true
+ *
+ * _.eq(object, other);
+ * // => false
+ *
+ * _.eq('a', 'a');
+ * // => true
+ *
+ * _.eq('a', Object('a'));
+ * // => false
+ *
+ * _.eq(NaN, NaN);
+ * // => true
+ */
+function eq(value, other) {
+  return value === other || (value !== value && other !== other);
+}
+
+module.exports = eq;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/filter.js":
+/*!***************************************!*\
+  !*** ./node_modules/lodash/filter.js ***!
+  \***************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var arrayFilter = __webpack_require__(/*! ./_arrayFilter */ "./node_modules/lodash/_arrayFilter.js"),
+    baseFilter = __webpack_require__(/*! ./_baseFilter */ "./node_modules/lodash/_baseFilter.js"),
+    baseIteratee = __webpack_require__(/*! ./_baseIteratee */ "./node_modules/lodash/_baseIteratee.js"),
+    isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js");
+
+/**
+ * Iterates over elements of `collection`, returning an array of all elements
+ * `predicate` returns truthy for. The predicate is invoked with three
+ * arguments: (value, index|key, collection).
+ *
+ * **Note:** Unlike `_.remove`, this method returns a new array.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Collection
+ * @param {Array|Object} collection The collection to iterate over.
+ * @param {Function} [predicate=_.identity] The function invoked per iteration.
+ * @returns {Array} Returns the new filtered array.
+ * @see _.reject
+ * @example
+ *
+ * var users = [
+ *   { 'user': 'barney', 'age': 36, 'active': true },
+ *   { 'user': 'fred',   'age': 40, 'active': false }
+ * ];
+ *
+ * _.filter(users, function(o) { return !o.active; });
+ * // => objects for ['fred']
+ *
+ * // The `_.matches` iteratee shorthand.
+ * _.filter(users, { 'age': 36, 'active': true });
+ * // => objects for ['barney']
+ *
+ * // The `_.matchesProperty` iteratee shorthand.
+ * _.filter(users, ['active', false]);
+ * // => objects for ['fred']
+ *
+ * // The `_.property` iteratee shorthand.
+ * _.filter(users, 'active');
+ * // => objects for ['barney']
+ *
+ * // Combining several predicates using `_.overEvery` or `_.overSome`.
+ * _.filter(users, _.overSome([{ 'age': 36 }, ['age', 40]]));
+ * // => objects for ['fred', 'barney']
+ */
+function filter(collection, predicate) {
+  var func = isArray(collection) ? arrayFilter : baseFilter;
+  return func(collection, baseIteratee(predicate, 3));
+}
+
+module.exports = filter;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/flatten.js":
+/*!****************************************!*\
+  !*** ./node_modules/lodash/flatten.js ***!
+  \****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseFlatten = __webpack_require__(/*! ./_baseFlatten */ "./node_modules/lodash/_baseFlatten.js");
+
+/**
+ * Flattens `array` a single level deep.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Array
+ * @param {Array} array The array to flatten.
+ * @returns {Array} Returns the new flattened array.
+ * @example
+ *
+ * _.flatten([1, [2, [3, [4]], 5]]);
+ * // => [1, 2, [3, [4]], 5]
+ */
+function flatten(array) {
+  var length = array == null ? 0 : array.length;
+  return length ? baseFlatten(array, 1) : [];
+}
+
+module.exports = flatten;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/get.js":
+/*!************************************!*\
+  !*** ./node_modules/lodash/get.js ***!
+  \************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseGet = __webpack_require__(/*! ./_baseGet */ "./node_modules/lodash/_baseGet.js");
+
+/**
+ * Gets the value at `path` of `object`. If the resolved value is
+ * `undefined`, the `defaultValue` is returned in its place.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.7.0
+ * @category Object
+ * @param {Object} object The object to query.
+ * @param {Array|string} path The path of the property to get.
+ * @param {*} [defaultValue] The value returned for `undefined` resolved values.
+ * @returns {*} Returns the resolved value.
+ * @example
+ *
+ * var object = { 'a': [{ 'b': { 'c': 3 } }] };
+ *
+ * _.get(object, 'a[0].b.c');
+ * // => 3
+ *
+ * _.get(object, ['a', '0', 'b', 'c']);
+ * // => 3
+ *
+ * _.get(object, 'a.b.c', 'default');
+ * // => 'default'
+ */
+function get(object, path, defaultValue) {
+  var result = object == null ? undefined : baseGet(object, path);
+  return result === undefined ? defaultValue : result;
+}
+
+module.exports = get;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/hasIn.js":
+/*!**************************************!*\
+  !*** ./node_modules/lodash/hasIn.js ***!
+  \**************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseHasIn = __webpack_require__(/*! ./_baseHasIn */ "./node_modules/lodash/_baseHasIn.js"),
+    hasPath = __webpack_require__(/*! ./_hasPath */ "./node_modules/lodash/_hasPath.js");
+
+/**
+ * Checks if `path` is a direct or inherited property of `object`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Object
+ * @param {Object} object The object to query.
+ * @param {Array|string} path The path to check.
+ * @returns {boolean} Returns `true` if `path` exists, else `false`.
+ * @example
+ *
+ * var object = _.create({ 'a': _.create({ 'b': 2 }) });
+ *
+ * _.hasIn(object, 'a');
+ * // => true
+ *
+ * _.hasIn(object, 'a.b');
+ * // => true
+ *
+ * _.hasIn(object, ['a', 'b']);
+ * // => true
+ *
+ * _.hasIn(object, 'b');
+ * // => false
+ */
+function hasIn(object, path) {
+  return object != null && hasPath(object, path, baseHasIn);
+}
+
+module.exports = hasIn;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/identity.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/identity.js ***!
+  \*****************************************/
+/***/ (function(module) {
+
+/**
+ * This method returns the first argument it receives.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Util
+ * @param {*} value Any value.
+ * @returns {*} Returns `value`.
+ * @example
+ *
+ * var object = { 'a': 1 };
+ *
+ * console.log(_.identity(object) === object);
+ * // => true
+ */
+function identity(value) {
+  return value;
+}
+
+module.exports = identity;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isArguments.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/isArguments.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseIsArguments = __webpack_require__(/*! ./_baseIsArguments */ "./node_modules/lodash/_baseIsArguments.js"),
+    isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/** Built-in value references. */
+var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+
+/**
+ * Checks if `value` is likely an `arguments` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an `arguments` object,
+ *  else `false`.
+ * @example
+ *
+ * _.isArguments(function() { return arguments; }());
+ * // => true
+ *
+ * _.isArguments([1, 2, 3]);
+ * // => false
+ */
+var isArguments = baseIsArguments(function() { return arguments; }()) ? baseIsArguments : function(value) {
+  return isObjectLike(value) && hasOwnProperty.call(value, 'callee') &&
+    !propertyIsEnumerable.call(value, 'callee');
+};
+
+module.exports = isArguments;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isArray.js":
+/*!****************************************!*\
+  !*** ./node_modules/lodash/isArray.js ***!
+  \****************************************/
+/***/ (function(module) {
+
+/**
+ * Checks if `value` is classified as an `Array` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an array, else `false`.
+ * @example
+ *
+ * _.isArray([1, 2, 3]);
+ * // => true
+ *
+ * _.isArray(document.body.children);
+ * // => false
+ *
+ * _.isArray('abc');
+ * // => false
+ *
+ * _.isArray(_.noop);
+ * // => false
+ */
+var isArray = Array.isArray;
+
+module.exports = isArray;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isArrayLike.js":
+/*!********************************************!*\
+  !*** ./node_modules/lodash/isArrayLike.js ***!
+  \********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var isFunction = __webpack_require__(/*! ./isFunction */ "./node_modules/lodash/isFunction.js"),
+    isLength = __webpack_require__(/*! ./isLength */ "./node_modules/lodash/isLength.js");
+
+/**
+ * Checks if `value` is array-like. A value is considered array-like if it's
+ * not a function and has a `value.length` that's an integer greater than or
+ * equal to `0` and less than or equal to `Number.MAX_SAFE_INTEGER`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is array-like, else `false`.
+ * @example
+ *
+ * _.isArrayLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isArrayLike(document.body.children);
+ * // => true
+ *
+ * _.isArrayLike('abc');
+ * // => true
+ *
+ * _.isArrayLike(_.noop);
+ * // => false
+ */
+function isArrayLike(value) {
+  return value != null && isLength(value.length) && !isFunction(value);
+}
+
+module.exports = isArrayLike;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isBuffer.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/isBuffer.js ***!
+  \*****************************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+/* module decorator */ module = __webpack_require__.nmd(module);
+var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js"),
+    stubFalse = __webpack_require__(/*! ./stubFalse */ "./node_modules/lodash/stubFalse.js");
+
+/** Detect free variable `exports`. */
+var freeExports =  true && exports && !exports.nodeType && exports;
+
+/** Detect free variable `module`. */
+var freeModule = freeExports && "object" == 'object' && module && !module.nodeType && module;
+
+/** Detect the popular CommonJS extension `module.exports`. */
+var moduleExports = freeModule && freeModule.exports === freeExports;
+
+/** Built-in value references. */
+var Buffer = moduleExports ? root.Buffer : undefined;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeIsBuffer = Buffer ? Buffer.isBuffer : undefined;
+
+/**
+ * Checks if `value` is a buffer.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.3.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a buffer, else `false`.
+ * @example
+ *
+ * _.isBuffer(new Buffer(2));
+ * // => true
+ *
+ * _.isBuffer(new Uint8Array(2));
+ * // => false
+ */
+var isBuffer = nativeIsBuffer || stubFalse;
+
+module.exports = isBuffer;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isEmpty.js":
+/*!****************************************!*\
+  !*** ./node_modules/lodash/isEmpty.js ***!
+  \****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseKeys = __webpack_require__(/*! ./_baseKeys */ "./node_modules/lodash/_baseKeys.js"),
+    getTag = __webpack_require__(/*! ./_getTag */ "./node_modules/lodash/_getTag.js"),
+    isArguments = __webpack_require__(/*! ./isArguments */ "./node_modules/lodash/isArguments.js"),
+    isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
+    isArrayLike = __webpack_require__(/*! ./isArrayLike */ "./node_modules/lodash/isArrayLike.js"),
+    isBuffer = __webpack_require__(/*! ./isBuffer */ "./node_modules/lodash/isBuffer.js"),
+    isPrototype = __webpack_require__(/*! ./_isPrototype */ "./node_modules/lodash/_isPrototype.js"),
+    isTypedArray = __webpack_require__(/*! ./isTypedArray */ "./node_modules/lodash/isTypedArray.js");
+
+/** `Object#toString` result references. */
+var mapTag = '[object Map]',
+    setTag = '[object Set]';
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Checks if `value` is an empty object, collection, map, or set.
+ *
+ * Objects are considered empty if they have no own enumerable string keyed
+ * properties.
+ *
+ * Array-like values such as `arguments` objects, arrays, buffers, strings, or
+ * jQuery-like collections are considered empty if they have a `length` of `0`.
+ * Similarly, maps and sets are considered empty if they have a `size` of `0`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is empty, else `false`.
+ * @example
+ *
+ * _.isEmpty(null);
+ * // => true
+ *
+ * _.isEmpty(true);
+ * // => true
+ *
+ * _.isEmpty(1);
+ * // => true
+ *
+ * _.isEmpty([1, 2, 3]);
+ * // => false
+ *
+ * _.isEmpty({ 'a': 1 });
+ * // => false
+ */
+function isEmpty(value) {
+  if (value == null) {
+    return true;
+  }
+  if (isArrayLike(value) &&
+      (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' ||
+        isBuffer(value) || isTypedArray(value) || isArguments(value))) {
+    return !value.length;
+  }
+  var tag = getTag(value);
+  if (tag == mapTag || tag == setTag) {
+    return !value.size;
+  }
+  if (isPrototype(value)) {
+    return !baseKeys(value).length;
+  }
+  for (var key in value) {
+    if (hasOwnProperty.call(value, key)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+module.exports = isEmpty;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isFunction.js":
+/*!*******************************************!*\
+  !*** ./node_modules/lodash/isFunction.js ***!
+  \*******************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
+    isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js");
+
+/** `Object#toString` result references. */
+var asyncTag = '[object AsyncFunction]',
+    funcTag = '[object Function]',
+    genTag = '[object GeneratorFunction]',
+    proxyTag = '[object Proxy]';
+
+/**
+ * Checks if `value` is classified as a `Function` object.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a function, else `false`.
+ * @example
+ *
+ * _.isFunction(_);
+ * // => true
+ *
+ * _.isFunction(/abc/);
+ * // => false
+ */
+function isFunction(value) {
+  if (!isObject(value)) {
+    return false;
+  }
+  // The use of `Object#toString` avoids issues with the `typeof` operator
+  // in Safari 9 which returns 'object' for typed arrays and other constructors.
+  var tag = baseGetTag(value);
+  return tag == funcTag || tag == genTag || tag == asyncTag || tag == proxyTag;
+}
+
+module.exports = isFunction;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isLength.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/isLength.js ***!
+  \*****************************************/
+/***/ (function(module) {
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+
+/**
+ * Checks if `value` is a valid array-like length.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @example
+ *
+ * _.isLength(3);
+ * // => true
+ *
+ * _.isLength(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isLength(Infinity);
+ * // => false
+ *
+ * _.isLength('3');
+ * // => false
+ */
+function isLength(value) {
+  return typeof value == 'number' &&
+    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+}
+
+module.exports = isLength;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isObject.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/isObject.js ***!
+  \*****************************************/
+/***/ (function(module) {
+
+/**
+ * Checks if `value` is the
+ * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+ * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @example
+ *
+ * _.isObject({});
+ * // => true
+ *
+ * _.isObject([1, 2, 3]);
+ * // => true
+ *
+ * _.isObject(_.noop);
+ * // => true
+ *
+ * _.isObject(null);
+ * // => false
+ */
+function isObject(value) {
+  var type = typeof value;
+  return value != null && (type == 'object' || type == 'function');
+}
+
+module.exports = isObject;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isObjectLike.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/isObjectLike.js ***!
+  \*********************************************/
+/***/ (function(module) {
+
+/**
+ * Checks if `value` is object-like. A value is object-like if it's not `null`
+ * and has a `typeof` result of "object".
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+ * @example
+ *
+ * _.isObjectLike({});
+ * // => true
+ *
+ * _.isObjectLike([1, 2, 3]);
+ * // => true
+ *
+ * _.isObjectLike(_.noop);
+ * // => false
+ *
+ * _.isObjectLike(null);
+ * // => false
+ */
+function isObjectLike(value) {
+  return value != null && typeof value == 'object';
+}
+
+module.exports = isObjectLike;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isSymbol.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/isSymbol.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
+    isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
+
+/** `Object#toString` result references. */
+var symbolTag = '[object Symbol]';
+
+/**
+ * Checks if `value` is classified as a `Symbol` primitive or object.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+ * @example
+ *
+ * _.isSymbol(Symbol.iterator);
+ * // => true
+ *
+ * _.isSymbol('abc');
+ * // => false
+ */
+function isSymbol(value) {
+  return typeof value == 'symbol' ||
+    (isObjectLike(value) && baseGetTag(value) == symbolTag);
+}
+
+module.exports = isSymbol;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/isTypedArray.js":
+/*!*********************************************!*\
+  !*** ./node_modules/lodash/isTypedArray.js ***!
+  \*********************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseIsTypedArray = __webpack_require__(/*! ./_baseIsTypedArray */ "./node_modules/lodash/_baseIsTypedArray.js"),
+    baseUnary = __webpack_require__(/*! ./_baseUnary */ "./node_modules/lodash/_baseUnary.js"),
+    nodeUtil = __webpack_require__(/*! ./_nodeUtil */ "./node_modules/lodash/_nodeUtil.js");
+
+/* Node.js helper references. */
+var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
+
+/**
+ * Checks if `value` is classified as a typed array.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+ * @example
+ *
+ * _.isTypedArray(new Uint8Array);
+ * // => true
+ *
+ * _.isTypedArray([]);
+ * // => false
+ */
+var isTypedArray = nodeIsTypedArray ? baseUnary(nodeIsTypedArray) : baseIsTypedArray;
+
+module.exports = isTypedArray;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/keys.js":
+/*!*************************************!*\
+  !*** ./node_modules/lodash/keys.js ***!
+  \*************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var arrayLikeKeys = __webpack_require__(/*! ./_arrayLikeKeys */ "./node_modules/lodash/_arrayLikeKeys.js"),
+    baseKeys = __webpack_require__(/*! ./_baseKeys */ "./node_modules/lodash/_baseKeys.js"),
+    isArrayLike = __webpack_require__(/*! ./isArrayLike */ "./node_modules/lodash/isArrayLike.js");
+
+/**
+ * Creates an array of the own enumerable property names of `object`.
+ *
+ * **Note:** Non-object values are coerced to objects. See the
+ * [ES spec](http://ecma-international.org/ecma-262/7.0/#sec-object.keys)
+ * for more details.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Object
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ *   this.b = 2;
+ * }
+ *
+ * Foo.prototype.c = 3;
+ *
+ * _.keys(new Foo);
+ * // => ['a', 'b'] (iteration order is not guaranteed)
+ *
+ * _.keys('hi');
+ * // => ['0', '1']
+ */
+function keys(object) {
+  return isArrayLike(object) ? arrayLikeKeys(object) : baseKeys(object);
+}
+
+module.exports = keys;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/memoize.js":
+/*!****************************************!*\
+  !*** ./node_modules/lodash/memoize.js ***!
+  \****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var MapCache = __webpack_require__(/*! ./_MapCache */ "./node_modules/lodash/_MapCache.js");
+
+/** Error message constants. */
+var FUNC_ERROR_TEXT = 'Expected a function';
+
+/**
+ * Creates a function that memoizes the result of `func`. If `resolver` is
+ * provided, it determines the cache key for storing the result based on the
+ * arguments provided to the memoized function. By default, the first argument
+ * provided to the memoized function is used as the map cache key. The `func`
+ * is invoked with the `this` binding of the memoized function.
+ *
+ * **Note:** The cache is exposed as the `cache` property on the memoized
+ * function. Its creation may be customized by replacing the `_.memoize.Cache`
+ * constructor with one whose instances implement the
+ * [`Map`](http://ecma-international.org/ecma-262/7.0/#sec-properties-of-the-map-prototype-object)
+ * method interface of `clear`, `delete`, `get`, `has`, and `set`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Function
+ * @param {Function} func The function to have its output memoized.
+ * @param {Function} [resolver] The function to resolve the cache key.
+ * @returns {Function} Returns the new memoized function.
+ * @example
+ *
+ * var object = { 'a': 1, 'b': 2 };
+ * var other = { 'c': 3, 'd': 4 };
+ *
+ * var values = _.memoize(_.values);
+ * values(object);
+ * // => [1, 2]
+ *
+ * values(other);
+ * // => [3, 4]
+ *
+ * object.a = 2;
+ * values(object);
+ * // => [1, 2]
+ *
+ * // Modify the result cache.
+ * values.cache.set(object, ['a', 'b']);
+ * values(object);
+ * // => ['a', 'b']
+ *
+ * // Replace `_.memoize.Cache`.
+ * _.memoize.Cache = WeakMap;
+ */
+function memoize(func, resolver) {
+  if (typeof func != 'function' || (resolver != null && typeof resolver != 'function')) {
+    throw new TypeError(FUNC_ERROR_TEXT);
+  }
+  var memoized = function() {
+    var args = arguments,
+        key = resolver ? resolver.apply(this, args) : args[0],
+        cache = memoized.cache;
+
+    if (cache.has(key)) {
+      return cache.get(key);
+    }
+    var result = func.apply(this, args);
+    memoized.cache = cache.set(key, result) || cache;
+    return result;
+  };
+  memoized.cache = new (memoize.Cache || MapCache);
+  return memoized;
+}
+
+// Expose `MapCache`.
+memoize.Cache = MapCache;
+
+module.exports = memoize;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/pick.js":
+/*!*************************************!*\
+  !*** ./node_modules/lodash/pick.js ***!
+  \*************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var basePick = __webpack_require__(/*! ./_basePick */ "./node_modules/lodash/_basePick.js"),
+    flatRest = __webpack_require__(/*! ./_flatRest */ "./node_modules/lodash/_flatRest.js");
+
+/**
+ * Creates an object composed of the picked `object` properties.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Object
+ * @param {Object} object The source object.
+ * @param {...(string|string[])} [paths] The property paths to pick.
+ * @returns {Object} Returns the new object.
+ * @example
+ *
+ * var object = { 'a': 1, 'b': '2', 'c': 3 };
+ *
+ * _.pick(object, ['a', 'c']);
+ * // => { 'a': 1, 'c': 3 }
+ */
+var pick = flatRest(function(object, paths) {
+  return object == null ? {} : basePick(object, paths);
+});
+
+module.exports = pick;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/property.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/property.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseProperty = __webpack_require__(/*! ./_baseProperty */ "./node_modules/lodash/_baseProperty.js"),
+    basePropertyDeep = __webpack_require__(/*! ./_basePropertyDeep */ "./node_modules/lodash/_basePropertyDeep.js"),
+    isKey = __webpack_require__(/*! ./_isKey */ "./node_modules/lodash/_isKey.js"),
+    toKey = __webpack_require__(/*! ./_toKey */ "./node_modules/lodash/_toKey.js");
+
+/**
+ * Creates a function that returns the value at `path` of a given object.
+ *
+ * @static
+ * @memberOf _
+ * @since 2.4.0
+ * @category Util
+ * @param {Array|string} path The path of the property to get.
+ * @returns {Function} Returns the new accessor function.
+ * @example
+ *
+ * var objects = [
+ *   { 'a': { 'b': 2 } },
+ *   { 'a': { 'b': 1 } }
+ * ];
+ *
+ * _.map(objects, _.property('a.b'));
+ * // => [2, 1]
+ *
+ * _.map(_.sortBy(objects, _.property(['a', 'b'])), 'a.b');
+ * // => [1, 2]
+ */
+function property(path) {
+  return isKey(path) ? baseProperty(toKey(path)) : basePropertyDeep(path);
+}
+
+module.exports = property;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/stubArray.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/stubArray.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+/**
+ * This method returns a new empty array.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {Array} Returns the new empty array.
+ * @example
+ *
+ * var arrays = _.times(2, _.stubArray);
+ *
+ * console.log(arrays);
+ * // => [[], []]
+ *
+ * console.log(arrays[0] === arrays[1]);
+ * // => false
+ */
+function stubArray() {
+  return [];
+}
+
+module.exports = stubArray;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/stubFalse.js":
+/*!******************************************!*\
+  !*** ./node_modules/lodash/stubFalse.js ***!
+  \******************************************/
+/***/ (function(module) {
+
+/**
+ * This method returns `false`.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.13.0
+ * @category Util
+ * @returns {boolean} Returns `false`.
+ * @example
+ *
+ * _.times(2, _.stubFalse);
+ * // => [false, false]
+ */
+function stubFalse() {
+  return false;
+}
+
+module.exports = stubFalse;
+
+
+/***/ }),
+
+/***/ "./node_modules/lodash/toString.js":
+/*!*****************************************!*\
+  !*** ./node_modules/lodash/toString.js ***!
+  \*****************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+var baseToString = __webpack_require__(/*! ./_baseToString */ "./node_modules/lodash/_baseToString.js");
+
+/**
+ * Converts `value` to a string. An empty string is returned for `null`
+ * and `undefined` values. The sign of `-0` is preserved.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ * @example
+ *
+ * _.toString(null);
+ * // => ''
+ *
+ * _.toString(-0);
+ * // => '-0'
+ *
+ * _.toString([1, 2, 3]);
+ * // => '1,2,3'
+ */
+function toString(value) {
+  return value == null ? '' : baseToString(value);
+}
+
+module.exports = toString;
+
+
+/***/ }),
+
+/***/ "@wordpress/block-editor":
+/*!*************************************!*\
+  !*** external ["wp","blockEditor"] ***!
+  \*************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = window["wp"]["blockEditor"];
+
+/***/ }),
+
+/***/ "@wordpress/element":
+/*!*********************************!*\
+  !*** external ["wp","element"] ***!
+  \*********************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = window["wp"]["element"];
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _extends; }
+/* harmony export */ });
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			loaded: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	!function() {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/node module decorator */
+/******/ 	!function() {
+/******/ 		__webpack_require__.nmd = function(module) {
+/******/ 			module.paths = [];
+/******/ 			if (!module.children) module.children = [];
+/******/ 			return module;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _gutenberg_blocks_mindgallery_block_mind_gallery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./gutenberg/blocks/mindgallery-block/mind-gallery */ "./src/gutenberg/blocks/mindgallery-block/mind-gallery.js");
+/*jshint esversion: 9 */
+const {
+  registerBlockType
+} = wp.blocks; // Category slug and title
+
+const category = {
+  slug: 'block-gallery',
+  title: 'Block Gallery'
+};
+
+registerBlockType('mindfulness-blocks/mindgallery-block', { ..._gutenberg_blocks_mindgallery_block_mind_gallery__WEBPACK_IMPORTED_MODULE_0__.settings
+});
+}();
+/******/ })()
+;
+//# sourceMappingURL=index.js.map
