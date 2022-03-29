@@ -34,7 +34,7 @@ if (!defined('WPINC')) {
 /**
  * First things first.
  */
-define('WM_MINDGALLERY_VERSION', '2.0.1');
+define('WM_MINDGALLERY_VERSION', '2.0.2');
 define('WM_MINDGALLERY_TEXTDOMAIN', 'wm_mindgallery');
 
 /**

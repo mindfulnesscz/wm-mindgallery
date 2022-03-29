@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 ## [2.1] - Things to come in next version
   
 - whole new React based view layer on frontend
+- postcss support instead of sass
   
 ## [2.0] - 2021-07-08
  
