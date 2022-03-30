@@ -2,9 +2,10 @@
 
 interface MindImageType {
   url: string
-  link: string
+  link?: string
   id: string
-  caption: string
+  caption?: string
+  alt?:  string
 }
 
 export interface GalleryProps {

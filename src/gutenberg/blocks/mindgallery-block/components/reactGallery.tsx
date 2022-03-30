@@ -9,12 +9,6 @@ import MindImage from './utils/mind-image';
 const ReactGallery: React.FC<GalleryProps> = ({ className, attributes }) => {
 
   const {
-    captions,
-    customFontSize,
-    fontSize,
-    fullwidth,
-    gutter,
-    gutterMobile,
     images,
     linkTo,
   } = attributes;
@@ -36,9 +30,7 @@ const ReactGallery: React.FC<GalleryProps> = ({ className, attributes }) => {
                 break;
             }
 
-            const img = <MindImage
-              image={image}
-            />;
+            const img = <MindImage image={image} />;
 
             return (
               <li key={image.id || image.url} className="blockgallery--item orbit-slide">

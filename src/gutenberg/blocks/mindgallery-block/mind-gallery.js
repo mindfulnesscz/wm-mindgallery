@@ -12,12 +12,8 @@ import filter from 'lodash/filter';
 import Edit from './components/edit';
 import ReactGallery from './components/reactGallery.tsx';
 import FoundationGallery from './components/foundationGallery.tsx';
+import { GlobalAttributes, GlobalTransforms } from './components/global';
 
-import { GlobalAttributes, GlobalTransforms, GlobalStyles } from './components/global';
-
-
-import { useBlockProps } from '@wordpress/block-editor';
-import classnames from 'classnames';
 
 
 

@@ -4,7 +4,7 @@
     "./src/gutenberg/blocks/mindgallery-block/components/reactGallery.tsx"
   ],
   "exclude": [
-    "/**/*"
+    "/**/*.js"
   ],
   "compilerOptions": {
     "esModuleInterop": true,
