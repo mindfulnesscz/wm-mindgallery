@@ -181,17 +181,8 @@ const settings = {
 
   save({ attributes, className }) {
 
-
-    const components = {
-      react: ReactGallery,
-      foundation: FoundationGallery
-    };
-
-    const GalleryType = components[attributes.typeTo];
-    const ret = <GalleryType className={className} attributes={attributes} />;
-    console.log(ret);
     return (
-      <GalleryType className={className} attributes={attributes} />
+      <ReactGallery className={className} attributes={attributes} />
     );
 
   },

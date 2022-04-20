@@ -1,9 +1,8 @@
 /**
  * Internal dependencies
  */
-import { title } from '../mind-gallery';
 import linkOptions from './utils/link-options';
-import typeOptions from './utils/type-options';
+
 
 
 /**
@@ -13,8 +12,8 @@ const { __, sprintf } = wp.i18n;
 const { Component, Fragment } = wp.element;
 const { compose } = wp.compose;
 const { withSelect } = wp.data;
-const { InspectorControls, FontSizePicker, withFontSizes } = wp.blockEditor;
-const { PanelBody, RangeControl, ToggleControl, SelectControl } = wp.components;
+const { InspectorControls, withFontSizes } = wp.blockEditor;
+const { PanelBody, ToggleControl, SelectControl } = wp.components;
 
 /**
  * Inspector controls
@@ -48,24 +47,12 @@ class Inspector extends Component {
 			attributes,
 			setAttributes,
 			isSelected,
-			setFontSize,
-			fontSize,
-			wideControlsEnabled = false,
 		} = this.props;
 
 		const {
-			align,
-			images,
 			linkTo,
-			typeTo,
 			controls,
-			gutter,
-			lightbox,
-			fullwidth,
-			radius,
-			shadow,
-			captions,
-			backgroundPadding,
+
 		} = attributes;
 
 		return (
@@ -73,15 +60,9 @@ class Inspector extends Component {
 				<Fragment>
 					<InspectorControls>
 						<PanelBody
-							title={ __( 'Type Settings' ) }
+							title={ __( 'Control Settings' ) }
 							initialOpen={ false }
 							>
-							<SelectControl
-								label={ __( 'Type of Gallery' ) }
-								value={ typeTo }
-								options={ typeOptions }
-								onChange={ this.setTypeTo }
-							/>
 							<ToggleControl
 								label={ __( 'Controls' ) }
 								checked={ !! controls }
