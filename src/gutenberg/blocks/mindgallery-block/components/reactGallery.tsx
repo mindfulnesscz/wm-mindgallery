@@ -1,3 +1,12 @@
+/** reactGallery 
+ * React front end gallery called from save function in guttenberg block object.
+ * 
+ * @param className 
+ * @param attributes
+ * @since 2.0.1
+ */
+
+
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { GalleryProps } from './galleryTypes';

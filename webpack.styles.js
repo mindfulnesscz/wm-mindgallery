@@ -1,13 +1,10 @@
 const path = require( "path" );
-const defaultConfig = require( "@wordpress/scripts/config/webpack.config" );
-
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-	...defaultConfig,
-
 	entry: {
-		"../../../html/myb.com/wp-content/plugins/mindgallery-block/assets/css/style": "./src/sass/style.sass",
+		"../assets/css/style": "./src/sass/style.sass",
+    "../assets/css/vendors/mind-gallery-nomodule": "./src/sass/style-frontend.sass",
 	},
 
 	output: {
@@ -27,7 +24,14 @@ module.exports = {
 	module: {
 		rules: [ {
 			test: /\.s(a|c)ss$/,
-			use: [ MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader' ], // postcss-loader has config file in src/postcss.config.js         
+      // postcss-loader has config file in src/postcss.config.js   
+			use: [ MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', { loader: 'sass-loader',
+        options: {
+          sassOptions: {
+            includePaths: [ require('path').resolve(__dirname, 'node_modules') ]
+          }   
+        }
+      }],       
 		},
 	]},
 };

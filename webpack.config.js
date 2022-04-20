@@ -15,7 +15,7 @@ module.exports = {
 
   entry: {
     "./assets/js/index": "./src/index.js",
-    "./assets/js/options": "./src/mind-gallery-options.jsx"
+    "./assets/js/options": "./src/mind-gallery-options.jsx",
   },
 
   plugins: [new DependencyExtractionWebpackPlugin()],
