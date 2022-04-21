@@ -8,11 +8,8 @@
 
 
 import * as React from 'react';
-import { useState, useEffect } from 'react';
 import { GalleryProps } from './galleryTypes';
 import MindImage from './utils/mind-image';
-
-
 
 
 const ReactGallery: React.FC<GalleryProps> = ({ className, attributes }) => {

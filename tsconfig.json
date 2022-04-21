@@ -1,6 +1,5 @@
 {
   "files": [
-    "./src/gutenberg/blocks/mindgallery-block/components/foundationGallery.tsx",
     "./src/gutenberg/blocks/mindgallery-block/components/reactGallery.tsx"
   ],
   "exclude": [

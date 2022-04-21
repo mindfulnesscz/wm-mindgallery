@@ -3,7 +3,7 @@
  Plugin Name: WM Mindgallery
  Plugin URI: http://www.petrmucha.cz/blog/mindgallery
  Description:Easily display all your WordPress usersname on wordpress website.
- Version: 2.0.4
+ Version: 2.1.0
  Author: Webmajstr
  Author URI: http://www.webmajstr.cz/
  Text Domain: wm_mindgallery
@@ -34,7 +34,7 @@ if (!defined('WPINC')) {
 /**
  * First things first.
  */
-define('WM_MINDGALLERY_VERSION', '2.0.4');
+define('WM_MINDGALLERY_VERSION', '2.1.0');
 define('WM_MINDGALLERY_TEXTDOMAIN', 'wm_mindgallery');
 
 /**

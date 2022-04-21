@@ -1,11 +1,33 @@
 # Change Log
-All notable changes to this project will be documented in this file.
- 
-## [2.1] - Things to come in next version
+
+
+
+
+## [2.2] - IN FUTURE
+- lightbox and fullscreen versions
+- preview mode in editor
+
+
+## [2.1.1] - IN PROGRESS
+- different skins for gallery and player in options
+
+
+
+-----------------------------------------------------
+-----------------------------------------------------
+
+
+## [2.1.0] - 2022-04-22
   
+### Updated
 - whole new React based view layer on frontend
-- postcss support instead of sass
-  
+- postcss support instead of sass (Tailwind) on frontend
+
+### Added
+- vimeo and mp4 files functionallity
+
+ -------------------------------------- 
+
 ## [2.0] - 2021-07-08
  
 ### Added

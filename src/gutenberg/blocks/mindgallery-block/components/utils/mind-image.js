@@ -13,9 +13,6 @@ export default class MindImage extends React.Component {
 
     const { image } = this.props;
 
-    console.log('MindImage - save image data');
-    console.log(image);
-
     /**
      * function that checks the image caption tag and distinguishes whether it is a video or image
      * @param {image object} img 
@@ -31,9 +28,19 @@ export default class MindImage extends React.Component {
       if (VimeoReg.test(img.alt)) {
         type = 'vimeo'
       }
+
+      const VideoJsExp = /^https?:\/\/([-a-zA-Z0-9()@:%_\+.~#?&\/=])*.mp4$/
+      const VideoJsReg = new RegExp(VideoJsExp);
+      if (VideoJsReg.test(img.alt)) {
+        type = 'mp4'
+      }
+
+      console.log('image is');
+      console.log(image.title);
+      console.log(type);
+
       return type;
     }
-
 
     return (
       <img
@@ -48,7 +55,7 @@ export default class MindImage extends React.Component {
         srcset={image.srcset}
         sizes={image.sizes}
         caption={image.caption}
-        type={getType(image)}
+        type={getType(image) || 'image'}
       />
     )
   }

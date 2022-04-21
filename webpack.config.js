@@ -20,6 +20,7 @@ module.exports = {
 
   plugins: [new DependencyExtractionWebpackPlugin()],
 
+
   module: {
     rules: [
       {
