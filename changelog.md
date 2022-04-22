@@ -6,18 +6,17 @@
 ## [2.2] - IN FUTURE
 - lightbox and fullscreen versions
 - preview mode in editor
-
-
-## [2.1.1] - IN PROGRESS
-- different skins for gallery and player in options
-
-
+- skin library in options page
 
 -----------------------------------------------------
 -----------------------------------------------------
 
 
-## [2.1.0] - 2022-04-22
+## [2.1.1] - 2022-04-22
+- Custom skin implemented
+
+
+## [2.1.0] - 2022-04-21
   
 ### Updated
 - whole new React based view layer on frontend

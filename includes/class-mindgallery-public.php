@@ -97,7 +97,12 @@ class Mindgallery_Public
 
   public function enqueue_styles()
   {
-    wp_enqueue_style($this->plugin_name, plugin_dir_url(__DIR__) . 'assets/css/vendors/mind-gallery-nomodule.css', array(), $this->version, 'all');
+    wp_enqueue_style($this->plugin_name . '-gallery', plugin_dir_url(__DIR__) . 'assets/css/vendors/mind-gallery.css', array(), $this->version, 'all');
+
+    // default cdn vjs css replaced at v 2.1.1
+    //wp_enqueue_style('vjs-style', 'https://vjs.zencdn.net/7.18.1/video-js.css');
+
+    wp_enqueue_style($this->plugin_name . '-wmvjs', plugin_dir_url(__DIR__) . 'assets/css/vendors/wmvjs.css', array(), $this->version, 'all');
   }
 
   /**
@@ -108,7 +113,6 @@ class Mindgallery_Public
    */
   public function enqueue_scripts()
   {
-    wp_enqueue_style('vjs-style', 'https://vjs.zencdn.net/7.18.1/video-js.css');
     wp_enqueue_script('react', 'https://unpkg.com/react@17/umd/react.production.min.js', array(), $this->version, false);
     wp_enqueue_script('react-dom', 'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js', array('react'), $this->version, false);
     wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', array(), $this->version,  false);
