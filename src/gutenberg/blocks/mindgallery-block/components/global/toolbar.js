@@ -1,9 +1,9 @@
 /**
  * Internal dependencies
  */
-import * as helper from './../utils/helper';
-import icons from './../utils/icons';
-import { BackgroundToolbar } from './../background';
+import * as helper from '../utils/helper';
+import icons from '../utils/icons';
+import { BackgroundToolbar } from '../background';
 
 /**
  * WordPress dependencies

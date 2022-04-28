@@ -10,7 +10,7 @@
 /**
  * Internal dependencies
  */
-import BackgroundPanel, { BackgroundAttributes } from './../background';
+import BackgroundPanel, { BackgroundAttributes } from '../background';
 
 /**
  * Set global attributes that every block uses.

@@ -1,7 +1,7 @@
 /**
  * Internal dependencies
  */
-import * as ratio from './../utils/helper';
+import * as ratio from '../utils/helper';
 
 /**
  * WordPress dependencies

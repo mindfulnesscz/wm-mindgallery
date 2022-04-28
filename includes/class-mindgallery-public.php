@@ -113,11 +113,16 @@ class Mindgallery_Public
    */
   public function enqueue_scripts()
   {
-    wp_enqueue_script('react', 'https://unpkg.com/react@17/umd/react.production.min.js', array(), $this->version, false);
-    wp_enqueue_script('react-dom', 'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js', array('react'), $this->version, false);
-    wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', array(), $this->version,  false);
-    wp_enqueue_script('mindgallery-no-module-script', plugin_dir_url(__DIR__) . 'assets/js/vendors/mind-gallery-nomodule.js', array('react', 'react-dom', 'gsap'), $this->version, false);
-    wp_enqueue_script('vjs', 'https://vjs.zencdn.net/7.18.1/video.min.js', array('mindgallery-no-module-script'), $this->version, true);
+    if (is_singular()) {
+      $id = get_the_ID();
+      if (has_block('wmwp-blocks/mindgallery', $id)) {
+        wp_enqueue_script('react', 'https://unpkg.com/react@17/umd/react.production.min.js', array(), false, true);
+        wp_enqueue_script('react-dom', 'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js', array('react'), false, true);
+        wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', array(), false,  true);
+        wp_enqueue_script('mindgallery-no-module-script', plugin_dir_url(__DIR__) . 'assets/js/vendors/mind-gallery-nomodule.js', array('react', 'react-dom', 'gsap'), $this->version, false);
+        wp_enqueue_script('video-js', 'https://vjs.zencdn.net/7.18.1/video.min.js', array('mindgallery-no-module-script'), false, true);
+      }
+    }
   }
 
   private function get_instance_id()

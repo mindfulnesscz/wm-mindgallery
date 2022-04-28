@@ -13,8 +13,8 @@ import GalleryPlaceholder from './gallery-placeholder';
 import GalleryDropZone from './gallery-dropzone';
 import GalleryUpload from './gallery-upload';
 import Inspector from './inspector';
-import { BackgroundStyles } from './background/';
-import { GlobalClasses, GlobalToolbar } from './global/';
+import { BackgroundStyles } from './background';
+import { GlobalClasses, GlobalToolbar } from './global';
 import { title, icon } from '../mind-gallery';
 
 

@@ -2,7 +2,7 @@
  * Internal dependencies
  */
 
-import { BackgroundClasses } from './../background';
+import { BackgroundClasses } from '../background';
 
 /**
  * WordPress dependencies

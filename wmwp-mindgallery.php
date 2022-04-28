@@ -1,6 +1,6 @@
 <?php
 /*
- Plugin Name: WM Mindgallery
+ Plugin Name: WMWP Mindgallery
  Plugin URI: http://www.petrmucha.cz/blog/mindgallery
  Description:Easily display all your WordPress usersname on wordpress website.
  Version: 2.1.1

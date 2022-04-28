@@ -25,9 +25,9 @@ const { createBlock } = wp.blocks;
 /**
  * Block constants
  */
-const name = 'Mindgallery';
+const name = 'WMWP Mindgallery';
 
-const title = __('Mindgallery');
+const title = __('WMWP Mindgallery');
 
 const category = 'layout';
 

@@ -1,8 +1,8 @@
 /**
  * Internal dependencies
  */
-import icons from './../utils/icons';
-import * as helper from './../utils/helper';
+import icons from '../utils/icons';
+import * as helper from '../utils/helper';
 
 /**
  * WordPress dependencies

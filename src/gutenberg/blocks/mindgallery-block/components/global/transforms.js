@@ -1,8 +1,8 @@
 /**
  * Internal dependencies
  */
-import * as helper from './../utils/helper';
-import { BackgroundTransforms } from './../background';
+import * as helper from '../utils/helper';
+import { BackgroundTransforms } from '../background';
 
 /**
  * Set global transforms that every block uses.
