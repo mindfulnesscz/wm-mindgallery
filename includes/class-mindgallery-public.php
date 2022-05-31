@@ -97,12 +97,16 @@ class Mindgallery_Public
 
   public function enqueue_styles()
   {
-    wp_enqueue_style($this->plugin_name . '-gallery', plugin_dir_url(__DIR__) . 'assets/css/vendors/mind-gallery.css', array(), $this->version, 'all');
-
-    // default cdn vjs css replaced at v 2.1.1
-    //wp_enqueue_style('vjs-style', 'https://vjs.zencdn.net/7.18.1/video-js.css');
-
-    wp_enqueue_style('wmvjs-style', plugin_dir_url(__DIR__) . 'assets/css/vendors/wmvjs.css', array(), $this->version, 'all');
+    if (is_singular()) {
+      $id = get_the_ID();
+      if (has_block('wmwp-blocks/mindgallery', $id)) {
+        $id = get_the_ID();
+        wp_enqueue_style($this->plugin_name . '-gallery', plugin_dir_url(__DIR__) . 'assets/css/vendors/mind-gallery.css', array(), $this->version, 'all');
+        // default cdn vjs css replaced at v 2.1.1
+        //wp_enqueue_style('vjs-style', 'https://vjs.zencdn.net/7.18.1/video-js.css');
+        wp_enqueue_style('wmvjs-style', plugin_dir_url(__DIR__) . 'assets/css/vendors/wmvjs.css', array(), $this->version, 'all');
+      }
+    }
   }
 
   /**
