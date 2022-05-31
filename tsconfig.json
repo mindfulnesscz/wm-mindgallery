@@ -6,6 +6,7 @@
     "/**/*.js"
   ],
   "compilerOptions": {
+    "outDir": "./dist",
     "esModuleInterop": true,
     "sourceMap": true,
     "noImplicitAny": true,
@@ -15,5 +16,7 @@
     "allowJs": true,
     "moduleResolution": "node",
     "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "suppressImplicitAnyIndexErrors": true, // for lettings index of array be a string
   }
 }

@@ -124,8 +124,4 @@ class Mindgallery_Public
       }
     }
   }
-
-  private function get_instance_id()
-  {
-  }
 }
