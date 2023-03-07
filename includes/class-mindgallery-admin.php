@@ -15,9 +15,11 @@
 class Mindgallery_Admin
 {
 
-  private $plugin_name;
+  private string $plugin_name;
 
-  private $version;
+  private string $version;
+
+  private string $textdomain;
 
   public function __construct($plugin_name, $version, $textdomain)
   {
