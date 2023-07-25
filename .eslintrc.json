@@ -36,7 +36,7 @@
     "space-before-blocks": "error",
     "space-before-function-paren": "error",
     "linebreak-style": [
-      2,
+      4,
       "unix"
     ],
     "quotes": [
